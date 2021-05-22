@@ -1,0 +1,8 @@
+module:
+  imports:
+  - path: github.com/theNewDynamic/hugo-module-tnd-netlifycms
+  mounts:
+  - source: data
+    target: data
+  - source: content
+    target: content

@@ -1,0 +1,5 @@
+label: "identifier field" 
+name: identifier_field 
+widget: string 
+required: false
+hint: "Enter the name of a field created or imported below to use it instead of \"title\" as the identifier in the CMS"

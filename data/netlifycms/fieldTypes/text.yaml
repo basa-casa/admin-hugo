@@ -1,0 +1,17 @@
+label: text
+name: text
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption widget
+    extend:
+      default: text
+  - import: fieldOption field_type
+    extend:
+      default: text
+  - import: fieldOption required
+  - import: fieldOption default 
+  - import: fieldOption hint 
+  - import: fieldOption comment 
+  - import: fieldOption pattern  

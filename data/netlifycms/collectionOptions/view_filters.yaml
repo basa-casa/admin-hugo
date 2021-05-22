@@ -1,0 +1,10 @@
+label: "View Filters" 
+name: view_filters
+widget: object 
+collapsed: true
+required: false
+hint: "An optional list of predefined view filters to show in the UI."
+fields: 
+  - import: fieldOption label
+  - import: collectionOption field
+  - import: fieldOption pattern

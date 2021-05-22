@@ -1,0 +1,49 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: code-fields
+identifier_field: name
+label: Code Fields
+label_singular: Code Field
+description: The code widget provides a code editor (powered by Codemirror) with
+  optional syntax awareness. Can output the raw code value or an object with the
+  selected language and the raw code value.
+folder: data/netlifycms/fields
+fields:
+  - import: fieldOption name
+    field_type: import
+  - import: fieldOption label
+    field_type: import
+  - import: fieldOption widget
+    field_type: import
+    extend:
+      default: code
+  - import: fieldOption field_type
+    field_type: import
+    extend:
+      default: code
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption default
+    field_type: import
+    extend: 
+      widget: code
+  - import: fieldOption hint
+    field_type: import
+  - import: fieldOption default_language
+    field_type: import
+  - import: fieldOption allow_language_selection
+    field_type: import
+  - import: fieldOption keys
+    field_type: import
+  - import: fieldOption output_code_only
+    field_type: import
+filter: 'Map { "field": "field_type", "value": "code" }'
+create: true
+publish: false
+hide: false
+delete: true
+format: yml
+extension: yml
+slug: "{{field_type}}-{{name}}"
+editor:
+  preview: true
+summary: "{{slug}}"

@@ -1,0 +1,5 @@
+label: slug 
+name: slug 
+widget: string 
+required: false
+hint: "https://www.netlifycms.org/docs/configuration-options/#slug"

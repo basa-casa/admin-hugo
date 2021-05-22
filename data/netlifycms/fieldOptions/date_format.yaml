@@ -1,0 +1,4 @@
+label: date format
+name: date_format
+widget: string
+hint: sets date display format in UI; boolean or Moment.js tokens. If true use default locale format.

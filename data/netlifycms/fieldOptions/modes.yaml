@@ -1,0 +1,6 @@
+label: modes
+name: modes
+widget: select
+options: [raw, rich-text]
+multiple: true
+default: [raw, rich-text]

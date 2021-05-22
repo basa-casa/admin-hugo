@@ -1,0 +1,4 @@
+label: time format
+name: time_format
+widget: string
+hint: sets time display format in UI; boolean or Moment.js tokens. 

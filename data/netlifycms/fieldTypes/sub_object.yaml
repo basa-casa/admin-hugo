@@ -1,0 +1,21 @@
+label: object
+name: object
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption sub_fields
+  - import: fieldOption widget
+    extend:
+      default: object
+      widget: select
+      options:
+        - object
+        - hidden
+  - import: fieldOption required
+  - import: fieldOption default
+  - import: fieldOption hint      
+  - import: fieldOption collapsed
+  - import: fieldOption summary
+    extend:
+      hint: specify the label displayed when the object is collapsed

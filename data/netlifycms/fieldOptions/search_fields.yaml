@@ -1,0 +1,4 @@
+label: search fields
+name: search_fields
+widget: list
+hint: list of one or more names of fields in the referenced collection to search for the typed value. Syntax to reference nested fields is similar to that of value_field.

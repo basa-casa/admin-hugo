@@ -1,0 +1,22 @@
+label: Widget
+name: widget
+widget: hidden
+required: true
+options: 
+ - "string"
+ - "text"
+ - "markdown"
+ - "boolean" 
+ - "select"
+ - "list"
+ - "number"
+ - "relation"
+ - "object"
+ - "code" 
+ - "color"
+ - "date"
+ - "dateTime"
+ - "file"
+ - "hidden"
+ - "image"
+ - "map"

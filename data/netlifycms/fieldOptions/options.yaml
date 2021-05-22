@@ -1,0 +1,4 @@
+label: options
+name: options
+widget: list
+hint: "Input a string for each option or an object with a key to show users and a value to store in the file, like ({ label: \"Key\", value: \"string\"})"

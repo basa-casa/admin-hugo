@@ -1,0 +1,6 @@
+label: value type
+name: value_type
+widget: select
+options: [string, int, float]
+hint: int or float change the data type from string to integer or float.
+required: false

@@ -1,0 +1,6 @@
+label: allow language selection (code)
+name: allow_language_selection
+widget: boolean
+default: false
+required: false
+hint: allows syntax to be changed

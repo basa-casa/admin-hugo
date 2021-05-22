@@ -1,0 +1,5 @@
+label: display url
+name: display_url
+widget: string
+field_type: string
+required: false

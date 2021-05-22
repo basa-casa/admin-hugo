@@ -1,0 +1,11 @@
+label: publish mode
+name: publish_mode
+widget: select
+field_type: select
+options:
+  - editorial_workflow
+hint: Enables "Editorial Workflow" mode for more control over the content
+  publishing phases. All unpublished entries will be arranged in a board
+  according to their status, and they can be further reviewed and edited
+  before going live. See https://www.netlifycms.org/docs/configuration-options/#publish-mode
+required: false

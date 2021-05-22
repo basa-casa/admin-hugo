@@ -1,0 +1,6 @@
+label: Comment
+name: comment
+widget: string
+required: false
+hint: "optional comment to add before the field (only supported for yaml)"
+import: "field comment"

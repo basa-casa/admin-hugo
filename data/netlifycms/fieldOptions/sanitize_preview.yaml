@@ -1,0 +1,6 @@
+label: sanitize preview
+name: sanitize_preview
+widget: boolean
+default: false
+hint: Sanitizes markdown preview to prevent XSS attacks - might alter the preview content.
+required: false

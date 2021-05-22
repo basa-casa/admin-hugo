@@ -1,0 +1,5 @@
+label: multiple
+name: multiple
+widget: boolean
+default: false
+required: false

@@ -1,0 +1,28 @@
+label: boolean 
+name: boolean
+widget: object
+fields:
+  - import: fieldOption name
+    field_type: import
+  - import: fieldOption label
+    field_type: import
+  - import: fieldOption widget
+    field_type: import
+    extend:
+      default: boolean
+  - import: fieldOption field_type
+    field_type: import
+    extend:
+      default: boolean
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption default
+    field_type: import
+    extend: 
+      widget: boolean
+  - import: fieldOption hint
+    field_type: import
+  - import: fieldOption comment
+    field_type: import
+  - import: fieldOption pattern
+    field_type: import

@@ -1,0 +1,5 @@
+label: filter 
+name: filter 
+widget: string 
+required: false
+hint: "i.e. {field: \"language\", value: \"en\"} to create a separate collection in the same folder as another, filtered by a field in common to both."

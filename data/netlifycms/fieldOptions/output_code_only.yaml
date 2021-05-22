@@ -1,0 +1,5 @@
+label: output code only (code)
+name: output_code_only
+widget: boolean
+default: false
+hint: set to true to output the string value only.

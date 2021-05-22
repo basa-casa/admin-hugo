@@ -1,0 +1,16 @@
+label: map
+name: map
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption widget
+    extend:
+      default: map
+      widget: hidden
+  - import: fieldOption decimals
+  - import: fieldOption type
+  - import: fieldOption required
+  - import: fieldOption default
+    extend: 
+      hint: accepts a GeoJSON string containing a single geometry; defaults to an empty string

@@ -1,0 +1,6 @@
+label: allow add
+name: allow_add
+widget: boolean
+default: true
+required: false
+hint: false hides the button to add additional items

@@ -1,0 +1,5 @@
+label: sortable_fields 
+name: sortable_fields 
+widget: string 
+required: false
+hint: "An optional list of sort fields to show in the UI. Defaults to inferring title, date, author and description fields and will also show Update On sort field in git based backends. When author field can't be inferred commit author will be used."

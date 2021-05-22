@@ -1,0 +1,34 @@
+label: image
+name: image
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption widget
+    extend:
+      default: image
+  - import: fieldOption field_type
+    extend:
+      default: image
+  - import: fieldOption required
+  - import: fieldOption default
+    extend:
+      hint: accepts a file path string; defaults to null
+  - label: media library
+    name: media_library
+    widget: object
+    fields:
+      - label: config
+        name: config
+        widget: string
+        hint: media library settings to apply when a media library is opened by the current widget
+        required: false
+      - label: allow multiple
+        name: allow_multiple
+        widget: boolean
+        default: true
+        required: false
+  - import: configOption media_folder
+    extend:
+      hint: file path where uploaded images will be saved specific to this control. Paths can be relative to a collection folder (e.g. 'images' will add the image to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with / (e.g '/static/images' will save uploaded images to the static folder in a sub folder named images)
+    required: false

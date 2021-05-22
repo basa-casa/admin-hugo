@@ -1,0 +1,5 @@
+label: options length
+name: options_length
+widget: number
+hint: accepts integer to override number of options presented to user. Defaults to 20.
+required: false

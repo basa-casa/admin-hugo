@@ -1,0 +1,5 @@
+label: Hint
+name: hint
+widget: string
+required: false
+hint: "optionally add helper text directly below a widget. Useful for including instructions."

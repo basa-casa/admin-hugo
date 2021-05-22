@@ -1,0 +1,4 @@
+label: default language (code)
+name: default_language
+widget: string
+required: false

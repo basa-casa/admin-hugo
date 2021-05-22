@@ -1,0 +1,5 @@
+label: minimize collapsed
+name: minimize_collapsed
+widget: boolean
+required: false
+hint: when true, collapsing the widget will hide all of it's entries instead of showing summaries

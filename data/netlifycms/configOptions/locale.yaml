@@ -1,0 +1,9 @@
+label: locale
+name: locale
+widget: select
+field_type: select
+required: false
+default: en
+options:
+  - en
+  - fr

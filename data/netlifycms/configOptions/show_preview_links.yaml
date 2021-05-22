@@ -1,0 +1,6 @@
+label: show preview links
+name: show_preview_links
+widget: boolean
+field_type: boolean
+required: false
+default: true

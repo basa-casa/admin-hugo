@@ -1,0 +1,38 @@
+backend:
+  branch: main
+  open_authoring: false
+  name: test-repo
+  use_graphql: false
+  repo: basa-casa/hugo-module-bc-netlifycmsms
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: "{{message}}"
+  squash_merges: false
+collections:
+  - import: collection config
+    type: import
+  - import: collection files_collections
+    type: import
+  - import: collection folder_collections
+    type: import
+  - type: import
+    import: collection boolean-fields
+  - type: import
+    import: collection code-fields
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: static/img
+public_folder: img
+site_url: https://netlifycmsms.basa.casa
+display_url: https://netlifycmsms.basa.casa
+logo_url: https://netlifycmsms.basa.casa/images/logo.svg
+locale: en
+show_preview_links: false
+slug:
+  encoding: unicode
+  clean_accents: true
+  sanitize_replacement: "-"

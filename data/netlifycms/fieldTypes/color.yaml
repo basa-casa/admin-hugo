@@ -1,0 +1,19 @@
+label: color
+name: "color"
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption widget
+    extend:
+      default: color
+  - import: fieldOption field_type
+    extend:
+      default: color
+  - import: fieldOption required
+  - import: fieldOption default
+    extend: 
+      widget: color
+  - import: fieldOption hint
+  - import: fieldOption allowInput
+  - import: fieldOption enableAlpha

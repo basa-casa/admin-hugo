@@ -1,0 +1,6 @@
+label: Editor Components
+name: editor_components
+widget: select
+options: [image, code-block]
+multiple: true
+default: [image, code-block]

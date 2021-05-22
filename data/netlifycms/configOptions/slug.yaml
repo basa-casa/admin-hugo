@@ -1,0 +1,25 @@
+label: slug
+name: slug
+widget: object
+field_type: object
+required: false
+fields:
+  - label: encoding
+    name: encoding
+    widget: select
+    options:
+      - unicode
+      - ascii
+    required: false
+    default: unicode
+  - label: clean accents
+    name: clean_accents
+    widget: boolean
+    required: false
+    default: false
+  - label: sanitize replacement
+    name: sanitize_replacement
+    widget: string
+    required: false
+    default: "-"
+collapsed: true

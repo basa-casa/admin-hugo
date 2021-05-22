@@ -1,0 +1,6 @@
+label: allow input (color)
+name: allowInput
+widget: boolean
+required: false
+default: false
+hint: Allows manual editing of the color input value

@@ -1,0 +1,6 @@
+label: collapsed
+name: collapsed
+widget: boolean
+default: false
+required: false
+hint: when true, the entries collapse by default.

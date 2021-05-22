@@ -1,0 +1,6 @@
+label: format 
+name: format 
+widget: select
+options: ["yml", "toml", "json", "frontmatter", "yaml-frontmatter", "toml-frontmatter", "json-frontmatter"] 
+default: "yaml-frontmatter"
+hint: "https://www.netlifycms.org/docs/configuration-options/#extension-and-format"

@@ -1,0 +1,5 @@
+label: description
+name: description
+widget: text
+required: false
+hint: Optional text, displayed below the label when viewing a collection

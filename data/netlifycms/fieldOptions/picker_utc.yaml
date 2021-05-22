@@ -1,0 +1,5 @@
+label: picker UTC
+name: picker_utc
+widget: boolean
+default: false
+hint: If true use default locale format, false hides time-picker.

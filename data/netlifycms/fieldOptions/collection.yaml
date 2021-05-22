@@ -1,0 +1,4 @@
+label: collection
+name: collection
+widget: string
+hint: name of the referenced collection

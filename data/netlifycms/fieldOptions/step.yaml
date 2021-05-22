@@ -1,0 +1,5 @@
+label: step (number)
+name: step
+widget: number
+hint: accepts a number for stepping up/down values in the input; 1 by default
+required: false

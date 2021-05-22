@@ -1,0 +1,5 @@
+label: logo url
+name: logo_url
+widget: string
+field_type: string
+required: false

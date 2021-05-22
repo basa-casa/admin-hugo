@@ -1,0 +1,16 @@
+label: hidden
+name: hidden
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption required
+  - import: fieldOption default
+    extend:
+      hint: accepts any valid data type; recommended for (folder)collections and lists that allow adding new items
+  - import: fieldOption widget
+    extend:
+      default: hidden
+  - import: fieldOption field_type
+    extend:
+      default: hidden

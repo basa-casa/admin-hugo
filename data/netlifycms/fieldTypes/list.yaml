@@ -1,0 +1,29 @@
+label: list
+name: list
+widget: object
+fields:
+  - import: fieldOption name
+  - import: fieldOption label
+  - import: fieldOption widget
+    extend:
+      default: list
+  - import: fieldOption required
+  - import: fieldOption default
+  - import: fieldOption hint
+  - import: fieldOption comment
+  - import: fieldOption pattern
+  - import: fieldOption label_singular
+  - import: fieldOption allow_add
+  - import: fieldOption collapsed
+  - import: fieldOption summary
+  - import: fieldOption minimize_collapsed
+  - label: field
+    name: field
+    widget: string
+    required: false
+    hint: "Define a single widget to be repeated ({label: Image, name: image, widget: image})"
+  - label: fields
+    name: fields
+    widget: list
+    required: false
+    hint: "Define a nested list of single widget to be repeated {label: Image, name: image, widget: image}."

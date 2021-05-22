@@ -1,0 +1,5 @@
+label: extension
+name: extension
+widget: select
+default: "yaml"
+options: ["yml", "yaml", "toml", "json", "md", "markdown", "html"]

@@ -1,0 +1,5 @@
+label: site url
+name: site_url
+widget: string
+field_type: string
+required: false

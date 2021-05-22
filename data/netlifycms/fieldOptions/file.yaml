@@ -1,0 +1,5 @@
+label: file
+name: file
+widget: string
+required: false
+hint: allows referencing a specific file whent the referenced collection is a files collection.

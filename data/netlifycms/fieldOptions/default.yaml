@@ -1,0 +1,5 @@
+label: Default
+name: default
+widget: string
+required: false
+hint: Add a default value for the field.

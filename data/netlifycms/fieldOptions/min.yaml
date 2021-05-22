@@ -1,0 +1,5 @@
+label: min
+name: min
+widget: number
+hint: accepts a number for minimum value accepted; unset by default
+required: false

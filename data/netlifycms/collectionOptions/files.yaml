@@ -1,0 +1,27 @@
+label: "files"
+label_singular: file
+name: "files" 
+widget: "list"
+multiple: true
+hint: "https://www.netlifycms.org/docs/collection-types#file-collections"
+fields:
+  - import: fieldOption name
+  - import: fieldOption label 
+  - label: "file"
+    name: "file" 
+    widget: "string"
+    hint: "unique filepath relative to the base of the repo, to file that must already exist in the hosted repository branch set in your Netlify CMS backend configuration. Files must also have a valid value for the file type."
+  - import: fieldOption label_singular
+  - import: collectionOption description
+    extend:
+      hint: optional text, displayed below the label when viewing the file
+  - import: collectionOption publish
+  - import: collectionOption hide
+  - import: collectionOption delete
+  - import: collectionOption preview_path
+  - import: collectionOption preview_path_date_field
+  - import: collectionOption editor
+  - import: fieldOption summary
+    extend:
+      hint: "This setting allows the customization of the collection list view in the CMS UI. Enter a string with templates can be used to include values of different fields, e.g. {{title}}. This option over-rides the default of title field and identifier_field"
+  - import: collectionOption fields

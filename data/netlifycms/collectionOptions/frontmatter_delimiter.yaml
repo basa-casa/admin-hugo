@@ -1,0 +1,5 @@
+label: Frontmatter Delimiter
+name: frontmatter_delimiter 
+widget: string 
+required: false
+hint: "If you have an explicit frontmatter format declared, this option allows you to specify a custom delimiter like ~~~"

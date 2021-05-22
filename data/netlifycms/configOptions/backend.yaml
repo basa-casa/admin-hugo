@@ -1,0 +1,97 @@
+label: "backend"
+name: "backend"
+widget: "object"
+collapsed: true
+summary: 'Backend settings'
+fields:
+  - import: fieldOption name
+    extend:
+      widget: "select"
+      options: ["azure","github","gitlab","bitbucket","git-gateway","test-repo"]
+      default: "test-repo"
+      hint: "A backend is JavaScript code that allows Netlify CMS to communicate with a service that stores content - typically a Git host like GitHub or GitLab. It provides functions that Netlify CMS can use to do things like read and update files using API's provided by the service."
+  - label: "repo"
+    name: "repo"
+    widget: "string"
+    hint: "Required for azure, github, gitlab, and bitbucket backends; ignored by git-gateway. Follows the pattern [org-or-username]/[repo-name]."
+  - name: "branch"
+    label: "branch"
+    widget: string
+    default: main
+    hint: "The branch where published content is stored. All CMS commits and PRs are made to this branch."
+  - name: api_root
+    label: API root
+    widget: string
+    required: false
+    hint: "The API endpoint. Only necessary in certain cases, like with GitHub Enterprise or self-hosted GitLab."
+  - name: site_domain
+    label: Site Domain
+    widget: string
+    required: false
+    hint: "Sets the site_id query param sent to the API endpoint. Non-Netlify auth setups will often need to set this for local development to work properly."
+  - name: base_url
+    label: base URL
+    widget: string
+    required: false
+    hint: "OAuth client hostname (just the base domain, no path). Required when using an external OAuth server or self-hosted GitLab."
+  - name: auth_endpoint
+    label: Auth Endpoint
+    widget: string
+    required: false
+    hint: "Path to append to base_url for authentication requests. Optional."
+  - name: cms_label_prefix
+    label: CMS Label Prefix
+    widget: string
+    required: false
+    hint: "Pull (or Merge) Requests label prefix when using editorial workflow. Optional."
+  - label: "GitHub Squash Merge (Beta)"
+    name: "squash_merges"
+    widget: boolean
+    required: false
+    default: false
+  - label: "GitHub Open Authoring (Beta)"
+    name: open_authoring
+    widget: boolean
+    required: false
+    default: false
+  - label: "GitGub GraphQL (Beta)"
+    name: use_graphql
+    widget: boolean
+    required: false
+    default: false
+  - label: commit message templates (Beta)
+    name: commit_messages
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+      - label: create
+        name: create
+        widget: string
+        required: false
+        default: 'Create {{collection.label}} “{{slug}}”'
+      - label: update
+        name: update
+        widget: string
+        required: false
+        default: 'update {{collection.label}} “{{slug}}”'
+      - label: delete
+        name: delete
+        widget: string
+        required: false
+        default: 'delete {{collection.label}} “{{slug}}”'
+      - label: uploadMedia
+        name: uploadMedia
+        widget: string
+        required: false
+        default: 'Upload “{{path}}'
+      - label: deleteMedia
+        name: deleteMedia
+        widget: string
+        required: false
+        default: 'Delete “{{path}}'
+      - label: openAuthoring
+        name: openAuthoring
+        widget: string
+        required: false
+        default: '{{message}}'

@@ -1,0 +1,4 @@
+label: Name
+name: name
+widget: string
+required: true

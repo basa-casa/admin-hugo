@@ -1,0 +1,7 @@
+label: types
+name: fields
+widget: list
+required: false
+hint: "A nested list of object widgets. Every object widget may define different set of fields."
+fields:
+  - import: fieldType object

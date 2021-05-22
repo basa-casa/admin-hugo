@@ -1,0 +1,5 @@
+label: media folder
+name: media_folder
+widget: string
+field_type: string
+hint: Specifies the folder path where uploaded files should be saved relative to the base of the repo.

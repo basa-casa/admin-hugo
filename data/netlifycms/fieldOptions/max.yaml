@@ -1,0 +1,5 @@
+label: max
+name: max
+widget: number
+hint: accepts a number for maximum value accepted; unset by default
+required: false

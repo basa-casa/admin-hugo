@@ -1,0 +1,5 @@
+label: type (map)
+name: type
+widget: select
+options: [Point, LineString, Polygon]
+default: Point

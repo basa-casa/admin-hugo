@@ -1,0 +1,6 @@
+label: import
+name: 'import'
+fields:
+  - name: "import"
+    widget: string
+    hint: Add code for importing and extending one existing collection. See https://github.com/theNewDynamic/hugo-module-tnd-netlifycms#example-of-the-base-config-data-file for more information. Extending collections is not yet supported through this interface. One must edit the data/netlifycms/config.yml file directly to extend existing collections.
