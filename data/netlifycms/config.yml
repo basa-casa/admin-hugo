@@ -19,6 +19,10 @@ collections:
       folder: data/netlifycms
       slug: config
       format: yaml
+  - import: collection folder_collections
+    collection_type: import
+  - import: collection files_collections
+    collection_type: import
 local_backend: true
 publish_mode: editorial_workflow
 media_folder: static/img
