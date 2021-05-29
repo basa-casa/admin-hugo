@@ -1,5 +1,8 @@
-label: site url
+label: Site URL
 name: site_url
 widget: string
+hint: Provide a URL to your published site. May be used by the CMS for various
+  functionality. Used together with a collection's preview_path to create links
+  to live content.
 field_type: string
 required: false

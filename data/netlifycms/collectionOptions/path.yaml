@@ -2,4 +2,4 @@ label: Path (Beta)
 name: path
 widget: string
 required: false
-hint: "This allows saving content in subfolders, e.g. configuring path: '{{year}}/{{slug}}' and folder: \"posts\" will save the content under posts/2019/post-title.md"
+hint: "Allows saving content in subfolders, e.g. configuring path: '{{year}}/{{slug}}' and folder: \"posts\" will save the content under posts/2019/post-title.md"

@@ -1,4 +1,4 @@
-label: default language (code)
+label: Default Language
 name: default_language
 widget: string
 required: false

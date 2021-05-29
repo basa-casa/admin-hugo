@@ -2,3 +2,4 @@ label: Required
 name: required
 widget: boolean
 required: false
+default: true

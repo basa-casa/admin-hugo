@@ -1,20 +1,17 @@
-label: "files"
-label_singular: file
+label: "Files"
+label_singular: File
 name: "files" 
 widget: "list"
 multiple: true
 hint: "https://www.netlifycms.org/docs/collection-types#file-collections"
+summary: '{{label}}: {{file}}'
 fields:
   - import: fieldOption name
   - import: fieldOption label 
   - label: "file"
     name: "file" 
     widget: "string"
-    hint: "unique filepath relative to the base of the repo, to file that must already exist in the hosted repository branch set in your Netlify CMS backend configuration. Files must also have a valid value for the file type."
-  - import: fieldOption label_singular
-  - import: collectionOption description
-    extend:
-      hint: optional text, displayed below the label when viewing the file
+    hint: "Unique filepath relative to the base of the repo, to file that must already exist in the hosted repository branch set in your Netlify CMS backend configuration. Files must also have a valid value for the file type."
   - import: collectionOption publish
   - import: collectionOption hide
   - import: collectionOption delete

@@ -1,4 +1,4 @@
-label: create 
+label: Create 
 name: create 
 widget: boolean 
 default: false

@@ -1,14 +1,16 @@
-label: media library
+label: Media Library
 name: media_library
 widget: object
-hint: media library settings to apply when a media library is opened by the current widget
+hint: Select from Cloudinary or Uploadcare, and configure connection to your account.
 required: false
+collapsed: true
 fields:
   - import: fieldOption name
     extend: 
       widget: select
       options: [cloudinary, uploadcare]
-  - label: config
+      required: false
+  - label: Config
     name: config
     widget: string
     hint: a configuration object that will be passed directly to the media library being used - available options are determined by the library

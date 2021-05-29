@@ -1,5 +1,6 @@
-label: minimal
+label: Minimal
 name: minimal
 widget: boolean
 default: false
+required: false
 hint: Sets the widget height to minimum possible.

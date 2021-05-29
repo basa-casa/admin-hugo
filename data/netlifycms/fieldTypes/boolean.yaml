@@ -1,4 +1,4 @@
-label: boolean 
+label: Boolean 
 name: boolean
 widget: object
 fields:
@@ -10,6 +10,9 @@ fields:
     field_type: import
     extend:
       default: boolean
+      options: 
+        - boolean
+        - hidden
   - import: fieldOption field_type
     field_type: import
     extend:

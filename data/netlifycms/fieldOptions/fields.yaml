@@ -8,7 +8,7 @@ label_singular: Sub-Field
 typeKey: field_type
 add_to_top: true
 types:
-  - import: fieldType field_import
+  - import: fieldType import
     field_type: import
   - import: fieldType string
     field_type: import
@@ -37,8 +37,6 @@ types:
   - import: fieldType color
     field_type: import
   - import: fieldType dateTime
-    field_type: import
-  - import: fieldType hidden
     field_type: import
   - import: fieldType map
     field_type: import

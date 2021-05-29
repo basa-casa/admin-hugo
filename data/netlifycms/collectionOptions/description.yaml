@@ -1,5 +1,5 @@
-label: description
+label: Description
 name: description
 widget: text
 required: false
-hint: Optional text, displayed below the label when viewing a collection
+hint: Text displayed below the label when viewing a collection. Useful for adding instructions prior to content creation or editing.

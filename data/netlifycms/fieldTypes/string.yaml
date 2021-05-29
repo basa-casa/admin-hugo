@@ -1,4 +1,4 @@
-label: string
+label: String
 name: 'string'
 widget: object
 fields:

@@ -1,4 +1,5 @@
-label: "field" 
+label: Field 
 name: field
 widget: string 
 required: false
+hint: The name of the field on which to filter or group in the collection list view.

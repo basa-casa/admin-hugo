@@ -1,4 +1,4 @@
-label: collection
+label: Collection
 name: collection
 widget: string
-hint: name of the referenced collection
+hint: Name of the referenced collection.

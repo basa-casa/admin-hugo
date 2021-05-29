@@ -1,5 +1,15 @@
-label: filter 
-name: filter 
-widget: string 
+label: Filter
+name: filter
+widget: object
+fields:
+  - import: collectionOption field
+    field_type: import
+  - label: value
+    name: value
+    widget: string
+    field_type: string
+    required: false
+    hint: The value all of the entries of this collection will have for the
+      specified field.
+field_type: object
 required: false
-hint: "i.e. {field: \"language\", value: \"en\"} to create a separate collection in the same folder as another, filtered by a field in common to both."

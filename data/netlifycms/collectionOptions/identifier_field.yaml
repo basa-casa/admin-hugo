@@ -1,4 +1,4 @@
-label: "identifier field" 
+label: Identifier Field 
 name: identifier_field 
 widget: string 
 required: false

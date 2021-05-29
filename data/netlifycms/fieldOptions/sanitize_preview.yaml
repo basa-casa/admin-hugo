@@ -1,4 +1,4 @@
-label: sanitize preview
+label: Sanitize Preview
 name: sanitize_preview
 widget: boolean
 default: false

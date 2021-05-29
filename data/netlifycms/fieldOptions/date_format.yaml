@@ -1,4 +1,4 @@
-label: date format
+label: Date Format
 name: date_format
 widget: string
-hint: sets date display format in UI; boolean or Moment.js tokens. If true use default locale format.
+hint: Sets date display format in UI; boolean or Moment.js tokens. If true use default locale format.

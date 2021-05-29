@@ -1,4 +1,4 @@
-label: dateTime
+label: Date Time
 name: dateTime
 widget: object
 fields:

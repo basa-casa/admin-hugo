@@ -1,10 +1,10 @@
-# The Fields Field
+# The Fields Field Option (subfields)
 name: fields
-label: Fields
+label: Sub-Fields
 widget: list
 summary: "{{field_type}}: {{name}}{{import}}"
-minimize_collapsed: false
-label_singular: Field
+minimize_collapsed: true
+label_singular: Sub-Field
 typeKey: field_type
 add_to_top: true
 types:
@@ -24,15 +24,9 @@ types:
     field_type: import
   - import: fieldType select
     field_type: import
-  - import: fieldType list
-    field_type: import
-  - import: fieldType list_variable_types
-    field_type: import
   - import: fieldType number
     field_type: import
   - import: fieldType relation 
-    field_type: import
-  - import: fieldType object
     field_type: import
   - import: fieldType code
     field_type: import

@@ -1,6 +1,7 @@
-label: allow language selection (code)
+label: Allow Language Selection
 name: allow_language_selection
 widget: boolean
 default: false
+hint: Allows syntax to be changed.
+field_type: boolean
 required: false
-hint: allows syntax to be changed

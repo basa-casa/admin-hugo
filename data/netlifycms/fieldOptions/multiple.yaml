@@ -1,4 +1,4 @@
-label: multiple
+label: Multiple
 name: multiple
 widget: boolean
 default: false

@@ -1,4 +1,4 @@
-label: publish mode
+label: Publish Mode
 name: publish_mode
 widget: select
 field_type: select

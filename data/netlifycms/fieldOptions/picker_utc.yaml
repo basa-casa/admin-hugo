@@ -1,4 +1,4 @@
-label: picker UTC
+label: Picker UTC
 name: picker_utc
 widget: boolean
 default: false

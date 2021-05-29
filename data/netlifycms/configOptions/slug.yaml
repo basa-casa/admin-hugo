@@ -1,8 +1,8 @@
-label: slug
+label: Slug Type
 name: slug
 widget: object
-field_type: object
-required: false
+hint: Changes how filenames for entries are created and sanitized. Also applies
+  to filenames of media inserted via the default media library.
 fields:
   - label: encoding
     name: encoding
@@ -22,4 +22,6 @@ fields:
     widget: string
     required: false
     default: "-"
+field_type: object
+required: false
 collapsed: true

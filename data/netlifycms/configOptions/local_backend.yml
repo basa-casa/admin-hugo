@@ -1,4 +1,4 @@
-label: local backend (Beta)
+label: Local Backend (Beta)
 name: local_backend
 widget: boolean
 field_type: boolean

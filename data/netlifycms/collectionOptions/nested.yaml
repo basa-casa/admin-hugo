@@ -9,7 +9,7 @@ fields:
     name: depth
     widget: number
     required: false
-    hint: max depth to show in the collection tree
+    hint: Max depth to show in the collection tree.
   - import: fieldOption summary
     extend:
-      hint: optional summary for a tree node, defaults to the inferred title field
+      hint: Optional summary for a tree node, defaults to the inferred title field.

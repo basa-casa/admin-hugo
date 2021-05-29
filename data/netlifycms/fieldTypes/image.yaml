@@ -1,4 +1,4 @@
-label: image
+label: I
 name: image
 widget: object
 fields:
@@ -30,5 +30,5 @@ fields:
         required: false
   - import: configOption media_folder
     extend:
-      hint: file path where uploaded images will be saved specific to this control. Paths can be relative to a collection folder (e.g. 'images' will add the image to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with / (e.g '/static/images' will save uploaded images to the static folder in a sub folder named images)
+      hint: File path where uploaded images will be saved specific to this control. Paths can be relative to a collection folder (e.g. 'images' will add the image to a sub-folder in the collection folder) or absolute with reference to the base of the repo which needs to begin with / (e.g '/static/images' will save uploaded images to the static folder in a sub folder named images)
     required: false

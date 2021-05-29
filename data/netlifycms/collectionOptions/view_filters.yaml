@@ -1,6 +1,6 @@
 label: "View Filters" 
 name: view_filters
-widget: object 
+widget: list 
 collapsed: true
 required: false
 hint: "An optional list of predefined view filters to show in the UI."

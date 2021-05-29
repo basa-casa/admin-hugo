@@ -1,4 +1,4 @@
-label: relation
+label: Relation
 name: relation
 widget: object
 fields:
@@ -7,6 +7,9 @@ fields:
   - import: fieldOption widget
     extend:
       default: relation
+      options:
+        - relation
+        - hidden
   - import: fieldOption required
   - import: fieldOption default
   - import: fieldOption hint      
@@ -18,8 +21,8 @@ fields:
   - import: fieldOption multiple
   - import: fieldOption min
     extend:
-      hint: minimum number of items; ignored if multiple is false
+      hint: Minimum number of items; ignored if multiple is false
   - import: fieldOption max
     extend:
-      hint: maximum number of items; ignored if multiple is false   
+      hint: Maximum number of items; ignored if multiple is false   
   - import: fieldOption options_length

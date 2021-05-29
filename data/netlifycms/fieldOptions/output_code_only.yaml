@@ -1,5 +1,6 @@
-label: output code only (code)
+label: Output Code Only
 name: output_code_only
 widget: boolean
 default: false
-hint: set to true to output the string value only.
+required: false
+hint: Set to true to output the string value only.

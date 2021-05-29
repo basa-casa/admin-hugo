@@ -1,5 +1,5 @@
-label: slug 
+label: Slug 
 name: slug 
 widget: string 
 required: false
-hint: "https://www.netlifycms.org/docs/configuration-options/#slug"
+hint: "See https://www.netlifycms.org/docs/configuration-options/#slug"

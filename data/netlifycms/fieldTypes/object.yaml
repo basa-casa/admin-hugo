@@ -1,4 +1,4 @@
-label: object
+label: Object
 name: object
 widget: object
 fields:
@@ -8,7 +8,6 @@ fields:
   - import: fieldOption widget
     extend:
       default: object
-      widget: select
       options:
         - object
         - hidden

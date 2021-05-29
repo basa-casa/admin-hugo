@@ -1,4 +1,4 @@
-label: modes
+label: Modes
 name: modes
 widget: select
 options: [raw, rich-text]

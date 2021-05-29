@@ -1,5 +1,5 @@
-label: min
+label: Min
 name: min
 widget: number
-hint: accepts a number for minimum value accepted; unset by default
+hint: Accepts a number for minimum value accepted.
 required: false

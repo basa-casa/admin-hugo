@@ -1,6 +1,6 @@
-label: "publish" 
+label: "Publish" 
 name: publish 
 widget: boolean
 default: true
 required: false 
-hint: "for publish_mode: editorial_workflow only; false hides UI publishing controls for a collection."
+hint: "For publish_mode: editorial_workflow only; false hides UI publishing controls for a collection."

@@ -1,4 +1,5 @@
 label: Summary 
 name: summary 
-widget: string 
+widget: text
+hint: "Accepts a string with {{name}} references to fields, displayed when the object is collapsed in the UI."
 required: false

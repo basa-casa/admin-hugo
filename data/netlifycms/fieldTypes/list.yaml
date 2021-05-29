@@ -1,4 +1,4 @@
-label: list
+label: List
 name: list
 widget: object
 fields:
@@ -17,12 +17,12 @@ fields:
   - import: fieldOption collapsed
   - import: fieldOption summary
   - import: fieldOption minimize_collapsed
-  - label: field
+  - label: Field
     name: field
     widget: string
     required: false
     hint: "Define a single widget to be repeated ({label: Image, name: image, widget: image})"
-  - label: fields
+  - label: Fields
     name: fields
     widget: list
     required: false

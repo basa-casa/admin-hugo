@@ -1,11 +1,11 @@
-label: editor
+label: Editor
 name: editor
 widget: object
 required: false
 fields:
-  - label: preview
+  - label: Preview
     name: preview
     widget: boolean
     default: true
     required: false
-    hint: "set to false to disable the preview pane for this collection or file"
+    hint: "False disables the preview pane for this collection or file."

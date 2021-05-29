@@ -1,6 +1,6 @@
-label: delete 
+label: Delete 
 name: delete 
 widget: boolean 
 default: true
 required: false
-hint: false prevents users from deleting items in a collection; defaults to true
+hint: False prevents users from deleting items in a collection.

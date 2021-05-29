@@ -1,5 +1,5 @@
-label: options length
+label: Options Length
 name: options_length
 widget: number
-hint: accepts integer to override number of options presented to user. Defaults to 20.
+hint: Accepts integer to override number of options presented to user. Defaults to 20.
 required: false

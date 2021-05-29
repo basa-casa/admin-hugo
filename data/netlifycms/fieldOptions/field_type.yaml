@@ -1,7 +1,7 @@
 label: Field Type
 name: field_type
-widget: hidden
-required: true
+widget: select
+required: false
 hint: DANGER - Changing type will change the widget used for collecting this field's data and may result in unintended consequences.
 options: 
  - "import"
@@ -11,14 +11,13 @@ options:
  - "boolean" 
  - "select"
  - "list"
+ - "list_variable_types"
  - "number"
  - "relation"
  - "object"
  - "code" 
  - "color"
- - "date"
  - "dateTime"
  - "file"
- - "hidden"
  - "image"
  - "map"

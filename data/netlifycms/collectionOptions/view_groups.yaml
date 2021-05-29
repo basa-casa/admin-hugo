@@ -1,6 +1,6 @@
 label: "View Groups" 
 name: view_groups 
-widget: object 
+widget: list 
 required: false
 collapsed: true
 hint: "An optional list of predefined view groups to show in the UI."

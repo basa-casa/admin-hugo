@@ -1,13 +1,15 @@
-label: keys
+label: Keys
 name: keys
 widget: object
-hint: sets key names for code and lang if outputting an object
+hint: Sets key names for code and lang if outputting an object.
 fields: 
   - label: code
     name: code
     widget: string
+    required: false
   - label: lang
     name: lang
     widget: string
+    required: false
 default: { code: 'code', lang: 'lang' }
 required: false

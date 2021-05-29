@@ -1,6 +1,6 @@
-label: enable alpha
+label: Enable Alpha
 name: enableAlpha
 widget: boolean
 required: false
 default: false
-hint: Enables Alpha editing
+hint: Enables Alpha editing.

@@ -2,4 +2,4 @@ label: Label
 name: label
 widget: string
 required: false
-hint: "label in the editor UI; defaults to the value of name"
+hint: "Label in the editor UI; defaults to the value of name."

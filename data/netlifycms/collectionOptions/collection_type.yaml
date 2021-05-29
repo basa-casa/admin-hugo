@@ -1,0 +1,7 @@
+label: Collection Type
+name: collection_type
+widget: select
+options:
+  - import
+  - folder
+  - files

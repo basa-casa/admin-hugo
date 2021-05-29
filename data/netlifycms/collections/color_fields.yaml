@@ -1,6 +1,10 @@
-label: Color
-name: "color"
-widget: object
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: color fields
+identifier_field: name
+label: Color Fields
+label_singular: Color Field
+description: The boolean widget translates a toggle switch input to a true/false value.
+folder: data/netlifycms/fields
 fields:
   - import: fieldOption name
     field_type: import
@@ -26,3 +30,16 @@ fields:
     field_type: import
   - import: fieldOption enableAlpha
     field_type: import
+filter:
+  field: field_type
+  value: color
+create: true
+publish: false
+hide: false
+delete: true
+format: yml
+extension: yml
+slug: "{{field_type}}_{{name}}"
+editor:
+  preview: true
+summary: "{{slug}}"

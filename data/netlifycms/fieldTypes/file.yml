@@ -1,4 +1,4 @@
-label: file
+label: File
 name: file
 widget: object
 fields:
@@ -8,21 +8,20 @@ fields:
   - import: fieldOption required
   - import: fieldOption default
     extend:
-      hint: accepts a file path string; defaults to null
+      hint: Accepts a file path string; defaults to null
   - import: configOption media_library
     extend:
-      hint: media library settings to apply when a media library is opened by the current widget
+      hint: Media library settings to apply when a media library is opened by the current widget
       fields: 
-        - label: allow multiple
+        - label: Allow Multiple
           name: allow_multiple
           widget: boolean
           default: true
           required: false
-          hint: when set to false, prevents multiple selection for any media library extension, but must be supported by the extension in use.
-        - label: config
+          hint: When set to false, prevents multiple selection for any media library extension, but must be supported by the extension in use.
+        - label: Config
           name: config
           widget: object
-          
   - import: fieldOption widget
     extend:
       default: file

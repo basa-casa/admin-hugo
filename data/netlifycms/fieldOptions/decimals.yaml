@@ -1,5 +1,5 @@
-label: decimals
+label: Decimals
 name: decimals
 widget: number
 default: 7
-hint: specify precision of saved coordinates; defaults to 7 decimals
+hint: Specify precision of saved coordinates; defaults to 7 decimals.

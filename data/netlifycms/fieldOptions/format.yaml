@@ -1,4 +1,5 @@
-label: format
+label: Format
 name: format
 widget: string
-hint: sets storage format; accepts Moment.js tokens; defaults to raw Date object (if supported by output format)
+required: false
+hint: Sets storage format; accepts Moment.js tokens; defaults to raw Date object (if supported by output format)

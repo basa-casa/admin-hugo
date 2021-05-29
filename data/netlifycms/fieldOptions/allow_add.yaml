@@ -1,6 +1,6 @@
-label: allow add
+label: Allow Add
 name: allow_add
 widget: boolean
 default: true
 required: false
-hint: false hides the button to add additional items
+hint: False hides the button to add additional items.

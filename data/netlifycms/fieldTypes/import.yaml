@@ -1,7 +1,8 @@
-label: import
+label: Import
 name: 'import'
 fields:
   - name: "import"
+    label: Import
     widget: string
     field_type: string
     hint: Add code for importing and extending one existing field. See https://github.com/theNewDynamic/hugo-module-tnd-netlifycms#example-of-a-collection-data-file for more information.
@@ -10,11 +11,12 @@ fields:
     extend:
       default: import 
   - name: extend
-    label: extend
+    label: Extend
     widget: object
     field_type: object
     collapsed: true
     required: false
+    hint: Only common field options may be extended here. For further control, consider cloning the field or editing the extend object directly in the file.
     fields:
       - import: fieldOption name
         extend:
@@ -24,6 +26,8 @@ fields:
         field_type: import
       - import: fieldOption widget
         field_type: import
+        extend:
+          required: false
       - import: fieldOption hint
         field_type: import
       - import: fieldOption default

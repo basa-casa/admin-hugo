@@ -1,4 +1,4 @@
-label: type (map)
+label: Type
 name: type
 widget: select
 options: [Point, LineString, Polygon]

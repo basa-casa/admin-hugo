@@ -1,4 +1,4 @@
-label: number
+label: Number
 name: number
 widget: object
 fields:

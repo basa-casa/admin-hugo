@@ -1,22 +1,23 @@
 label: Widget
 name: widget
-widget: hidden
+widget: select
+options:
+  - string
+  - text
+  - markdown
+  - boolean
+  - select
+  - list
+  - number
+  - relation
+  - object
+  - code
+  - color
+  - dateTime
+  - file
+  - hidden
+  - image
+  - map
+hint: See https://www.netlifycms.org/docs/widgets/. Widget fields should only change to equivalent data types.
+field_type: select
 required: true
-options: 
- - "string"
- - "text"
- - "markdown"
- - "boolean" 
- - "select"
- - "list"
- - "number"
- - "relation"
- - "object"
- - "code" 
- - "color"
- - "date"
- - "dateTime"
- - "file"
- - "hidden"
- - "image"
- - "map"

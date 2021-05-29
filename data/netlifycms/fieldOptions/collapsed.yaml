@@ -1,6 +1,6 @@
-label: collapsed
+label: Collapsed
 name: collapsed
 widget: boolean
 default: false
+hint: True collapses field entries by default.
 required: false
-hint: when true, the entries collapse by default.

@@ -1,5 +1,5 @@
-label: "label_singular" 
+label: "Label Singular" 
 name: label_singular 
 required: false
 widget: string
-hint: "singular label for certain elements in the editor; defaults to the value of label"
+hint: "Singular label for certain elements in the editor; defaults to the value of label."

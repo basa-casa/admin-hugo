@@ -1,7 +1,7 @@
 # Netlify CMS Files Collection. See https://www.netlifycms.org/docs/collection-types#file-collections
 name: config
-label: Configurator
-label_singular: config
+label: Configuration
+label_singular: ""
 description: Controller for this CMS's base data/netlifycms/config.yml file.
 files:
   - label: data/netlifycms/config.yml
@@ -34,6 +34,8 @@ files:
         field_type: import
       - import: configOption slug
         field_type: import
+    description: does this end up anywhere
+    label_singular: nothereisnt
 publish: true
 hide: false
 delete: false
