@@ -4,10 +4,11 @@ identifier_field: name
 label: Files Collections
 label_singular: Files Collection
 description: >-
-  A files collection contains one or more uniquely configured files. Unlike items in folder collections, which repeat the same configuration over all files in the folder, each item in a files collection has an explicitly set path, filename, and configuration. This can be useful for unique files with a custom set of fields, like a settings file or a custom landing page with a unique content structure.
+  A files collection contains one or more uniquely configured files. Each item in a files collection has an explicitly set path, filename, and configuration. This can be useful for settings files or a custom landing page with a unique content structure.
 folder: data/netlifycms/collections
 filter:
-  field: create
+  field: collection_type
+  value: files
 create: true
 publish: true
 hide: false
@@ -37,10 +38,6 @@ fields:
     field_type: import
   - import: collectionOption preview_path_date_field
     field_type: import
-  - import: collectionOption fields # see data/netlifycms/fields/fields.yaml
-    field_type: import
-    extend:
-      hint: create at least one field with name "title" using the String widget, or use another field as the identifier field.
   - import: collectionOption editor
     field_type: import
   - import: fieldOption summary
