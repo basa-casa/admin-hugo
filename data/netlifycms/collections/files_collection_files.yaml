@@ -1,0 +1,29 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: files_collection_files
+identifier_field: name
+collection_type: folder
+label: Files Collection Files
+label_singular: Files Collection File
+description: Create and edit files for import to files collections. Useful for
+  sharing configuration file controllers and variants without cluttering the
+  collection list.
+folder: data/netlifycms/files
+fields:
+  - field_type: import
+    import: fieldOption name
+  - import: fieldOption label 
+  - label: "file"
+    name: "file" 
+    widget: "string"
+    hint: "Unique filepath relative to the base of the repo, to a file that must already exist in the hosted repository branch set in your Netlify CMS backend configuration. Files must also have a valid value for the file type."
+  - import: collectionOption fields
+  - import: collectionOption delete
+  - import: collectionOption preview_path
+  - import: collectionOption editor
+create: true
+publish: false
+hide: false
+delete: true
+format: yaml
+editor:
+  preview: true
