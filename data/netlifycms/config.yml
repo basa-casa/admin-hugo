@@ -1,9 +1,10 @@
+# This Netlify CMS configuration file was assembled with the assistance of github.com/basa-casa/hugo-module-bc-nc-admin
 backend:
   branch: main
   open_authoring: false
   name: test-repo
   use_graphql: false
-  repo: basa-casa/hugo-module-bc-netlifycmsms
+  repo: basa-casa/hugo-module-bc-nc-admin
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
@@ -23,6 +24,8 @@ collections:
     collection_type: import
   - import: collection files_collections
     collection_type: import
+  - collection_type: import
+    import: collection files_collection_files
 local_backend: true
 publish_mode: editorial_workflow
 media_folder: static/img
@@ -32,8 +35,8 @@ media_library:
   config:
     cloud_name: your_cloud_name
     api_key: your_api_key
-site_url: https://nc-admin.basa.casa
-display_url: https://nc-admin.basa.casa
+site_url: https://example.com
+display_url: https://example.com
 logo_url: https://nc-admin.basa.casa/img/nc-admin.png
 locale: en
 show_preview_links: false
