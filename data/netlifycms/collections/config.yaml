@@ -34,8 +34,6 @@ files:
         field_type: import
       - import: configOption slug
         field_type: import
-    description: does this end up anywhere
-    label_singular: nothereisnt
 publish: true
 hide: false
 delete: false

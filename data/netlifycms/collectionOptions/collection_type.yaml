@@ -1,6 +1,6 @@
 label: Collection Type
 name: collection_type
-widget: select
+widget: hidden
 options:
   - import
   - folder

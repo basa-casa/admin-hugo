@@ -16,10 +16,6 @@ fields:
         https://www.netlifycms.org/docs/collection-types#folder-collections
   - import: collectionOption identifier_field
     field_type: import
-  - import: collectionOption collection_type
-    field_type: import
-    extend:
-      default: folder
   - import: fieldOption label
     field_type: import
     extend:
@@ -27,6 +23,10 @@ fields:
       hint: Label for the collection in the editor UI; defaults to the value of name.
   - import: fieldOption label_singular
     field_type: import
+  - import: collectionOption collection_type
+    field_type: import
+    extend:
+      default: folder
   - import: collectionOption description
     field_type: import
   - import: collectionOption folder
