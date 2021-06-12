@@ -1,6 +1,21 @@
 module:
   imports:
   - path: github.com/theNewDynamic/hugo-module-tnd-netlifycms
+    mounts:
+      - source: templates/single.html.html
+        target: layouts/netlifycms/list.html.html
+      - source: templates/single.netlifycms_config.yml
+        target: layouts/netlifycms/list.netlifycms_config.yml
+      - source: templates/single.netlifycms_debug.yml
+        target: layouts/netlifycms/list.netlifycms_debug.yml
+      - source: data
+        target: data
+      - source: templates
+        target: layouts/netlifycms
+      - source: partials
+        target: layouts/partials/tnd-netlifycms
+      - source: console
+        target: layouts/partials/tnd-netlifycms
   mounts:
   - source: data
     target: data
