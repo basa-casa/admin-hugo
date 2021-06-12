@@ -1,0 +1,7 @@
+label: relativeURLs
+name: relativeURLs
+widget: boolean
+field_type: boolean
+required: false
+hint: Enable this to make all relative URLs relative to content root. Note that
+  this does not affect absolute URLs.

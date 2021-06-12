@@ -1,0 +1,7 @@
+label: defaultContentLanguageInSubdir
+name: defaultContentLanguageInSubdir
+widget: boolean
+field_type: boolean
+required: false
+hint: Render the default content language in subdir, e.g. content/en/. The site
+  root / will then redirect to /en/.

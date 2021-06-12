@@ -1,0 +1,38 @@
+label: exif
+name: exif
+widget: object
+field_type: object
+required: false
+fields:
+  - field_type: string
+    widget: string
+    required: false
+    name: includeFields
+    label: includeFields
+    hint: Regexp matching the fields you want to Exclude from the (massive) set of
+      Exif info available. As we cache this info to disk, this is for
+      performance and disk space reasons more than anything. If you want it all,
+      put ".*" in this config setting. Note that if neither this or
+      ExcludeFields is set, Hugo will return a small default set.
+  - field_type: string
+    widget: string
+    required: false
+    name: excludeFields
+    label: excludeFields
+    hint: Regexp matching the Exif fields you want to exclude. This may be easier to
+      use than IncludeFields above, depending on what you want.
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: disableDate
+    label: disableDate
+    hint: Hugo extracts the "photo taken" date/time into .Date by default. Set this
+      to true to turn it off.
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: disableLatLong
+    label: disableLatLong
+    hint: |-
+      Hugo extracts the "photo taken where" (GPS latitude and longitude) into
+      .Long and .Lat. Set this to true to turn it off.

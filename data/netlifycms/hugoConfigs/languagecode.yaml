@@ -1,0 +1,7 @@
+label: languageCode
+name: languageCode
+widget: string
+field_type: string
+required: false
+hint: The site’s language code. It is used in the default RSS template and can
+  be useful for multi-lingual sites.

@@ -1,0 +1,11 @@
+label: titleCaseStyle
+name: titleCaseStyle
+widget: select
+field_type: select
+required: false
+hint: Specify the title style used by the title template function and automatic
+  section titles.
+options:
+  - AP
+  - Chicago
+  - Go

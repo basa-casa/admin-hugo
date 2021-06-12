@@ -1,0 +1,18 @@
+label: imaging
+name: imaging
+widget: object
+field_type: object
+required: true
+fields:
+  - field_type: import
+    import: hugoConfig resamplefilter
+  - field_type: import
+    import: hugoConfig quality
+  - field_type: import
+    import: hugoConfig hint
+  - field_type: import
+    import: hugoConfig anchor
+  - field_type: import
+    import: hugoConfig bgColor
+  - field_type: import
+    import: hugoConfig exif

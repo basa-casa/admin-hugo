@@ -1,0 +1,6 @@
+label: paginatePath
+name: paginatePath
+widget: string
+field_type: string
+required: false
+hint: The path element used during pagination ("page" in https://example.com/page/2).

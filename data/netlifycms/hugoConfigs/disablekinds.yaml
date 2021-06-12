@@ -1,0 +1,16 @@
+label: disableKinds
+name: disableKinds
+widget: select
+field_type: select
+required: false
+options:
+  - "404"
+  - robotsTXT
+  - sitemap
+  - RSS
+  - term
+  - taxonomy
+  - section
+  - home
+  - page
+hint: Enable disabling of all pages of the specified Kinds.

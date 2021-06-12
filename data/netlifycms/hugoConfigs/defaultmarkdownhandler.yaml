@@ -1,0 +1,9 @@
+field_type: select
+widget: select
+required: false
+multiple: false
+name: defaultMarkdownHandler
+label: defaultMarkdownHandler
+options:
+  - goldmark
+  - blackfriday

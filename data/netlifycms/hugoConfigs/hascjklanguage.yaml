@@ -1,0 +1,7 @@
+label: hasCJKLanguage
+name: hasCJKLanguage
+widget: boolean
+field_type: boolean
+required: false
+hint: If true, auto-detect Chinese/Japanese/Korean Languages in the content.
+  This will make .Summary and .WordCount behave correctly for CJK languages.

@@ -1,0 +1,6 @@
+label: logFile
+name: logFile
+widget: string
+field_type: string
+required: false
+hint: Log File path (if set, logging enabled automatically).

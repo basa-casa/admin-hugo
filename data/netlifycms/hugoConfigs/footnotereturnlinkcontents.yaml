@@ -1,0 +1,6 @@
+label: footnoteReturnLinkContents
+name: footnoteReturnLinkContents
+widget: string
+field_type: string
+required: false
+hint: Text to display for footnote return links.

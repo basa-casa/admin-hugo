@@ -1,0 +1,26 @@
+label: caches
+name: caches
+widget: object
+field_type: object
+required: false
+fields:
+  - field_type: import
+    import: hugoConfig cachetype
+    extend:
+      name: assets
+  - field_type: import
+    import: hugoConfig cachetype
+    extend:
+      name: getcsv
+  - field_type: import
+    import: hugoConfig cachetype
+    extend:
+      name: getjson
+  - field_type: import
+    import: hugoConfig cachetype
+    extend:
+      name: images
+  - field_type: import
+    import: hugoConfig cachetype
+    extend:
+      name: modules

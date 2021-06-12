@@ -1,0 +1,6 @@
+label: verbose
+name: verbose
+widget: boolean
+field_type: boolean
+required: false
+hint: Enable verbose output.

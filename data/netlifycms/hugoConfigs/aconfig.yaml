@@ -1,0 +1,5 @@
+label: aConfig
+name: aConfig
+widget: boolean
+field_type: boolean
+required: false

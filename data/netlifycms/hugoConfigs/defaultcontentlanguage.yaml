@@ -1,0 +1,6 @@
+label: defaultContentLanguage
+name: defaultContentLanguage
+widget: string
+field_type: string
+required: false
+hint: (en) Content without language indicator will default to this language.

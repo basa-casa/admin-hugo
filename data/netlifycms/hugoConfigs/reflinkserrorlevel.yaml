@@ -1,0 +1,11 @@
+label: refLinksErrorLevel
+name: refLinksErrorLevel
+widget: select
+field_type: select
+required: true
+hint: When using ref or relref to resolve page links and a link cannot resolved,
+  it will be logged with this logg level. Valid values are ERROR (default) or
+  WARNING. Any ERROR will fail the build (exit -1).
+options:
+  - ERROR
+  - WARNING

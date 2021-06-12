@@ -1,0 +1,6 @@
+label: noChmod
+name: noChmod
+widget: boolean
+field_type: boolean
+required: false
+hint: Don't sync permission mode of files.

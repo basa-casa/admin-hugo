@@ -1,0 +1,8 @@
+label: enableRobotsTXT
+name: enableRobotsTXT
+widget: boolean
+field_type: boolean
+required: false
+default: ""
+hint: |
+  Enable generation of robots.txt file.

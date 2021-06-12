@@ -1,0 +1,7 @@
+label: publishDir
+name: publishDir
+widget: string
+field_type: string
+required: false
+hint: The directory to where Hugo will write the final static site (the HTML
+  files etc.).

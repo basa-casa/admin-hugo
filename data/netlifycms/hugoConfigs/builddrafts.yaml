@@ -1,0 +1,6 @@
+label: buildDrafts
+name: buildDrafts
+widget: boolean
+field_type: boolean
+required: false
+hint: Include drafts when building.

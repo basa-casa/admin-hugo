@@ -1,0 +1,7 @@
+label: disablePathToLower
+name: disablePathToLower
+widget: boolean
+field_type: boolean
+required: false
+hint: |
+  Do not convert the url/path to lowercase.

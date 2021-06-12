@@ -1,0 +1,6 @@
+label: enableEmoji
+name: enableEmoji
+widget: boolean
+field_type: boolean
+required: false
+hint: Enable Emoji emoticons support for page content;

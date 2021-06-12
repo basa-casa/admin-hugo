@@ -1,0 +1,6 @@
+label: buildFuture
+name: buildFuture
+widget: boolean
+field_type: boolean
+required: false
+hint: Include content with publishdate in the future.

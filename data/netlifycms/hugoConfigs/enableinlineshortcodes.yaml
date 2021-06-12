@@ -1,0 +1,7 @@
+label: enableInlineShortcodes
+name: enableInlineShortcodes
+widget: boolean
+field_type: boolean
+required: false
+default: ""
+hint: Enable inline shortcode support

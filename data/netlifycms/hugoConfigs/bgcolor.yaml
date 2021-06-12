@@ -1,0 +1,13 @@
+label: bgColor
+name: bgColor
+widget: string
+field_type: string
+required: true
+hint: >-
+  Default background color.
+
+  Hugo will preserve transparency for target formats that supports it, but will fall back to this color for JPEG.
+
+  Expects a standard HEX color string with 3 or 6 digits.
+
+  See https://www.google.com/search?q=color+picker

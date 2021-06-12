@@ -1,0 +1,6 @@
+label: staticDir
+name: staticDir
+widget: list
+field_type: list
+required: false
+hint: A directory or a list of directories from where Hugo reads static files.

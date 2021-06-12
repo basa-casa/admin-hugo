@@ -1,0 +1,6 @@
+label: watch
+name: watch
+widget: boolean
+field_type: boolean
+required: false
+hint: Watch filesystem for changes and recreate as needed.

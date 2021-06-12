@@ -1,0 +1,6 @@
+label: verboseLog
+name: verboseLog
+widget: boolean
+field_type: boolean
+required: false
+hint: Enable verbose logging.

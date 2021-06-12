@@ -1,0 +1,107 @@
+label: highlight
+name: highlight
+widget: object
+field_type: object
+required: false
+hint: "Blackfriday was Hugo’s default Markdown rendering engine, now replaced
+  with Goldmark. But you can still use it: Just set defaultMarkdownHandler to
+  blackfriday in your top level markup config."
+fields:
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: anchorLineNos
+    label: anchorLineNos
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: codeFences
+    label: codeFences
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: guessSyntax
+    label: guessSyntax
+  - field_type: string
+    widget: string
+    required: false
+    name: hl_Lines
+    label: hl_Lines
+  - field_type: string
+    widget: string
+    required: false
+    name: lineAnchors
+    label: lineAnchors
+  - field_type: number
+    widget: number
+    required: false
+    name: lineNoStart
+    label: lineNoStart
+    value_type: int
+    min: 1
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: lineNos
+    label: lineNos
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: lineNumbersInTable
+    label: lineNumbersInTable
+  - field_type: boolean
+    widget: boolean
+    required: false
+    name: noClasses
+    label: noClasses
+  - field_type: select
+    widget: boolean
+    required: false
+    name: style
+    label: style
+    options:
+      - monokai
+      - abap
+      - algol
+      - algol_nu
+      - api
+      - arduino
+      - autumn
+      - borland
+      - bw
+      - colorful
+      - dracula
+      - emacs
+      - friendly
+      - fruity
+      - github
+      - igor
+      - lovelace
+      - manni
+      - monokailight
+      - murphy
+      - native
+      - paraiso-dark
+      - paraiso-light
+      - pastie
+      - perldoc
+      - pygments
+      - rainbow_dash
+      - rrt
+      - solarized-dark
+      - solarized-dark256
+      - solarized-light
+      - swapoff
+      - tango
+      - trac
+      - vim
+      - vs
+      - xcode
+  - field_type: number
+    widget: number
+    required: false
+    name: tabWidth
+    label: tabWidth
+    value_type: int
+    min: 2
+    step: 2

@@ -1,0 +1,6 @@
+label: dataDir
+name: dataDir
+widget: string
+field_type: string
+required: false
+hint: The directory from where Hugo reads data files.

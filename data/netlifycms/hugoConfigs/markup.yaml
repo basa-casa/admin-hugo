@@ -1,0 +1,17 @@
+label: markup
+name: markup
+widget: object
+field_type: object
+required: false
+fields:
+  - field_type: import
+    import: hugoConfig defaultmarkdownhandler
+  - field_type: import
+    import: hugoConfig tableofcontents
+  - field_type: import
+    import: hugoConfig blackfriday
+  - field_type: import
+    import: hugoConfig highlight
+  - field_type: import
+    import: hugoConfig goldmark
+

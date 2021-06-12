@@ -1,0 +1,9 @@
+label: disableAliases
+name: disableAliases
+widget: boolean
+field_type: boolean
+required: false
+hint: Will disable generation of alias redirects. Note that even if
+  disableAliases is set, the aliases themselves are preserved on the page. The
+  motivation with this is to be able to generate 301 redirects in an .htaccess,
+  a Netlify _redirects file or similar using a custom output format

@@ -1,0 +1,6 @@
+label: languageName
+name: languageName
+widget: string
+field_type: string
+required: false
+hint: The site's language name.

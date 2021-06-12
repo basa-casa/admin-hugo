@@ -1,0 +1,6 @@
+label: theme
+name: theme
+widget: string
+field_type: string
+required: true
+hint: Theme to use (located by default in /themes/THEMENAME/).

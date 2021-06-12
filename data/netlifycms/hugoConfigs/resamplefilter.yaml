@@ -1,0 +1,7 @@
+label: resampleFilter
+name: resampleFilter
+widget: select
+field_type: select
+required: false
+options: [NearestNeighbor, Box, Linear, Hermite, MitchellNetravali, CatmullRom, BSpline, Gaussian, Lanczos, Hann, Hamming, Blackman, Bartlett, Welch, Cosine]
+hint: See https://github.com/disintegration/imaging.
