@@ -1,0 +1,31 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: fields
+identifier_field: name
+label: Fields
+label_singular: Field
+collection_type: folder
+description: Use this list to quickly view and edit common options for your fields. The preview link will open the same field in a more specific editor for its type. 
+folder: data/netlifycms/fields
+fields:
+  - field_type: import
+    import: fieldOption label
+  - field_type: import
+    import: fieldOption name
+  - field_type: import
+    import: fieldOption widget
+  - field_type: import
+    import: fieldOption field_type
+  - field_type: import
+    import: fieldOption hint
+create: false
+hide: false
+delete: false
+format: yml
+extension: yaml
+editor:
+  preview: true
+summary: "{{dirname}} {{filename}}: {{field_type}} {{hint}}"
+sortable_fields: []
+view_groups:
+  - label: Field Types
+    field: field_type

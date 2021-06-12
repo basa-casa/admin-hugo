@@ -1,6 +1,7 @@
 name: collections
 label: Collections
 widget: list
+field_type: list_variable_types
 summary: "{{type}} {{import}}"
 minimize_collapsed: true
 label_singular: Collection

@@ -1,0 +1,27 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: Select Fields
+identifier_field: name
+label: Select Fields
+label_singular: Select Field
+collection_type: folder
+description: >
+  The select widget allows you to pick a string value from a dropdown menu.
+folder: data/netlifycms
+fields:
+  - import: fieldType select.fields
+    field_type: import
+filter:
+  field: field_type
+  value: select
+create: true
+publish: false
+hide: true
+delete: true
+format: yaml
+extension: yaml
+slug: fields/{{name}}
+editor:
+  preview: true
+summary: "{{slug}}"
+nested:
+  depth: 3

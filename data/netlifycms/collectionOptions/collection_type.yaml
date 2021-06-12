@@ -5,3 +5,4 @@ options:
   - import
   - folder
   - files
+field_type: select

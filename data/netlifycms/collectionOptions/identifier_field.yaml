@@ -1,5 +1,6 @@
 label: Identifier Field 
 name: identifier_field 
 widget: string 
+field_type: string 
 required: false
 hint: "Enter the name of a field created or imported below to use it instead of \"title\" as the identifier in the CMS"

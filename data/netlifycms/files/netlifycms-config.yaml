@@ -1,0 +1,7 @@
+label: data/netlifycms/config.yml
+type: file
+name: config
+file: data/netlifycms/config.yml
+fields:
+  - import: collection cms.fields
+    field_type: import

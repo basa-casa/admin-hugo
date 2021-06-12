@@ -2,6 +2,7 @@
 name: fields
 label: Sub-Fields
 widget: list
+field_type: list_variable_types
 summary: "{{field_type}}: {{name}}{{import}}"
 minimize_collapsed: true
 label_singular: Sub-Field

@@ -1,0 +1,36 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: nc-admin_fields
+identifier_field: name
+label: Config Fields
+label_singular: Config Field
+collection_type: folder
+description: Basic editor and preview link to detailed editor for all fields under data/netlifycms
+folder: data/netlifycms
+preview_path: "nc-admin/#/collections/{{field_type}}_fields/entries/{{dirname}}/{{name}}"
+fields:
+  - field_type: import
+    import: fieldOption label
+  - field_type: import
+    import: fieldOption name
+  - field_type: import
+    import: fieldOption widget
+  - field_type: import
+    import: fieldOption field_type
+  - field_type: import
+    import: fieldOption hint
+filter:
+  field: collection_type
+create: false
+hide: true
+delete: false
+format: yaml
+extension: yaml
+editor:
+  preview: true
+summary: "{{dirname}}/{{filename}}"
+sortable_fields: []
+view_groups:
+  - label: Field Types
+    field: field_type
+nested:
+  depth: 2

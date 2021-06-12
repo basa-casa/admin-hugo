@@ -1,0 +1,24 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: boolean_fields
+identifier_field: name
+collection_type: folder
+label: Boolean Fields
+label_singular: Boolean Field
+description: "The boolean widget translates a toggle switch input to a true/false value."
+folder: data/netlifycms
+slug: "fields/{{name}}"
+fields:
+  - import: fieldType boolean.fields
+    field_type: import
+filter: {field: field_type, value: boolean}
+create: true
+publish: false
+hide: true
+delete: true
+format: yaml
+extension: yaml
+summary: "{{slug}}"
+editor:
+  preview: true
+nested:
+  depth: 3

@@ -1,6 +1,7 @@
 label: Format 
 name: format 
 widget: select
+field_type: select
 required: false
 options: ["yaml", "yml", "toml", "json", "frontmatter", "yaml-frontmatter", "toml-frontmatter", "json-frontmatter"] 
 hint: "Determines how collection files are parsed and saved; will be inferred if the extension field or existing collection file extensions match one of the supported extensions above."

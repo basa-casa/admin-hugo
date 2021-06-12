@@ -1,7 +1,7 @@
 label: File
 name: file
 widget: string
+field_type: string
 hint: Allows referencing a specific file when the referenced collection is a
   files collection.
-field_type: string
 required: false

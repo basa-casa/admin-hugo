@@ -1,10 +1,14 @@
 label: "View Groups" 
 name: view_groups 
 widget: list 
+field_type: list 
 required: false
 collapsed: true
 hint: "An optional list of predefined view groups to show in the UI."
 fields: 
   - import: fieldOption label
+    field_type: import
   - import: collectionOption field
+    field_type: import
   - import: fieldOption pattern
+    field_type: import

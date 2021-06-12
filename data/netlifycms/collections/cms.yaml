@@ -2,7 +2,8 @@
 name: cms
 label: CMSs
 label_singular: CMS
-folder: content/{{repo}}
+collection_type: folder
+folder: content/
 fields:
   - import: configOption backend
     field_type: import
@@ -29,6 +30,8 @@ fields:
   - import: configOption show_preview_links
     field_type: import
   - import: configOption slug
+    field_type: import
+  - import: configOption tnd_netlifycms
     field_type: import
 identifier_field: backend.name
 description: Use to create the base config.yml for your CMS - everything from

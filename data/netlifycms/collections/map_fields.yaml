@@ -1,0 +1,27 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: Map Fields
+identifier_field: name
+label: Map Fields
+label_singular: Map Field
+collection_type: folder
+description: >
+  The map widget allows you to edit spatial data using an interactive map. Spatial data for a single piece of geometry saves as a GeoJSON string in WGS84 projection.
+folder: data/netlifycms
+fields:
+  - import: fieldType map.fields
+    field_type: import
+filter:
+  field: field_type
+  value: map
+create: true
+publish: false
+hide: true
+delete: true
+format: yaml
+extension: yaml
+slug: fields/{{name}}
+editor:
+  preview: true
+summary: "{{slug}}"
+nested:
+  depth: 3

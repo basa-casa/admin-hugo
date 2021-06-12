@@ -1,6 +1,7 @@
 label: Buttons
 name: buttons
 widget: select
+field_type: select
 options:
   - bold
   - italic
@@ -31,4 +32,3 @@ default:
   - bulleted-list
   - numbered-list
 hint: The formatting buttons to display (all shown by default).
-field_type: select

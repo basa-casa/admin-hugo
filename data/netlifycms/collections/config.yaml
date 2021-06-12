@@ -1,39 +1,13 @@
+label_singular: Configuration
 # Netlify CMS Files Collection. See https://www.netlifycms.org/docs/collection-types#file-collections
 name: config
 label: Configuration
-label_singular: ""
-description: Controller for this CMS's base data/netlifycms/config.yml file.
+collection_type: files
+description: "Controller for this CMS's base config file. "
 files:
-  - label: data/netlifycms/config.yml
-    name: config
-    file: data/netlifycms/config.yml
-    fields:
-      - import: configOption backend
-        field_type: import
-      - import: configOption collections
-        field_type: import
-      - import: configOption local_backend
-        field_type: import
-      - import: configOption publish_mode
-        field_type: import
-      - import: configOption media_folder
-        field_type: import
-      - import: configOption public_folder
-        field_type: import
-      - import: configOption media_library
-        field_type: import
-      - import: configOption site_url
-        field_type: import
-      - import: configOption display_url
-        field_type: import
-      - import: configOption logo_url
-        field_type: import
-      - import: configOption locale
-        field_type: import
-      - import: configOption show_preview_links
-        field_type: import
-      - import: configOption slug
-        field_type: import
+  - import: file netlifycms-config
+  - type: import
+    import: collection hugo_config_directory.files 
 publish: true
 hide: false
 delete: false

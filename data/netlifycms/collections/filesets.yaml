@@ -1,0 +1,22 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: fileSets
+identifier_field: name
+label: File Sets
+label_singular: File Set
+collection_type: folder
+description: "Create a list of files to import to file collections together.
+  Useful for grouped pages and configuration files. "
+folder: data/netlifycms/fileSets
+fields:
+  - field_type: import
+    import: fieldOption name
+  - field_type: import
+    import: collectionOption files
+create: true
+publish: true
+hide: false
+delete: true
+format: yaml
+extension: yaml
+editor:
+  preview: true

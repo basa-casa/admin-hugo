@@ -1,0 +1,14 @@
+# Netlify CMS Files Collection. See https://www.netlifycms.org/docs/collection-types#file-collections
+name: Hugo Config Directory
+label: /config
+collection_type: files
+description: "Hugo configuration controllers. Each must be accompanied by a
+  corresponding file in the repository. "
+files:
+  - type: import
+    import: file markup
+publish: false
+hide: false
+delete: true
+editor:
+  preview: true

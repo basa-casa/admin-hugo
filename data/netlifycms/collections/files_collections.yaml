@@ -3,29 +3,25 @@ name: files_collections
 identifier_field: name
 label: Files Collections
 label_singular: Files Collection
-description: >-
-  A files collection contains one or more uniquely configured files. Each item in a files collection has an explicitly set path, filename, and configuration. This can be useful for settings files or a custom landing page with a unique content structure.
+description: A files collection contains one or more uniquely configured files.
+  Each item in a files collection has an explicitly set path, filename, and
+  configuration. This can be useful for settings files or a custom landing page
+  with a unique content structure.
 folder: data/netlifycms/collections
-filter:
-  field: collection_type
-  value: files
-create: true
-publish: true
-hide: false
-delete: true
-format: yaml
-extension: yaml
 fields:
   - import: fieldOption name
     field_type: import
     extend:
-      comment: "Netlify CMS Files Collection. See https://www.netlifycms.org/docs/collection-types#file-collections"
-  - import: fieldOption label 
+      comment: Netlify CMS Files Collection. See
+        https://www.netlifycms.org/docs/collection-types#file-collections
+  - import: fieldOption label
     field_type: import
   - import: collectionOption collection_type
     field_type: import
     extend:
       default: files
+  - import: collectionOption description
+    field_type: import
   - import: collectionOption files
     field_type: import
   - import: collectionOption publish
@@ -39,7 +35,18 @@ fields:
   - import: fieldOption summary
     field_type: import
     extend:
-      hint: "This setting allows the customization of the collection list view in the CMS UI. Enter a string with templates can be used to include values of different fields, e.g. {{title}}."
+      hint: This setting allows the customization of the collection list view in the
+        CMS UI. Enter a string with templates can be used to include values of
+        different fields, e.g. {{title}}.
+filter:
+  field: collection_type
+  value: files
+create: true
+publish: true
+hide: false
+delete: true
+format: yaml
+extension: yaml
 editor:
   preview: false
 summary: "{{label}}"

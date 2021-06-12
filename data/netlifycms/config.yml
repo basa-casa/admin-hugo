@@ -1,4 +1,3 @@
-# This Netlify CMS configuration file was assembled with the assistance of github.com/basa-casa/hugo-module-bc-nc-admin
 backend:
   branch: main
   open_authoring: false
@@ -14,33 +13,29 @@ backend:
     openAuthoring: "{{message}}"
   squash_merges: false
 collections:
+  - import: collectionSet nc-admin.collections
+    collection_type: import
+  - import: collectionSet fields.collections
+    collection_type: import
   - import: collection cms
     collection_type: import
     extend:
+      label: Create Your CMS
       folder: data/netlifycms
       slug: config
       format: yaml
-  - import: collection folder_collections
-    collection_type: import
-  - import: collection files_collections
-    collection_type: import
-  - collection_type: import
-    import: collection files_collection_files
 local_backend: true
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: img
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: your_cloud_name
-    api_key: your_api_key
-site_url: https://example.com
+site_url: /
 display_url: https://example.com
 logo_url: https://nc-admin.basa.casa/img/nc-admin.png
 locale: en
-show_preview_links: false
+show_preview_links: true
 slug:
   encoding: unicode
   clean_accents: true
   sanitize_replacement: _
+tnd_netlifycms:
+  cms_version: 2.10.138

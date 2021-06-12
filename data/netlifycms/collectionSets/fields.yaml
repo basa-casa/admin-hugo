@@ -1,0 +1,34 @@
+name: fields
+collections:
+  - import: collection string_fields
+    field_type: import
+  - import: collection text_fields
+    field_type: import
+  - import: collection image_fields
+    field_type: import
+  - import: collection file_fields
+    field_type: import
+  - import: collection markdown_fields
+    field_type: import
+  - import: collection boolean_fields
+    field_type: import
+  - import: collection select_fields
+    field_type: import
+  - import: collection list_fields
+    field_type: import
+  - import: collection list_variable_types_fields
+    field_type: import
+  - import: collection number_fields
+    field_type: import
+  - import: collection relation_fields 
+    field_type: import
+  - import: collection object_fields
+    field_type: import
+  - import: collection code_fields
+    field_type: import
+  - import: collection color_fields
+    field_type: import
+  - import: collection datetime_fields
+    field_type: import
+  - import: collection map_fields
+    field_type: import

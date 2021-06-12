@@ -1,0 +1,12 @@
+label: Netlify CMS
+name: tnd_netlifycms
+widget: object
+field_type: object
+required: false
+fields:
+  - label: CMS Version
+    name: cms_version
+    widget: string
+    field_type: string
+    required: false
+    hint: Set the CMS version. See https://github.com/netlify/netlify-cms/releases

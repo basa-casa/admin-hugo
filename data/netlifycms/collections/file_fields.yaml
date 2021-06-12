@@ -1,0 +1,29 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: File Fields
+identifier_field: name
+label: File Fields
+label_singular: File Field
+collection_type: folder
+description: >
+  The file widget allows editors to upload a file or select an existing one from
+  the media library. The path to the file will be saved to the field as a
+  string.
+folder: data/netlifycms
+fields:
+  - import: fieldType file.fields
+    field_type: import
+filter:
+  field: field_type
+  value: file
+create: true
+publish: false
+hide: true
+delete: true
+format: yaml
+extension: yaml
+slug: fields/{{name}}
+editor:
+  preview: true
+summary: "{{slug}}"
+nested:
+  depth: 3

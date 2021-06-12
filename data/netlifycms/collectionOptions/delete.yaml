@@ -1,6 +1,7 @@
-label: Delete 
-name: delete 
-widget: boolean 
+label: Delete
+name: delete
+widget: boolean
 default: true
 required: false
+field_type: boolean
 hint: False prevents users from deleting items in a collection.

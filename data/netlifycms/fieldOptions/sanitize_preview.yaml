@@ -1,6 +1,7 @@
 label: Sanitize Preview
 name: sanitize_preview
 widget: boolean
+field_type: boolean
 default: false
 hint: Sanitizes markdown preview to prevent XSS attacks - might alter the preview content.
 required: false

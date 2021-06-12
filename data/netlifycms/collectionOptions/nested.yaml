@@ -1,6 +1,7 @@
 label: Nested (Beta)
 name: nested
 widget: object
+field_type: object
 collapsed: true
 required: false
 hint: Allows a folder collection to show a nested structure of entries and to edit the locations of the entries.
@@ -8,8 +9,10 @@ fields:
   - label: Depth
     name: depth
     widget: number
+    field_type: number
     required: false
     hint: Max depth to show in the collection tree.
   - import: fieldOption summary
+    field_type: import
     extend:
       hint: Optional summary for a tree node, defaults to the inferred title field.

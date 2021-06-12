@@ -1,4 +1,5 @@
 label: Collection
 name: collection
 widget: string
+field_type: string
 hint: Name of the referenced collection.

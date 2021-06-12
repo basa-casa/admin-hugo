@@ -1,6 +1,7 @@
 label: Field Type
 name: field_type
 widget: select
+field_type: select
 required: false
 hint: DANGER - Changing type will change the widget used for collecting this field's data and may result in unintended consequences.
 options: 
