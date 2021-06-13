@@ -17,4 +17,4 @@ types:
   - label: file
     name: file
     fields:
-      - import: collection files_collection_files.fields
+      - import: baseCollection files_collection_files.fields

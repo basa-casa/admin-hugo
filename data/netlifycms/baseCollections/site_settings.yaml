@@ -1,0 +1,8 @@
+# Netlify CMS Files Collection. See https://www.netlifycms.org/docs/collection-types#file-collections
+name: site_settings
+label: Site Settings
+collection_type: files
+description: "Files collection for settings."
+files:
+  - import: file netlifycms_config
+    type: import 

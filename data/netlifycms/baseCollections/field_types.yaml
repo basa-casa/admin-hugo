@@ -18,7 +18,7 @@ create: false
 publish: false
 hide: false
 delete: false
-format: yml
+format: yaml
 extension: yaml
 editor:
   preview: true

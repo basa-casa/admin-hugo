@@ -2,6 +2,6 @@ label: Collapsed
 name: collapsed
 widget: boolean
 field_type: boolean
-default: false
+
 hint: True collapses field entries by default.
 required: false

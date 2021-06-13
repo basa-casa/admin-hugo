@@ -1,41 +1,18 @@
 backend:
   branch: main
-  open_authoring: false
   name: test-repo
-  use_graphql: false
   repo: basa-casa/hugo-module-bc-nc-admin
-  commit_messages:
-    create: Create {{collection}} “{{slug}}”
-    update: Update {{collection}} “{{slug}}”
-    delete: Delete {{collection}} “{{slug}}”
-    uploadMedia: Upload “{{path}}”
-    deleteMedia: Delete “{{path}}”
-    openAuthoring: "{{message}}"
-  squash_merges: false
 collections:
-  - import: collectionSet nc-admin.collections
-    collection_type: import
-  - import: collectionSet fields.collections
-    collection_type: import
-  - import: collection cms
+  - import: baseCollection cms
     collection_type: import
     extend:
       label: Create Your CMS
       folder: data/netlifycms
       slug: config
       format: yaml
+      description: "Used to create data/netlifycms/config.yml for your CMS. Useful collections are available: import `collection netlifycms_settings` and `collection cffs.collections` to get started."
 local_backend: true
-publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: img
 site_url: /
-display_url: https://example.com
 logo_url: https://nc-admin.basa.casa/img/nc-admin.png
-locale: en
-show_preview_links: true
-slug:
-  encoding: unicode
-  clean_accents: true
-  sanitize_replacement: _
-tnd_netlifycms:
-  cms_version: 2.10.138

@@ -2,6 +2,6 @@ label: Output Code Only
 name: output_code_only
 widget: boolean
 field_type: boolean
-default: false
+
 required: false
 hint: Set to true to output the string value only.

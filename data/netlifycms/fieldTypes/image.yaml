@@ -26,7 +26,7 @@ fields:
       - label: allow multiple
         name: allow_multiple
         widget: boolean
-        default: true
+        
         required: false
   - import: configOption media_folder
     extend:

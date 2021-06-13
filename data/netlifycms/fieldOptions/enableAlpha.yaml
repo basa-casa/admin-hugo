@@ -3,5 +3,5 @@ name: enableAlpha
 widget: boolean
 field_type: boolean
 required: false
-default: false
+
 hint: Enables Alpha editing.

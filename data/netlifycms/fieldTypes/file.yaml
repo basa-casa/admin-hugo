@@ -16,7 +16,7 @@ fields:
         - label: Allow Multiple
           name: allow_multiple
           widget: boolean
-          default: true
+          
           required: false
           hint: When set to false, prevents multiple selection for any media library extension, but must be supported by the extension in use.
         - label: Config

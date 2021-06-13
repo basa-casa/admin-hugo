@@ -55,10 +55,11 @@ fields:
     name: noClasses
     label: noClasses
   - field_type: select
-    widget: boolean
+    widget: select
     required: false
     name: style
     label: style
+    hint: See https://xyproto.github.io/splash/docs/all.html. 
     options:
       - monokai
       - abap

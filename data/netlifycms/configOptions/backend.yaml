@@ -76,19 +76,19 @@ fields:
     widget: boolean
     field_type: boolean
     required: false
-    default: false
+    
   - label: GitHub Open Authoring (Beta)
     name: open_authoring
     widget: boolean
     field_type: boolean
     required: false
-    default: false
+    
   - label: GitGub GraphQL (Beta)
     name: use_graphql
     widget: boolean
     field_type: boolean
     required: false
-    default: false
+    
   - label: commit message templates (Beta)
     name: commit_messages
     widget: object
@@ -101,35 +101,35 @@ fields:
         widget: string
         field_type: string
         required: false
-        default: Create {{collection.label}} “{{slug}}”
+        hint: Create {{collection}} “{{slug}}”
       - label: update
         name: update
         widget: string
         field_type: string
         required: false
-        default: update {{collection.label}} “{{slug}}”
+        hint: Update {{collection}} “{{slug}}”
       - label: delete
         name: delete
         widget: string
         field_type: string
         required: false
-        default: delete {{collection.label}} “{{slug}}”
+        hint: Delete {{collection}} “{{slug}}”
       - label: uploadMedia
         name: uploadMedia
         widget: string
         field_type: string
         required: false
-        default: Upload “{{path}}
+        hint: Upload “{{path}}
       - label: deleteMedia
         name: deleteMedia
         widget: string
         field_type: string
         required: false
-        default: Delete “{{path}}
+        hint: Delete “{{path}}
       - label: openAuthoring
         name: openAuthoring
         field_type: string
         widget: string
         required: false
-        default: "{{message}}"
+        hint: "{{message}}"
 required: true

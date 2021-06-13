@@ -1,7 +1,7 @@
-label: data/netlifycms/config.yml
+label: CMS Configuration
 type: file
 name: config
 file: data/netlifycms/config.yml
 fields:
-  - import: collection cms.fields
+  - import: baseCollection cms.fields
     field_type: import

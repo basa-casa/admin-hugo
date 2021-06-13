@@ -1,5 +1,5 @@
 # Folder Collection for {{name}} files
-name: cms
+name: netlify_cmss
 label: CMSs
 label_singular: CMS
 collection_type: folder
@@ -33,19 +33,16 @@ fields:
     field_type: import
   - import: configOption tnd_netlifycms
     field_type: import
-identifier_field: backend.name
-description: Use to create the base config.yml for your CMS - everything from
-  netlifycms config.yaml except for collections
+identifier_field: backend.repo
 create: true
-publish: true
 hide: false
-delete: false
+delete: true
 format: yml
 extension: yml
 slug: config
 editor:
   preview: false
-summary: "{{backend}} - {backend.repo}} - {site_url}}"
+summary: "{{backend.name}} - {{backend.repo}} - {{site_url}}"
 sortable_fields:
   - commit_date
   - title

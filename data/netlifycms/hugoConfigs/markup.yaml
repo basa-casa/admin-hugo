@@ -7,11 +7,11 @@ fields:
   - field_type: import
     import: hugoConfig defaultmarkdownhandler
   - field_type: import
-    import: hugoConfig tableofcontents
-  - field_type: import
-    import: hugoConfig blackfriday
+    import: hugoConfig goldmark
   - field_type: import
     import: hugoConfig highlight
   - field_type: import
-    import: hugoConfig goldmark
+    import: hugoConfig tableofcontents
+  - field_type: import
+    import: hugoConfig blackfriday
 

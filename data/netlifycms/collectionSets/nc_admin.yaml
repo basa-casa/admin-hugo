@@ -1,0 +1,10 @@
+name: NC-Admin
+collections:
+  - import: baseCollection config_options
+    collection_type: import
+  - import: baseCollection collection_options
+    collection_type: import
+  - collection_type: import
+    import: baseCollection field_options
+  - collection_type: import
+    import: baseCollection field_types

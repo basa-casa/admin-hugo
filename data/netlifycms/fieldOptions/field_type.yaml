@@ -1,24 +1,7 @@
 label: Field Type
 name: field_type
-widget: select
-field_type: select
-required: false
+widget: string
+field_type: string
+required: true
 hint: DANGER - Changing type will change the widget used for collecting this field's data and may result in unintended consequences.
-options: 
- - "import"
- - "string"
- - "text"
- - "markdown"
- - "boolean" 
- - "select"
- - "list"
- - "list_variable_types"
- - "number"
- - "relation"
- - "object"
- - "code" 
- - "color"
- - "dateTime"
- - "file"
- - "image"
- - "map"
+
