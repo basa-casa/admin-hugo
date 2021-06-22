@@ -1,0 +1,7 @@
+name: image
+label: Image
+widget: object
+option_type: fieldTypes
+fields:
+  - import: baseCollection image_fields.fields
+    field_type: import

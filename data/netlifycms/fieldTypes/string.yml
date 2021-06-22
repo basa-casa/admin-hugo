@@ -1,0 +1,7 @@
+label: String
+name: 'string'
+widget: object
+option_type: fieldTypes
+fields:
+  - import: baseCollection string_fields.fields
+    field_type: import

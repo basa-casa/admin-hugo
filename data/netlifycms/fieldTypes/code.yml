@@ -1,0 +1,7 @@
+label: Code 
+name: code
+widget: object
+option_type: fieldTypes
+fields:
+  - import: baseCollection code_fields.fields
+    field_type: import

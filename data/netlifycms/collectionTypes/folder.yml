@@ -1,0 +1,5 @@
+label: "Folder Collection"
+name: folder_collection
+option_type: collectionTypes
+fields:
+  - import: baseCollection folder_collections.fields

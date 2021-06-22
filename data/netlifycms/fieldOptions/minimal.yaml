@@ -1,7 +1,0 @@
-label: Minimal
-name: minimal
-widget: boolean
-field_type: boolean
-
-required: false
-hint: Sets the widget height to minimum possible.

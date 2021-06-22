@@ -1,6 +1,0 @@
-label: Type
-name: type
-widget: select
-field_type: select
-options: [Point, LineString, Polygon]
-default: Point

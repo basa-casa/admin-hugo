@@ -1,0 +1,26 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: field_types
+identifier_field: name
+label: Field Types
+label_singular: Field Type
+description: Field Types are object fields for obtaining fields lists stored in `collectionOptions/fields.yml`, etc. 
+folder: data/netlifycms/fieldTypes
+collection_type: folder
+fields:
+  - field_type: import
+    import: fieldOption name
+  - field_type: import
+    import: fieldOption label
+  - field_type: import
+    import: fieldOption widget
+  - field_type: import
+    import: collectionOption fields
+create: false
+publish: false
+hide: false
+delete: false
+format: yml
+extension: yml
+editor:
+  preview: true
+summary: "{{label}}"

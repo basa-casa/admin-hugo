@@ -1,0 +1,8 @@
+label: Modes
+name: modes
+widget: select
+field_type: select
+option_type: fieldOptions
+options: [raw, rich-text]
+multiple: true
+default: [raw, rich-text]

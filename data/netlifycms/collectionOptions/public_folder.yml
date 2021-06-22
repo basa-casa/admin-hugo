@@ -1,0 +1,7 @@
+label: Public Folder (Beta)
+name: public_folder
+widget: string
+required: false
+field_type: string
+option_type: collectionOptions
+hint: See https://www.netlifycms.org/docs/beta-features/#folder-collections-media-and-public-folder. 

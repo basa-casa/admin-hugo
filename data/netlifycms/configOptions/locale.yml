@@ -1,0 +1,38 @@
+label: Locale
+name: locale
+widget: select
+field_type: select
+option_type: configOptions
+required: false
+default: en
+hint: Select the CMS locale. Missing translations will default to 'en'.
+options:
+  - cs
+  - da
+  - de
+  - en
+  - es
+  - ca
+  - fr
+  - gr
+  - hu
+  - it
+  - lt
+  - ja
+  - nl
+  - nb_no
+  - nn_no
+  - pl
+  - pt
+  - ro
+  - ru
+  - sv
+  - th
+  - tr
+  - uk
+  - vi
+  - ko
+  - hr
+  - bg
+  - zh_Hans
+  - zh_Hant

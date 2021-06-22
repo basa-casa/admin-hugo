@@ -1,0 +1,32 @@
+label: Import
+name: 'import'
+option_type: collectionTypes
+fields:
+  - name: "import"
+    widget: string
+    field_type: string
+    hint: Add code for importing and extend one existing collection. See https://github.com/theNewDynamic/hugo-module-tnd-netlifycms#example-of-the-base-config-data-file 
+    default: "collection "
+  - import: collectionOption collection_type
+    field_type: import
+    extend:
+      default: import
+  - name: extend
+    widget: object
+    field_type: object
+    required: false
+    collapsed: true
+    fields:
+      - import: fieldOption name
+        extend: 
+          required: false
+        field_type: import
+      - import: fieldOption label
+        field_type: import
+      - import: collectionOption description
+        field_type: import
+      - import: collectionOption folder
+        field_type: import
+        extend: 
+          required: false
+      

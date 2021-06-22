@@ -1,0 +1,7 @@
+label: Options Length
+name: options_length
+widget: number
+field_type: number
+option_type: fieldOptions
+hint: Accepts integer to override number of options presented to user. Defaults to 20.
+required: false

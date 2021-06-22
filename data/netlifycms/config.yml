@@ -9,10 +9,13 @@ collections:
       label: Create Your CMS
       folder: data/netlifycms
       slug: config
-      format: yaml
-      description: "Used to create data/netlifycms/config.yml for your CMS. Useful collections are available: import `collection netlifycms_settings` and `collection cffs.collections` to get started."
+      extension: yml
+      description: "Used to create data/netlifycms/config.yml for your CMS. Useful
+        collections are available: import `collection site_settings` and
+        `collectionSet cffs.collections` to get started."
 local_backend: true
 media_folder: static/img
 public_folder: img
 site_url: /
+display_url: https://example.com
 logo_url: https://nc-admin.basa.casa/img/nc-admin.png

@@ -1,0 +1,9 @@
+label: Types
+name: types
+widget: list
+field_type: list
+option_type: fieldOptions
+hint: "A nested list of object widgets. Every object widget may define different set of fields."
+fields:
+  - import: fieldType object.fields
+    field_type: import

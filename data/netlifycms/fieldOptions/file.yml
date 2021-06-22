@@ -1,0 +1,8 @@
+label: File
+name: file
+widget: string
+field_type: string
+option_type: fieldOptions
+hint: Allows referencing a specific file when the referenced collection is a
+  files collection.
+required: false

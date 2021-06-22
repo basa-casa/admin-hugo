@@ -1,0 +1,6 @@
+label: Collection
+name: collection
+widget: string
+field_type: string
+option_type: fieldOptions
+hint: Name of the referenced collection.

@@ -1,0 +1,18 @@
+name: collections
+label: Collections
+widget: list
+field_type: list_variable_types
+option_type: configOptions
+required: true
+summary: "{{type}} {{import}}"
+minimize_collapsed: true
+label_singular: Collection
+typeKey: collection_type
+hint: Import or create new collections. 
+types:
+  - import: collectionType import
+    name: import
+  - import: collectionType folder
+    name: folder
+  - import: collectionType files
+    name: files

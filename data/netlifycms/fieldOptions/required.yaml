@@ -1,5 +1,0 @@
-label: Required
-name: required
-widget: boolean
-field_type: boolean
-required: false

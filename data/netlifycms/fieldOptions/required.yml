@@ -1,0 +1,6 @@
+label: Required
+name: required
+widget: boolean
+field_type: boolean
+option_type: fieldOptions
+required: false

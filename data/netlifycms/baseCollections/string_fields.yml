@@ -1,0 +1,43 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: String Fields
+identifier_field: name
+label: String Fields
+label_singular: String Field
+collection_type: folder
+description: >
+  The string widget translates a basic text input to a string value. For larger textarea inputs, use the text widget.
+folder: data/netlifycms
+fields:
+  - import: fieldOption name
+    field_type: import
+  - import: fieldOption label
+    field_type: import
+  - import: fieldOption widget
+    field_type: import
+    extend:
+      default: string
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption default 
+    field_type: import
+  - import: fieldOption hint 
+    field_type: import
+  - import: fieldOption comment 
+    field_type: import
+  - import: fieldOption pattern  
+    field_type: import
+filter:
+  field: field_type
+  value: string
+create: true
+publish: false
+hide: true
+delete: true
+format: yml
+extension: yml
+slug: fields/{{name}}
+editor:
+  preview: true
+summary: "{{slug}}"
+nested:
+  depth: 3

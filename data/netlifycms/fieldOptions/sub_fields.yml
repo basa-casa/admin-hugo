@@ -1,0 +1,40 @@
+# The Fields Field Option (subfields)
+name: fields
+label: Sub-Fields
+widget: list
+field_type: list_variable_types
+option_type: fieldOptions
+summary: "{{field_type}}: {{name}}{{import}}"
+minimize_collapsed: true
+label_singular: Sub-Field
+typeKey: field_type
+add_to_top: true
+types:
+  - import: fieldType import
+    field_type: import
+  - import: fieldType string
+    field_type: import
+  - import: fieldType text
+    field_type: import
+  - import: fieldType image
+    field_type: import
+  - import: fieldType file
+    field_type: import
+  - import: fieldType markdown 
+    field_type: import
+  - import: fieldType boolean
+    field_type: import
+  - import: fieldType select
+    field_type: import
+  - import: fieldType number
+    field_type: import
+  - import: fieldType relation 
+    field_type: import
+  - import: fieldType code
+    field_type: import
+  - import: fieldType color
+    field_type: import
+  - import: fieldType dateTime
+    field_type: import
+  - import: fieldType map
+    field_type: import

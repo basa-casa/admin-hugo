@@ -1,0 +1,47 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: color_fields
+identifier_field: name
+label: Color Fields
+label_singular: Color Field
+description: |+
+  The color widget translates a color picker to a color string.
+folder: data/netlifycms
+collection_type: folder
+fields:
+  - import: fieldOption name
+    field_type: import
+  - import: fieldOption label
+    field_type: import
+  - import: fieldOption widget
+    field_type: import
+    extend:
+      default: color
+  - import: fieldOption field_type
+    field_type: import
+    extend:
+      default: color
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption default
+    field_type: import
+    extend: 
+      widget: color
+  - import: fieldOption hint
+    field_type: import
+  - import: fieldOption allowInput
+    field_type: import
+  - import: fieldOption enableAlpha
+    field_type: import
+filter:
+  field: field_type
+  value: color
+create: true
+publish: false
+hide: true
+delete: true
+format: yml
+extension: yml
+slug: fields/{{name}}
+editor:
+  preview: true
+summary: "{{slug}}"

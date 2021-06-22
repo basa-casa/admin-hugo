@@ -1,15 +1,72 @@
 # /nc-admin
-An admin for Netlify CMS, built in itself, with the help of Hugo, theNewDynamic, and Basa Casa. 
+A D.R.Y.-er [NetlifyCMS](netlifycms.org) generator, made with love, [Hugo](gohugo.io), NetlifyCMS, and [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
-1. Import this module in your Hugo config.
-    ```
+## Prerequisites
+Go 1.14
+Hugo 0.61.0
+Node
+## Installation
+1. Initialize your project as a hugo module with `hugo mod init`. 
+1. Import this module in your Hugo `config.toml`.
+    ```toml
     [module]
         [[module.imports]]
             path = "github.com/basa-casa/hugo-module-bc-nc-admin"
     ```
-1. run `npx netlify-cms-proxy-server` and `hugo server` from the base of your site repository.
-1. Navigate to localhost:1313/nc-admin at your site.
-1. Create the CMS, with at least one collection, `type import`, to `collection config`. 
-1. Add import collections to `collection files_collections` and `collection folder_collections` for the ability to create importable collections of your own.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/basa-casa/hugo-module-bc-nc-admin#HUGO_VERSION=0.83.1&CUSTOM_LOGO=https://nc-admin.basa.casa/img/nc-admin.png)
+## Usage
+### Getting Started
+Because the module's `/data/netlifycms/config.yml` file has `local_repo: true`, you can get started with the following as soon as the module is in your config.
+1. Run `npx netlify-cms-proxy-server` and `hugo server` from the root directory of your site repository.
+1. Open [/nc-admin](http://localhost:1313/nc-admin).
+1. Click "Create the CMS." Edit your backend settings, and add collections. When you are ready, click "Publish Now" and the CMS will create the `/data/netlifycms/config.yml` file that is the base of `/content/nc-admin/config.yml`
+
+At this point, Hugo will merge the information in the site's `/data/netlifycms/config.yml` file on top of the module's version. The new CMS will include any settings in the module's file that are not in the site's. For example, if you publish the new file without specifying any `collections:`, the CMS collection from the module's config file will remain in use. 
+
+### CMS Config
+We recommend adding the following to the site's `/data/netlifycms/config.yml`, through the interface or in your text editor.
+
+```yaml
+collections:
+  - import: collection site_settings
+    collection_type: import
+```
+
+This file collection exists in the module, with the following configuration
+
+```yaml
+name: site_settings
+label: Site Settings
+collection_type: files
+description: "Files collection for settings."
+files:
+  - import: file netlifycms_config
+    type: import 
+```
+The file imported into the collection has the following configuration
+```yaml
+label: CMS Configuration
+type: file
+name: config
+file: data/netlifycms/config.yml
+fields:
+  - import: baseCollection cms.fields
+    field_type: import
+```
+
+To add files to the Site Settings collection, you will need to create a new File Collection at `data/netlifycms/collections/site_settings.yml`. 
+
+### Collections, Fields, Files, and Sets
+To create collections in the UI for import to `config.yml`, simply add
+```yaml
+collections:
+  - import: collectionSet cffs.collections
+    collection_type: import
+```
+This set of collections contains folder collections for folder collections, files collections, files collection files, fields of every type, and sets of each of the above. 
+
+### Customization
+Import [`collectionSet nc_admin`](data/netlifycms/collectionSets/nc_admin.yml) to create overriding option fields or baseCollections as needed. 
+
+
+

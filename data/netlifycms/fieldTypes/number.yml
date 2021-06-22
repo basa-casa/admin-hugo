@@ -1,0 +1,7 @@
+label: Number
+name: number
+widget: object
+option_type: fieldTypes
+fields:
+  - import: baseCollection number_fields.fields
+    field_type: import

@@ -1,0 +1,19 @@
+label: Keys
+name: keys
+widget: object
+field_type: object
+option_type: fieldOptions
+hint: Sets key names for code and lang if outputting an object.
+fields: 
+  - label: code
+    name: code
+    widget: string
+    field_type: string
+    required: false
+  - label: lang
+    name: lang
+    widget: string
+    field_type: string
+    required: false
+default: { code: 'code', lang: 'lang' }
+required: false

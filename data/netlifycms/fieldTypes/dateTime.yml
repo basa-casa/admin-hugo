@@ -1,0 +1,7 @@
+label: Date Time
+name: dateTime
+widget: object
+option_type: fieldTypes
+fields:
+  - import: baseCollection datetime_fields.fields
+    field_type: import

@@ -1,0 +1,60 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: File Fields
+identifier_field: name
+label: File Fields
+label_singular: File Field
+collection_type: folder
+description: >
+  The file widget allows editors to upload a file or select an existing one from
+  the media library. The path to the file will be saved to the field as a
+  string.
+folder: data/netlifycms
+fields:
+  - import: fieldOption name
+    field_type: import
+  - import: fieldOption label
+    field_type: import
+  - import: fieldOption hint
+    field_type: import
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption default
+    field_type: import
+    extend:
+      hint: Accepts a file path string; defaults to null
+  # - import: configOption media_library
+  #   field_type: import
+  #   extend:
+  #     hint: Media library settings to apply when a media library is opened by the current widget
+  #     fields: 
+  #       - label: Allow Multiple
+  #         name: allow_multiple
+  #         widget: boolean
+  #         required: false
+  #         hint: When set to false, prevents multiple selection for any media library extension, but must be supported by the extension in use.
+  #       - label: Config
+  #         name: config
+  #         widget: object
+  - import: fieldOption widget
+    field_type: import
+    extend:
+      default: file
+  - import: fieldOption field_type
+    field_type: import
+    extend:
+      default: file
+filter:
+  field: field_type
+  value: file
+create: true
+publish: false
+hide: true
+delete: true
+format: yml
+extension: yml
+slug: fields/{{name}}
+editor:
+  preview: true
+summary: "{{slug}}"
+nested:
+  depth: 3
