@@ -3,7 +3,7 @@ name: types
 widget: list
 field_type: list
 option_type: fieldOptions
-hint: "A nested list of object widgets. Every object widget may define different set of fields."
+hint: "A nested list of object widgets. Every object widget may define different sets of fields."
 fields:
-  - import: fieldType object.fields
+  - import: baseCollection object_fields.fields
     field_type: import

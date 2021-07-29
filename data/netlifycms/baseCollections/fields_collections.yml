@@ -1,0 +1,15 @@
+identifier_field: name
+collection_type: folder
+folder: data/netlifycms
+slug: "fields/{{name}}"
+create: true
+publish: false
+hide: true
+delete: true
+format: yml
+extension: yml
+summary: "{{slug}}"
+editor:
+  preview: true
+nested:
+  depth: 3

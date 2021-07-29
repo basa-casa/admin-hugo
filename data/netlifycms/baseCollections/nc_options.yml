@@ -4,9 +4,7 @@ identifier_field: name
 label: CMS Options
 label_singular: Option
 collection_type: folder
-description: "Editor for all fields stored in data/netlifycms/collectionOptions,
-  and imported to files_collections and folder_collections collections and
-  collectionTypes. "
+description: "Create/Edit/Override all option fields stored in data/netlifycms/{{option_type}}, and imported to baseCollections for CMS control"
 folder: data/netlifycms
 fields:
   - field_type: import

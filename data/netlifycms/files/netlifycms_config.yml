@@ -1,5 +1,4 @@
 label: CMS Configuration
-type: file
 name: config
 file: data/netlifycms/config.yml
 fields:

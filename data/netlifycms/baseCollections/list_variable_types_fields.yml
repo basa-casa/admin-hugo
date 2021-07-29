@@ -1,31 +1,28 @@
 # Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
-name: List Variable Types Fields
+name: list_variable_types_fields
 identifier_field: name
-label: List Variable Types Fields
-label_singular: List Variable Types Field
+label: List Variable Types Fields (BETA)
+label_singular: List Variable Types Field (BETA)
 collection_type: folder
 description: >
-  The list widget allows you to create a repeatable item in the UI which saves as a list of widget values. map a user-provided string with a comma delimiter into a list. You can choose any widget as a child of a list widget—even other lists.
+  This beta feature replaces the fields field with the types field. Each type is
+  an object field with its own set of fields. 
 folder: data/netlifycms
 fields:
   - import: fieldOption name
     field_type: import
   - import: fieldOption label
     field_type: import
+  - import: fieldOption types
+    field_type: import
   - import: fieldOption widget
     field_type: import
     extend:
       default: list
-  - import: fieldOption required
+  - import: fieldOption field_type
     field_type: import
-  - import: fieldOption default
-    field_type: import
-  - import: fieldOption hint
-    field_type: import
-  - import: fieldOption comment
-    field_type: import
-  - import: fieldOption pattern
-    field_type: import
+    extend:
+      default: list_variable_types
   - import: fieldOption label_singular
     field_type: import
   - import: fieldOption allow_add
@@ -38,7 +35,11 @@ fields:
     field_type: import
   - import: fieldOption typeKey
     field_type: import
-  - import: fieldOption types
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption hint
+    field_type: import
+  - import: fieldOption comment
     field_type: import
 filter:
   field: field_type

@@ -43,8 +43,3 @@ slug: "{{backend.repo}}/config"
 editor:
   preview: false
 summary: "{{backend.name}} - {{backend.repo}} - {{site_url}}"
-sortable_fields:
-  - commit_date
-  - title
-  - commit_author
-  - language.en

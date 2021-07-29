@@ -12,6 +12,8 @@ fields:
     field_type: import
   - import: fieldOption label
     field_type: import
+  - import: fieldOption required
+    field_type: import
   - import: fieldOption widget
     field_type: import
     extend:
@@ -20,12 +22,13 @@ fields:
     field_type: import
     extend:
       default: code
-  - import: fieldOption required
-    field_type: import
-  - import: fieldOption default
-    field_type: import
-    extend: 
-      widget: code
+  - label: default
+    name: default
+    field_type: code
+    output_code_only: true
+    default_language: YAML
+    widget: code
+    required: false
   - import: fieldOption hint
     field_type: import
   - import: fieldOption default_language

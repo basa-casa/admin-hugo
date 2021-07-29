@@ -10,4 +10,4 @@ collections:
       folder: data/netlifycms/baseCollections
       name: base_folder_collections
       label: NC-Admin Folder Collections
-      summary: "{{name}} - {{collection_type}} collection"
+      summary: "{{label}}"

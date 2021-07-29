@@ -8,7 +8,6 @@ summary: "{{field_type}}: {{name}}{{import}}"
 minimize_collapsed: false
 label_singular: Field
 typeKey: field_type
-add_to_top: true
 types:
   - import: fieldType import
     field_type: import

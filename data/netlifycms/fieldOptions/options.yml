@@ -2,7 +2,6 @@ label: Options
 name: options
 widget: list
 field_type: list
-option_type: fieldOptions
 minimize_collapsed: true
 hint: "Input a string for each option or an object with a key to show users and a value to store in the file, like { label: \"Key\", value: \"string\"}"
 summary: '{{option}}'

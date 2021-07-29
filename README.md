@@ -1,5 +1,5 @@
 # /nc-admin
-A D.R.Y.-er [NetlifyCMS](netlifycms.org) generator, made with love, [Hugo](gohugo.io), NetlifyCMS, and [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
+A D.R.Y.-er [NetlifyCMS](https://netlifycms.org) generator, made with love, [Hugo](https://gohugo.io), NetlifyCMS, and [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
 ## Prerequisites
 Go 1.14
@@ -43,7 +43,7 @@ files:
   - import: file netlifycms_config
     type: import 
 ```
-The file imported into the collection has the following configuration
+The file imported into the collection controls the base config file, using the fields from the CMS folder collection you used to create it.
 ```yaml
 label: CMS Configuration
 type: file

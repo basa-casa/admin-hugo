@@ -1,13 +1,13 @@
 label: Import
-name: 'import'
+name: import
 widget: object
 option_type: fieldTypes
 fields:
-  - name: "import"
+  - name: import
     label: Import
     widget: string
     field_type: string
-    hint: Add code for importing and extending one existing field. See https://github.com/theNewDynamic/hugo-module-tnd-netlifycms#example-of-a-collection-data-file for more information.
+    hint: Pattern\:\ "(singularized) dirname filename". ex. "field body" will import data/netlifycms/fields/body.yml
   - import: fieldOption field_type
     field_type: import
     extend:
@@ -35,6 +35,4 @@ fields:
       - import: fieldOption default
         field_type: import
       - import: fieldOption comment
-        field_type: import
-      - import: fieldOption pattern
         field_type: import

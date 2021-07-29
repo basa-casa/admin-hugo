@@ -33,8 +33,6 @@ fields:
     field_type: import
   - import: fieldOption comment
     field_type: import
-  - import: fieldOption pattern
-    field_type: import
 filter: {field: field_type, value: boolean}
 create: true
 publish: false

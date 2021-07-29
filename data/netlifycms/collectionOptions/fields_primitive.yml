@@ -15,12 +15,6 @@ types:
     field_type: import
   - import: fieldType text
     field_type: import
-  - import: fieldType image
-    field_type: import
-  - import: fieldType file
-    field_type: import
-  - import: fieldType markdown 
-    field_type: import
   - import: fieldType boolean
     field_type: import
   - import: fieldType select
@@ -34,12 +28,4 @@ types:
   - import: fieldType relation 
     field_type: import
   - import: fieldType object
-    field_type: import
-  - import: fieldType code
-    field_type: import
-  - import: fieldType color
-    field_type: import
-  - import: fieldType dateTime
-    field_type: import
-  - import: fieldType map
     field_type: import
