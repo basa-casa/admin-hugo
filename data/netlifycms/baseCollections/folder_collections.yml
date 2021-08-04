@@ -28,9 +28,20 @@ fields:
     field_type: import
     extend:
       default: folder
+      widget: hidden
   - import: collectionOption description
     field_type: import
+  - import: collectionOption frontmatter_delimiter
+    field_type: import
+  - import: collectionOption format
+    field_type: import
   - import: collectionOption folder
+    field_type: import
+  - import: collectionOption path
+    field_type: import
+  - import: collectionOption slug
+    field_type: import
+  - import: collectionOption extension
     field_type: import
   - import: collectionOption fields
     field_type: import
@@ -47,14 +58,6 @@ fields:
   - import: collectionOption hide
     field_type: import
   - import: collectionOption delete
-    field_type: import
-  - import: collectionOption format
-    field_type: import
-  - import: collectionOption extension
-    field_type: import
-  - import: collectionOption frontmatter_delimiter
-    field_type: import
-  - import: collectionOption slug
     field_type: import
   - import: collectionOption preview_path
     field_type: import
@@ -74,8 +77,6 @@ fields:
   - import: collectionOption view_filters
     field_type: import
   - import: collectionOption view_groups
-    field_type: import
-  - import: collectionOption path
     field_type: import
   - import: collectionOption media_folder
     field_type: import
