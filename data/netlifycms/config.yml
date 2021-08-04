@@ -6,7 +6,7 @@ collections:
   - import: baseCollection cms
     collection_type: import
     extend:
-      label: Create Your CMS
+      label: Create data/netlifycms/config.yml
       folder: data/netlifycms
       slug: config
       extension: yml
@@ -16,6 +16,6 @@ collections:
 local_backend: true
 media_folder: static/img
 public_folder: img
-site_url: /
-display_url: https://example.com
+site_url: ../
+display_url: ../
 logo_url: https://nc-admin.basa.casa/img/nc-admin.png
