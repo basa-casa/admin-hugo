@@ -8,7 +8,7 @@ summary: "{{type}} {{import}}"
 minimize_collapsed: true
 label_singular: Collection
 typeKey: collection_type
-hint: Import or create new collections. 
+hint: "Create new and see available collections for imports: ----> [Folder Collections](./#/collections/folder_collections) ---->  [Files Collections](./#/collections/files_collections)." 
 types:
   - import: collectionType import
     name: import
