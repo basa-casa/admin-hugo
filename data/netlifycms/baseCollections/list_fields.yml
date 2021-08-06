@@ -36,18 +36,18 @@ fields:
     field_type: import
   - import: fieldOption minimize_collapsed
     field_type: import
-  - label: Field
+  - import: fieldOption fields
     field_type: import
-    name: field
-    widget: string
-    required: false
-    hint: "Define a single widget to be repeated ({label: Image, name: image, widget: image})"
-  - label: Fields
+    extend:
+      name: field
+      label: field
+      required: false
+      max: 1
+      hint: "Define a single widget to be repeated. "
+  - import: fieldOption fields
     field_type: import
-    name: fields
-    widget: list
-    required: false
-    hint: "Define a nested list of single widget to be repeated {label: Image, name: image, widget: image}."
+    extend:
+      hint: "Define a nested list of single widgets to be repeated."
 filter:
   field: field_type
   value: list

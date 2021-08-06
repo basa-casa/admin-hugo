@@ -6,7 +6,7 @@ label_singular: List Variable Types Field (BETA)
 collection_type: folder
 description: >
   This beta feature replaces the fields field with the types field. Each type is
-  an object field with its own set of fields. 
+  an object field with its own set of fields. The fields field is a list variable types field.
 folder: data/netlifycms
 fields:
   - import: fieldOption name
