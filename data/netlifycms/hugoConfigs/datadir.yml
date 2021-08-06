@@ -1,4 +1,4 @@
-label: dataDir
+label: data Dir
 name: dataDir
 widget: string
 field_type: string

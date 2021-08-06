@@ -1,4 +1,4 @@
-label: contentDir
+label: content Dir
 name: contentDir
 widget: string
 field_type: string

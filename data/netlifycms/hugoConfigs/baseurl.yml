@@ -1,4 +1,4 @@
-label: baseURL
+label: base URL
 name: baseURL
 widget: string
 default: ""

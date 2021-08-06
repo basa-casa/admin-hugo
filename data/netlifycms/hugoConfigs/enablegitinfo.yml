@@ -1,4 +1,4 @@
-label: enableGitInfo
+label: enable Git Info
 name: enableGitInfo
 widget: boolean
 field_type: boolean

@@ -1,4 +1,4 @@
-label: canonifyURLs
+label: canonify URLs
 name: canonifyURLs
 widget: boolean
 field_type: boolean

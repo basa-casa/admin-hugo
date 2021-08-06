@@ -1,8 +1,9 @@
-label: disableKinds
+label: disable Kinds
 name: disableKinds
 widget: select
 field_type: select
 required: false
+multiple: true
 options:
   - "404"
   - robotsTXT

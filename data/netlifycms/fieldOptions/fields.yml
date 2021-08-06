@@ -26,7 +26,7 @@ types:
     field_type: import
   - import: fieldType select
     field_type: import
-  - import: fieldType list
+  - import: fieldType sub_list
     field_type: import
   - import: fieldType number
     field_type: import

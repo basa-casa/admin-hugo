@@ -1,4 +1,4 @@
-label: footnoteReturnLinkContents
+label: footnote Return Link Contents
 name: footnoteReturnLinkContents
 widget: string
 field_type: string

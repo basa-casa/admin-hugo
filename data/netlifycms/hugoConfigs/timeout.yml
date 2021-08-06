@@ -1,0 +1,6 @@
+label: timeout
+name: timeout
+widget: number
+field_type: number
+required: false
+hint: Timeout for generating page contents, in milliseconds (defaults to 10 seconds). Note:\ this is used to bail out of recursive content generation, if your pages are slow to generate (e.g., because they require large image processing or depend on remote contents) you might need to raise this limit.

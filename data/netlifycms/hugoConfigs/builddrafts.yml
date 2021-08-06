@@ -1,4 +1,4 @@
-label: buildDrafts
+label: build Drafts
 name: buildDrafts
 widget: boolean
 field_type: boolean

@@ -1,0 +1,12 @@
+name: menus
+label: config/_default/menus.toml
+file: config/_default/menus.toml
+fields:
+  - import: hugoConfig menu
+    field_type: import
+    extend: 
+      name: main
+      label: main
+delete: false
+editor:
+  preview: true

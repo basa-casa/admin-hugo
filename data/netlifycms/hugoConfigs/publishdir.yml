@@ -1,4 +1,4 @@
-label: publishDir
+label: publish Dir
 name: publishDir
 widget: string
 field_type: string

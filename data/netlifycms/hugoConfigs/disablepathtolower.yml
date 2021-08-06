@@ -1,4 +1,4 @@
-label: disablePathToLower
+label: disable Path To Lower
 name: disablePathToLower
 widget: boolean
 field_type: boolean

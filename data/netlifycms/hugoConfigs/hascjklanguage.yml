@@ -1,4 +1,4 @@
-label: hasCJKLanguage
+label: has CJK Language
 name: hasCJKLanguage
 widget: boolean
 field_type: boolean

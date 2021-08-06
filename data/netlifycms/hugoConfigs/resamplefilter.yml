@@ -1,4 +1,4 @@
-label: resampleFilter
+label: resample Filter
 name: resampleFilter
 widget: select
 field_type: select

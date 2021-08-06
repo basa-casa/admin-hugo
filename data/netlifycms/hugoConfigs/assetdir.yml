@@ -1,4 +1,4 @@
-label: assetDir
+label: asset Dir
 name: assetDir
 widget: string
 field_type: string

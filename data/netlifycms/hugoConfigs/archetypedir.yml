@@ -1,4 +1,4 @@
-label: archetypeDir
+label: archetype Dir
 name: archetypeDir
 widget: string
 default: ""

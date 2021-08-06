@@ -1,4 +1,4 @@
-label: enableEmoji
+label: enable Emoji
 name: enableEmoji
 widget: boolean
 field_type: boolean

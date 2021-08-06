@@ -1,4 +1,4 @@
-label: staticDir
+label: static Dir
 name: staticDir
 widget: list
 field_type: list

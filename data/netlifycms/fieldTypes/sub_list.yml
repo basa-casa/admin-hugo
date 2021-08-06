@@ -1,0 +1,45 @@
+label: List
+name: list
+widget: object
+option_type: fieldTypes
+fields:
+  - import: fieldOption name
+    field_type: import
+  - import: fieldOption label
+    field_type: import
+  - import: fieldOption widget
+    field_type: import
+    extend:
+      default: list
+  - import: fieldOption required
+    field_type: import
+  - import: fieldOption default
+    field_type: import
+  - import: fieldOption hint
+    field_type: import
+  - import: fieldOption comment
+    field_type: import
+  - import: fieldOption pattern
+    field_type: import
+  - import: fieldOption label_singular
+    field_type: import
+  - import: fieldOption allow_add
+    field_type: import
+  - import: fieldOption collapsed
+    field_type: import
+  - import: fieldOption summary
+    field_type: import
+  - import: fieldOption minimize_collapsed
+    field_type: import
+  - import: fieldOption sub_fields
+    field_type: import
+    extend:
+      name: field
+      label: field
+      required: false
+      max: 1
+      hint: "Define a single widget to be repeated. "
+  - import: fieldOption sub_fields
+    field_type: import
+    extend:
+      hint: "Define a nested list of single widgets to be repeated."

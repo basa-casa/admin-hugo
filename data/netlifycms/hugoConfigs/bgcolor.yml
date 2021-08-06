@@ -1,4 +1,4 @@
-label: bgColor
+label: bg Color
 name: bgColor
 widget: string
 field_type: string

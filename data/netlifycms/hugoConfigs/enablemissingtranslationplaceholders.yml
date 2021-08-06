@@ -1,4 +1,4 @@
-label: enableMissingTranslationPlaceholders
+label: enable Missing Translation Placeholders
 name: enableMissingTranslationPlaceholders
 widget: boolean
 field_type: boolean

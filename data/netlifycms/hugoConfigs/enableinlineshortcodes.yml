@@ -1,4 +1,4 @@
-label: enableInlineShortcodes
+label: enable Inline Shortcodes
 name: enableInlineShortcodes
 widget: boolean
 field_type: boolean

@@ -1,4 +1,4 @@
-label: relativeURLs
+label: relative URLs
 name: relativeURLs
 widget: boolean
 field_type: boolean

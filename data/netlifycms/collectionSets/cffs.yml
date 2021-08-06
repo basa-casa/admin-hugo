@@ -5,15 +5,15 @@ collections:
     collection_type: import
   - import: baseCollection files_collections
     collection_type: import
-  - collection_type: import
-    import: baseCollection collection_sets
+  # - collection_type: import
+  #   import: baseCollection collection_sets
   - collection_type: import
     import: baseCollection files_collection_files
-  - collection_type: import
-    import: baseCollection file_sets
+  # - collection_type: import
+  #   import: baseCollection file_sets
   - collection_type: import
     import: baseCollection fields
-  - collection_type: import
-    import: baseCollection field_sets
+  # - collection_type: import
+  #   import: baseCollection field_sets
   - import: collectionSet fields.collections
     collection_type: import

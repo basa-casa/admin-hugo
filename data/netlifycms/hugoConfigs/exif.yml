@@ -2,6 +2,7 @@ label: exif
 name: exif
 widget: object
 field_type: object
+collapsed: true
 required: false
 fields:
   - field_type: string

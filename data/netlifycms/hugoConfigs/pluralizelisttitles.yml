@@ -1,4 +1,4 @@
-label: pluralizeListTitles
+label: pluralize List Titles
 name: pluralizeListTitles
 widget: boolean
 field_type: boolean

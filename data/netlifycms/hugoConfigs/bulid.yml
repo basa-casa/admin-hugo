@@ -1,5 +1,5 @@
 label: build
-name: bulid
+name: build
 widget: object
 field_type: object
 required: false

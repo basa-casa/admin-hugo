@@ -1,4 +1,4 @@
-label: defaultContentLanguageInSubdir
+label: default Content Language In Subdir
 name: defaultContentLanguageInSubdir
 widget: boolean
 field_type: boolean

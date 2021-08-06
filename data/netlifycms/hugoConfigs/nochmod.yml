@@ -1,4 +1,4 @@
-label: noChmod
+label: no Chmod
 name: noChmod
 widget: boolean
 field_type: boolean

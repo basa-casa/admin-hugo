@@ -1,4 +1,4 @@
-label: defaultContentLanguage
+label: default Content Language
 name: defaultContentLanguage
 widget: string
 field_type: string

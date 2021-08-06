@@ -1,4 +1,4 @@
-label: disableAliases
+label: disable Aliases
 name: disableAliases
 widget: boolean
 field_type: boolean

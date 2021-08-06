@@ -1,4 +1,4 @@
-label: logFile
+label: log File
 name: logFile
 widget: string
 field_type: string

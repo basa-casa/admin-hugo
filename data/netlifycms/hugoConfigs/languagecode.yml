@@ -1,4 +1,4 @@
-label: languageCode
+label: language Code
 name: languageCode
 widget: string
 field_type: string

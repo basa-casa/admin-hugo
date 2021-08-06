@@ -1,4 +1,4 @@
-label: buildExpired
+label: build Expired
 name: buildExpired
 widget: boolean
 field_type: boolean

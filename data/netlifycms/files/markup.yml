@@ -1,5 +1,5 @@
 name: markup
-label: /config/_default/markup
+label: config/_default/markup.toml
 file: config/_default/markup.toml
 fields:
   - field_type: import

@@ -1,0 +1,5 @@
+label: time Zone
+name: timeZone
+widget: string
+hint: The time zone (or location), e.g. Europe/Oslo, used to parse front matter dates without such information and in the time function. The list of valid values may be system dependent, but should include UTC, Local, and any location in the [IANA Time Zone database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+field_type: string

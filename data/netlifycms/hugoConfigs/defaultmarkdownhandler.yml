@@ -3,7 +3,7 @@ widget: select
 required: false
 multiple: false
 name: defaultMarkdownHandler
-label: defaultMarkdownHandler
+label: default Markdown Handler
 options:
   - goldmark
   - blackfriday

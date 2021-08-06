@@ -1,4 +1,4 @@
-label: disableLiveReload
+label: disable Live Reload
 name: disableLiveReload
 widget: boolean
 field_type: boolean

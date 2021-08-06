@@ -1,0 +1,8 @@
+label: _merge
+name: _merge
+widget: select
+required: false
+options: 
+  - none
+  - shallow
+  - deep

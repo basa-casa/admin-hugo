@@ -1,4 +1,4 @@
-label: enableRobotsTXT
+label: enable RobotsTXT
 name: enableRobotsTXT
 widget: boolean
 field_type: boolean

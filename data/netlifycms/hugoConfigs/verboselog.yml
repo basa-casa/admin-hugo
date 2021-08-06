@@ -1,4 +1,4 @@
-label: verboseLog
+label: verbose Log
 name: verboseLog
 widget: boolean
 field_type: boolean
