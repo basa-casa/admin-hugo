@@ -1,5 +1,5 @@
 label: "Files Collection"
-name: files_collection
+name: files
 option_type: collectionTypes
 fields: 
   - import: baseCollection files_collections.fields

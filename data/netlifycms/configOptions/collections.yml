@@ -11,8 +11,8 @@ typeKey: collection_type
 hint: "Create new and see available collections for imports: ----> [Folder Collections](./#/collections/folder_collections) ---->  [Files Collections](./#/collections/files_collections)." 
 types:
   - import: collectionType import
-    name: import
+    type: import
   # - import: collectionType folder
-  #   name: folder
+  #   type: import
   # - import: collectionType files
-  #   name: files
+  #   type: import

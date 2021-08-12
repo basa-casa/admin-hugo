@@ -2,7 +2,7 @@
 name: site_settings
 label: Site Settings
 collection_type: files
-description: Files collection for settings.
+description: Control NetlifyCMS configuration with data/netlifycms/config.yml
 files:
   - import: file netlifycms_config
     type: import

@@ -15,14 +15,22 @@ fields:
     extend:
       comment: Netlify CMS Folder Collection. See
         https://www.netlifycms.org/docs/collection-types#folder-collections
-  - import: collectionOption identifier_field
-    field_type: import
   - import: fieldOption label
     field_type: import
     extend:
       required: true
       hint: Label for the collection in the editor UI.
   - import: fieldOption label_singular
+    field_type: import
+  - import: collectionOption folder
+    field_type: import
+  - import: collectionOption fields
+    field_type: import
+    extend:
+      hint: Create at least one field with name "title" using the String widget, or
+        use another field set above as the identifier field. Content collections
+        should contain one field named "body" using the Markdown field type.  
+  - import: collectionOption identifier_field
     field_type: import
   - import: collectionOption collection_type
     field_type: import
@@ -35,20 +43,12 @@ fields:
     field_type: import
   - import: collectionOption format
     field_type: import
-  - import: collectionOption folder
-    field_type: import
   - import: collectionOption path
     field_type: import
   - import: collectionOption slug
     field_type: import
   - import: collectionOption extension
     field_type: import
-  - import: collectionOption fields
-    field_type: import
-    extend:
-      hint: Create at least one field with name "title" using the String widget, or
-        use another field set above as the identifier field. Content collections
-        should contain one field named "body" using the Markdown field type.
   - import: collectionOption filter
     field_type: import
   - import: collectionOption create

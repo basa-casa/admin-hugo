@@ -15,7 +15,7 @@ fields:
       and "10h" (10 hours).
   - field_type: string
     widget: string
-    required: true
+    required: false
     name: dir
     label: dir
     default: ""

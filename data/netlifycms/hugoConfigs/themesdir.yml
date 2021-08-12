@@ -2,5 +2,5 @@ label: themes Dir
 name: themesDir
 widget: string
 field_type: string
-required: true
+required: false
 hint: The directory where Hugo reads the themes from.
