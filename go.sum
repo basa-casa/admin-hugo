@@ -1,2 +1,13 @@
+github.com/julmot/mark.js v0.0.0-20210820195258-8b57fccf976b/go.mod h1:aAyDyl2EhNPiZbFqqURsAmxYwwTHslrIxZErXMO3pJQ=
+github.com/kaushalmodi/hugo-bare-min-theme v0.6.0 h1:A0fF5Es5wg5gygWRuslZCgk+Vsi9HhzeP6k0LzGFFFM=
+github.com/kaushalmodi/hugo-bare-min-theme v0.6.0/go.mod h1:F3dhvekisR/Hg6lj/Ha+MBriwKcXGNmef+hzGGE+82E=
+github.com/kaushalmodi/hugo-debugprint v0.1.0/go.mod h1:vusrDLlGE+4Uc1b4PgM0dI8lJCEqC1o7NjFr8WIfkaQ=
+github.com/kaushalmodi/hugo-search-fuse-js v0.4.1/go.mod h1:Wr6gbPat+KW6wReh/hDBykKIWn296FsEkuhojJvHHxw=
+github.com/krisk/Fuse v3.2.1+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
 github.com/theNewDynamic/hugo-module-tnd-netlifycms v0.1.80 h1:1msyp/pvZCNWmd9AI0/CHULHQAf+yKgd2LfedA5i1lQ=
 github.com/theNewDynamic/hugo-module-tnd-netlifycms v0.1.80/go.mod h1:nq9tIR0Xpx2W2mSQHfJya2OvAfgYOMveqrllijA27vo=
+github.com/wowchemy/wowchemy-hugo-modules v4.8.0+incompatible h1:bWdYezLML3TZq5H0Rot4Urwl6HBl1uok5xIDOTqcWC8=
+github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5 v5.0.0-20220608104852-b18d867d887d h1:zHd8zfZz8T6wfaeubYDrfAeDU+7U6HnKL1dRDo8tgew=
+github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5 v5.0.0-20220608104852-b18d867d887d/go.mod h1:Sp/AKo+2HAPi/IPHp1MEdKPmee+mzO5+efUBUPLPqPE=
+github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5 v5.0.0-20220608104852-b18d867d887d h1:EghghFsHI/+ULzCCXlo211nI12+9/Jfnk7CLcpkCWF0=
+github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5 v5.0.0-20220608104852-b18d867d887d/go.mod h1:2iL9rdrUYyJXX2BeHKfK+QbqZlubCsaR60nQ87NRQTY=

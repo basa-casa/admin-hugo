@@ -1,5 +1,0 @@
-label: title
-name: title
-widget: string
-hint: Site title.
-field_type: string

@@ -1,0 +1,13 @@
+name: NC-Admin
+collection_type: set
+collections:
+  - import: collection nc_options
+    collection_type: import
+  - collection_type: import
+    import: collection field_types
+  - import: collection folder_collections
+    extend:
+      folder: data/netlifycms/baseCollections
+      name: base_folder_collections
+      label: NC-Admin Folder Collections
+      summary: "{{label}}"

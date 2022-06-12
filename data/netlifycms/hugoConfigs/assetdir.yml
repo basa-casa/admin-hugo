@@ -1,7 +1,0 @@
-label: asset Dir
-name: assetDir
-widget: string
-field_type: string
-required: false
-default: ""
-hint: The directory where Hugo finds archetype files (content templates).

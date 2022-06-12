@@ -1,0 +1,7 @@
+label: Hint
+name: hint
+widget: text
+field_type: text
+option_type: field
+required: false
+hint: "Helper text directly below a widget. This is a hint."

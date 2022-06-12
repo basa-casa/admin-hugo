@@ -1,0 +1,13 @@
+backend:
+  branch: main
+  name: test-repo
+  repo: basa-casa/hugo-module-admin
+collections:
+  - import: collection posts
+    collection_type: import
+local_backend: true
+media_folder: assets/img
+public_folder: img
+site_url: ../
+display_url: ../
+logo_url: /img/nc-admin.png

@@ -1,7 +1,0 @@
-label: Min
-name: min
-widget: number
-field_type: number
-option_type: fieldOptions
-hint: Accepts a number for minimum value accepted.
-required: false

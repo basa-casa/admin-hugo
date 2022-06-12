@@ -1,7 +1,0 @@
-label: Format
-name: format
-widget: string
-field_type: string
-option_type: fieldOptions
-required: false
-hint: Sets storage format; accepts Moment.js tokens; defaults to raw Date object (if supported by output format)

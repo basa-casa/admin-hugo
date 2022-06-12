@@ -1,7 +1,0 @@
-label: Text
-name: text
-widget: object
-option_type: fieldTypes
-fields:
-  - import: baseCollection text_fields.fields
-    field_type: import 

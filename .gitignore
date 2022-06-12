@@ -31,6 +31,7 @@ partials/structure/stylesheet.html
 hugo_stats.json
 resources
 public
+_vendor
 
 # Local Netlify folder
 .netlify

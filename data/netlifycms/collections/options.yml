@@ -1,0 +1,57 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: nc_options
+identifier_field: name
+label: CMS 
+label_singular: Option
+collection_type: folder
+description: "Create/Edit/Override all option fields stored in data/netlifycms/{{option_type}}, and imported to baseCollections for CMS control"
+folder: data/netlifycms/fields
+fields:
+  - field_type: import
+    import: field field-label
+  - field_type: import
+    import: field field-name
+  - field_type: import
+    import: field field-widget
+  - field_type: import
+    import: field field-field_type
+  - field_type: import
+    import: field field-option_type
+  - field_type: import
+    import: field field-options
+  - field_type: import
+    import: field field-hint
+  - field_type: import
+    import: field field-comment
+  - field_type: import
+    import: field field-fields
+  - field_type: import
+    import: field field-required
+filter:
+  field: collection_type
+create: false
+publish: true
+hide: false
+delete: false
+format: yml
+extension: yml
+editor:
+  preview: true
+summary: "{{label}}: {{field_type}} {{collection_type}}"
+view_filters:
+  - label: CMS 
+    field: option_type
+    pattern: config
+  - label: Collection 
+    field: option_type
+    pattern: collection
+  - label: Field 
+    field: option_type
+    pattern: field
+  - label: Field Types
+    field: option_type
+    pattern: fieldTypes
+  - label: Collection Types
+    field: option_type
+    pattern: collectionTypes
+path: "{{option_type}}/{{slug}}"

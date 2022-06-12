@@ -1,0 +1,51 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: object_fields
+identifier_field: name
+label: Object Fields
+label_singular: Object Field
+collection_type: folder
+description: The object widget allows you to group multiple widgets together, nested under a single field. You can choose any widget as a child of an object widget—even other objects.
+folder: data/netlifycms/fields
+fields:
+  - import: field field-name
+    field_type: import
+  - import: field field-label
+    field_type: import
+  - import: field field-fields
+    field_type: import
+  - import: field field-widget
+    field_type: import
+    extend:
+      default: object
+      options:
+        - object
+        - hidden
+  - import: field field-field_type
+    field_type: import
+    extend:
+      default: object
+  - import: field field-required
+    field_type: import
+  - import: field field-hint      
+    field_type: import
+  - import: field field-collapsed
+    field_type: import
+  - import: field field-summary
+    field_type: import
+    extend:
+      hint: specify the label displayed when the object is collapsed
+filter:
+  field: field_type
+  value: object
+create: true
+publish: false
+hide: true
+delete: true
+format: yml
+extension: yml
+slug: "{{name}}"
+editor:
+  preview: true
+summary: "{{slug}}"
+nested:
+  depth: 3

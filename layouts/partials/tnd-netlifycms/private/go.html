@@ -1,0 +1,31 @@
+{{/*
+  Go simply run the process and returns data for templates.
+
+  @author @regisphilibert
+
+  @context Type (.name)
+
+  @access private
+
+  @use
+    - private/GetConfig
+
+  @example - Go Template
+      {{- with partial "tnd-netlifycms/private/go" . -}}
+        {{ . }}
+      {{- end -}}
+*/}}
+{{ $config := dict }}
+{{ with partial "tnd-netlifycms/private/GetConfig" . }}
+  {{ $config = . }}
+{{ end }}
+
+{{ with $config.collections }}
+  {{ with partial "tnd-netlifycms/private/parse" . }}
+    {{ $config = merge $config (dict "collections" .) }}
+  {{ end }}
+{{ end }}
+
+{{ $return := transform.Remarshal "yaml" $config }}
+
+{{ return $return }}

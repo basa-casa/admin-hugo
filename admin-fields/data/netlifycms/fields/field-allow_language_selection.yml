@@ -1,0 +1,8 @@
+label: Allow Language Selection
+name: allow_language_selection
+widget: boolean
+
+hint: Allows syntax to be changed.
+field_type: boolean
+option_type: field
+required: false

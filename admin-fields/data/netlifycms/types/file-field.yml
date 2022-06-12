@@ -1,0 +1,7 @@
+label: File
+name: file
+widget: object
+option_type: field-type
+fields:
+  - import: collection file_fields.fields
+    field_type: import

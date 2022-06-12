@@ -1,0 +1,6 @@
+label: base URL
+name: baseURL
+widget: string
+hint: Hostname (and path) to the root, e.g. https://bep.is/
+field_type: string
+required: false

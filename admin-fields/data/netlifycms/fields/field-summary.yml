@@ -1,0 +1,7 @@
+label: Summary 
+name: summary 
+widget: string
+field_type: string
+option_type: field
+hint: "Accepts a string with references to fields like {{name}}, displayed when the object is collapsed in the UI."
+required: false

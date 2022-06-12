@@ -1,0 +1,7 @@
+label: List
+name: list
+widget: object
+option_type: field-type
+fields:
+  - import: collection list_fields.fields
+    field_type: import

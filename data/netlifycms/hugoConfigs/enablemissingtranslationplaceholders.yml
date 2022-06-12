@@ -1,8 +1,0 @@
-label: enable Missing Translation Placeholders
-name: enableMissingTranslationPlaceholders
-widget: boolean
-field_type: boolean
-required: false
-default: ""
-hint: Show a placeholder instead of the default value or an empty string if a
-  translation is missing.

@@ -1,0 +1,37 @@
+label: mounts
+name: mounts
+widget: list
+required: false
+collapsed: true
+hint: https://gohugo.io/hugo-modules/configuration/#module-config-mounts
+fields:
+  - name: source
+    label: source
+    hint: ""
+    widget: string
+    field_type: string
+    required: false
+  - name: target
+    label: target
+    hint: ""
+    widget: string
+    field_type: string
+    required: false
+  - name: lang
+    label: lang
+    hint: ""
+    widget: string
+    field_type: string
+    required: false
+  - name: includeFiles
+    label: includeFiles
+    hint: ""
+    widget: string
+    field_type: string
+    required: false
+  - name: excludeFiles
+    label: excludeFiles
+    hint: ""
+    widget: string
+    field_type: string
+    required: false

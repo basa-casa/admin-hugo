@@ -1,0 +1,7 @@
+label: asset Dir
+name: assetDir
+widget: string
+field_type: string
+required: false
+hint: The directory where Hugo finds asset files for reference in
+  https://gohugo.io/hugo-pipes/introduction/.

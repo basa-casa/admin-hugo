@@ -1,0 +1,40 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: field_options
+identifier_field: name
+label: Field Options
+label_singular: Field Option
+description: Editor for all fields stored in data/netlifycms/fieldOptions, and
+  imported to fieldTypes and collections for creating new fields.
+folder: data/netlifycms/fieldOptions
+collection_type: folder
+fields:
+  - field_type: import
+    import: field field-label
+  - field_type: import
+    import: field field-name
+  - field_type: import
+    import: field field-widget
+  - field_type: import
+    import: field field-options
+  - field_type: import
+    import: field field-default
+  - field_type: import
+    import: field field-hint
+  - field_type: import
+    import: field field-comment
+  - field_type: import
+    import: field field-fields
+  - field_type: import
+    import: field field-field_type
+  - field_type: import
+    import: field field-required
+create: false
+publish: true
+hide: false
+delete: false
+format: yml
+extension: yml
+editor:
+  preview: true
+summary: "{{label}}: {{name}} ({{widget}}) required: {{required}} default:
+  {{default}} hint: {{hint}}"

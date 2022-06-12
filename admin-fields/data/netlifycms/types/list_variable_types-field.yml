@@ -1,0 +1,7 @@
+label: List (Variable Types)(Beta)
+name: list_variable_types
+widget: object
+option_type: field-type
+fields:
+  - import: collection list_variable_types_fields.fields
+    field_type: import

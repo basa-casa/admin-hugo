@@ -1,7 +1,0 @@
-label: Select
-name: select
-widget: object
-option_type: fieldTypes
-fields:
-  - import: baseCollection select_fields.fields
-    field_type: import

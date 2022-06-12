@@ -1,0 +1,50 @@
+# The Fields Field
+name: fields
+label: Fields
+widget: list
+field_type: list_variable_types
+option_type: collection
+summary: "{{field_type}}: {{name}}{{import}}"
+minimize_collapsed: false
+label_singular: Field
+typeKey: field_type
+types:
+  - import: type import-field
+    field_type: import
+  - import: type string-field
+    field_type: import
+  - import: type text-field
+    field_type: import
+  - import: type image-field
+    field_type: import
+  - import: type file-field
+    field_type: import
+  - import: type markdown-field
+    field_type: import
+  - import: type boolean-field
+    field_type: import
+  - import: type select-field
+    field_type: import
+  - import: type list-field
+    field_type: import
+  - import: type list_variable_types-field
+    field_type: import
+  - import: type number-field
+    field_type: import
+  - import: type relation-field
+    field_type: import
+  - import: type object-field
+    field_type: import
+  - import: type code-field
+    field_type: import
+  - import: type color-field
+    field_type: import
+  - label: Date Time
+    name: dateTime
+    widget: object
+    option_type: field-type
+    fields:
+      - import: collection datetime_fields.fields
+        field_type: import
+  - import: type map-field
+    field_type: import

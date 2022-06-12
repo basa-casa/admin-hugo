@@ -1,25 +1,22 @@
+destination: _default
+slug: config
 module:
   imports:
     - path: github.com/theNewDynamic/hugo-module-tnd-netlifycms
-      mounts:
-        - source: templates/single.html.html
-          target: layouts/netlifycms/list.html.html
-        - source: templates/single.netlifycms_config.yml
-          target: layouts/netlifycms/list.netlifycms_config.yml
-        - source: templates/single.netlifycms_debug.yml
-          target: layouts/netlifycms/list.netlifycms_debug.yml
-        - source: data
-          target: data
-        - source: templates
-          target: layouts/netlifycms
-        - source: partials
-          target: layouts/partials/tnd-netlifycms
-        - source: console
-          target: layouts/partials/tnd-netlifycms
+    - path: github.com/kaushalmodi/hugo-bare-min-theme
   mounts:
-  - source: data
-    target: data
-  - source: content
-    target: content
-  - source: static
-    target: static
+    - source: data
+      target: data
+    - source: content
+      target: content
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: admin-collections/data
+      target: data
+    - source: admin-fields/data
+      target: data
+    - source: admin-hugo/data
+      target: data
+      

@@ -1,0 +1,7 @@
+label: Type
+name: type
+widget: select
+field_type: select
+option_type: field
+options: [Point, LineString, Polygon]
+default: Point

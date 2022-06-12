@@ -1,0 +1,8 @@
+label: Output Code Only
+name: output_code_only
+widget: boolean
+field_type: boolean
+option_type: field
+default: true
+required: false
+hint: Set to true to output the string value only.

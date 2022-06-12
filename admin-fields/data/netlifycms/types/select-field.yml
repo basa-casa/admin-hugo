@@ -1,0 +1,7 @@
+label: Select
+name: select
+widget: object
+option_type: field-type
+fields:
+  - import: collection select_fields.fields
+    field_type: import

@@ -1,0 +1,7 @@
+label: Boolean 
+name: boolean
+widget: object
+option_type: field-type
+fields:
+  - import: collection boolean_fields.fields
+    field_type: import

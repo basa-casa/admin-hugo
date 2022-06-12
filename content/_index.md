@@ -1,4 +1,4 @@
 ---
-title: "Site with /nc-admin but no homepage"
+title: "Site with /admin but no homepage"
 ---
-## [CMS![CMS](img/nc-admin.png "nc-admin logo")](/nc-admin)
+## [CMS![CMS](/img/nc-admin.png "nc-admin logo")](/admin)

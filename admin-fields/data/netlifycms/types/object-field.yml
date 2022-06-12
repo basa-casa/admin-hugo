@@ -1,0 +1,6 @@
+label: Object
+name: object
+widget: object
+option_type: field-type
+fields:
+ - import: collection object_fields.fields

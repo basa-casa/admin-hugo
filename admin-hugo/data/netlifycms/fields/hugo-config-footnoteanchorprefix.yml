@@ -1,0 +1,6 @@
+label: footnote Anchor Prefix
+name: footnoteAnchorPrefix
+widget: string
+field_type: string
+required: false
+hint: Prefix for footnote anchors.

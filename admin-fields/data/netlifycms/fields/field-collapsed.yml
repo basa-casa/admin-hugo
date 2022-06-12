@@ -1,0 +1,8 @@
+label: Collapsed
+name: collapsed
+widget: boolean
+field_type: boolean
+option_type: field
+
+hint: True collapses field entries by default.
+required: false

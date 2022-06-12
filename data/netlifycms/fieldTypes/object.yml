@@ -1,6 +1,0 @@
-label: Object
-name: object
-widget: object
-option_type: fieldTypes
-fields:
- - import: baseCollection object_fields.fields

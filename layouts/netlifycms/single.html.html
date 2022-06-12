@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Site.Title }} {{ .Section }} {{ .Title }}</title>
+    <!-- Include the script that enables Netlify Identity on this page. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <div id="nc-root">
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    {{- $version := partial "tnd-netlifycms/private/GetCMSVersion" . "tnd-netlifycms/private//GetCMSVersion" -}}
+    {{/* Hugo keeps escaping the `^` character potentially used to specify CMS version (`^2.0.0`) in spite of
+      safeHTML, safeHTMLAttr and the like. Passing the whole tag through `printf` fixes it... */}}
+    {{- $cdn := printf `<script src="https://unpkg.com/netlify-cms@%s/dist/netlify-cms.js"></script>` $version -}}
+    {{ $cdn | safeHTML }}
+    {{ partial "tnd-netlifycms/scripts.html" . }}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: fields
+identifier_field: name
+label: Fields
+label_singular: Field
+collection_type: folder
+description: Create new fields using the "Quick Add" button at the top of the page. Use this list to quickly view and edit common options for your fields. The preview link will open the same field in a more specific editor for its type. 
+folder: data/netlifycms/fields
+fields:
+  - field_type: import
+    import: field field-label
+  - field_type: import
+    import: field field-name
+  - field_type: import
+    import: field field-widget
+  - field_type: import
+    import: field field-field_type
+  - field_type: import
+    import: field field-hint
+create: false
+hide: false
+delete: false
+format: yml
+extension: yml
+editor:
+  preview: true
+summary: "{{filename}}: {{field_type}} {{hint}}"
+preview_path: collections/{{field_type}}/entries/{{slug}}

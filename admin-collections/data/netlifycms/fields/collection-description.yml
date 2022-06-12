@@ -1,0 +1,8 @@
+label: Description
+name: description
+widget: text
+required: false
+field_type: text
+option_type: collection
+hint: Text displayed below the label when viewing a collection. Useful for
+  adding instructions prior to content creation or editing.

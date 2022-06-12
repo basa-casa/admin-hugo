@@ -1,0 +1,10 @@
+label: menus
+name: menus
+widget: object
+required: false
+collapsed: true
+fields:
+  - import: field hugo-config-menu
+    extend: 
+      name: main
+      label: main

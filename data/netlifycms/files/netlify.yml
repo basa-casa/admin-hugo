@@ -1,6 +1,0 @@
-name: Netlify
-label: Netlify Configuration
-file: netlify.toml
-fields:
-  - field_type: import
-    import: netlify build

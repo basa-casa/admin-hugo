@@ -11,13 +11,13 @@ Node
     ```toml
     [module]
         [[module.imports]]
-            path = "github.com/basa-casa/hugo-module-bc-nc-admin"
+            path = "github.com/basa-casa/hugo-module-admin"
     ```
 
 ## Usage
 ### Getting Started
 Because the module's `/data/netlifycms/config.yml` file has `local_repo: true`, you can get started with the following as soon as the module is in your config.
-1. Run `npx netlify-cms-proxy-server` and `hugo server` from the root directory of your site repository.
+1. Run `npx netlify-bc-nc-proxy-server` and `hugo server` from the root directory of your site repository.
 1. Open [/nc-admin](http://localhost:1313/nc-admin).
 1. Click "Create the CMS." Edit your backend settings, and add collections. When you are ready, click "Publish Now" and the CMS will create the `/data/netlifycms/config.yml` file that is the base of `/content/nc-admin/config.yml`
 
@@ -50,7 +50,7 @@ type: file
 name: config
 file: data/netlifycms/config.yml
 fields:
-  - import: baseCollection cms.fields
+  - import: collection bc-nc-cms.fields
     field_type: import
 ```
 
@@ -60,13 +60,13 @@ To add files to the Site Settings collection, you will need to create a new File
 To create collections in the UI for import to `config.yml`, simply add
 ```yaml
 collections:
-  - import: collectionSet cffs.collections
+  - import: set cffs.collections
     collection_type: import
 ```
 This set of collections contains folder collections for folder collections, files collections, files collection files, fields of every type, and sets of each of the above. 
 
 ### Customization
-Import [`collectionSet nc_admin`](data/netlifycms/collectionSets/nc_admin.yml) to create overriding option fields or baseCollections as needed. 
+Import [`set nc_admin`](data/netlifycms/collectionSets/nc_admin.yml) to create overriding option fields or baseCollections as needed. 
 
 
 

@@ -1,8 +1,0 @@
-label: Field Type
-name: field_type
-widget: string
-field_type: string
-option_type: fieldOptions
-required: true
-hint: DANGER - Changing type will change the widget used for collecting this field's data and may result in unintended consequences.
-

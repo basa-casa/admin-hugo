@@ -1,0 +1,13 @@
+backend:
+  branch: main
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+  repo: basa-casa/hugo-module-bc-nc-admin
+collections:
+  - import: set cffs.collections
+    collection_type: import
+media_folder: assets/img
+public_folder: img
+site_url: ../
+display_url: ../
+logo_url: /img/nc-admin.png

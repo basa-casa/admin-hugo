@@ -1,0 +1,8 @@
+field_type: select
+widget: select
+required: false
+multiple: false
+name: defaultMarkdownHandler
+label: default Markdown Handler
+options:
+  - goldmark

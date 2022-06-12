@@ -1,7 +1,0 @@
-label: base URL
-name: baseURL
-widget: string
-default: ""
-hint: Hostname (and path) to the root, e.g. https://bep.is/
-field_type: string
-required: true

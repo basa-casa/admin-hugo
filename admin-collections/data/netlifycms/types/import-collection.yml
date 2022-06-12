@@ -1,0 +1,31 @@
+label: Import
+name: 'import'
+option_type: collection-type
+fields:
+  - name: "import"
+    widget: string
+    field_type: string
+    hint: "ex: collection" 
+  - import: field collection-collection_type
+    field_type: import
+    extend:
+      default: import
+  - name: extend
+    widget: object
+    field_type: object
+    required: false
+    collapsed: true
+    fields:
+      - import: field field-name
+        extend: 
+          required: false
+        field_type: import
+      - import: field field-label
+        field_type: import
+      - import: field collection-description
+        field_type: import
+      - import: field collection-folder
+        field_type: import
+        extend: 
+          required: false
+      

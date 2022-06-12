@@ -1,9 +1,0 @@
-name: markup
-label: config/_default/markup.toml
-file: config/_default/markup.toml
-fields:
-  - field_type: import
-    import: hugoConfig markup.fields
-delete: false
-editor:
-  preview: true

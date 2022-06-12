@@ -1,0 +1,6 @@
+label: archetype Dir
+name: archetypeDir
+widget: string
+hint: The directory where Hugo finds archetype files (content templates).
+field_type: string
+required: false
