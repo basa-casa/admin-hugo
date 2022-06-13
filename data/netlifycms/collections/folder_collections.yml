@@ -93,7 +93,6 @@ hide: false
 delete: true
 format: yml
 extension: yml
-slug: "{{name}}"
 editor:
   preview: false
 summary: "{{label}}"

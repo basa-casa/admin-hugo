@@ -17,7 +17,7 @@ Node
 ## Usage
 ### Getting Started
 Because the module's `/data/netlifycms/config.yml` file has `local_repo: true`, you can get started with the following as soon as the module is in your config.
-1. Run `npx netlify-bc-nc-proxy-server` and `hugo server` from the root directory of your site repository.
+1. Run `npx netlify-cms-proxy-server` and `hugo server` from the root directory of your site repository.
 1. Open [/nc-admin](http://localhost:1313/nc-admin).
 1. Click "Create the CMS." Edit your backend settings, and add collections. When you are ready, click "Publish Now" and the CMS will create the `/data/netlifycms/config.yml` file that is the base of `/content/nc-admin/config.yml`
 

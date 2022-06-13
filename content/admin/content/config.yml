@@ -1,7 +1,7 @@
 backend:
   branch: main
   name: test-repo
-  repo: basa-casa/hugo-module-admin
+  repo: basa-casa/hugo-module-bc-nc-admin
 collections:
   - import: collection posts
     collection_type: import

@@ -1,12 +1,12 @@
 # Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
-name: boolean_fields
+name: text_fields
 identifier_field: name
+label: Text Fields
+label_singular: Text Field
 collection_type: folder
-label: Boolean Fields
-label_singular: Boolean Field
-description: "The boolean widget translates a toggle switch input to a true/false value."
+description: >
+  The text widget takes a multiline text field and saves it as a string. For shorter text inputs, use the string widget.
 folder: data/netlifycms/fields
-slug: "fields/{{name}}"
 fields:
   - import: field field-name
     field_type: import
@@ -15,33 +15,32 @@ fields:
   - import: field field-widget
     field_type: import
     extend:
-      default: boolean
-      options: 
-        - boolean
-        - hidden
+      default: text
   - import: field field-field_type
     field_type: import
     extend:
-      default: boolean
+      default: text
   - import: field field-required
     field_type: import
-  - import: field field-default
+  - import: field field-default 
     field_type: import
-    extend: 
-      widget: boolean
-  - import: field field-hint
+  - import: field field-hint 
     field_type: import
-  - import: field field-comment
+  - import: field field-comment 
     field_type: import
-filter: {field: field_type, value: boolean}
+  - import: field field-pattern 
+    field_type: import
+filter:
+  field: field_type
+  value: text
 create: true
 publish: false
 hide: true
 delete: true
 format: yml
 extension: yml
-summary: "{{slug}}"
+slug: "{{name}}"
 editor:
   preview: true
-nested:
-  depth: 3
+summary: "{{slug}}"
+

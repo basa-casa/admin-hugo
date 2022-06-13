@@ -48,3 +48,5 @@ slug: "config"
 editor:
   preview: false
 summary: "{{dirname}} {{backend.name}} / {{backend.repo}}"
+nested:
+  depth: 2

@@ -3,7 +3,7 @@ destination: configuration
 backend:
   branch: main
   name: test-repo
-  repo: basa-casa/hugo-module-admin
+  repo: basa-casa/hugo-module-bc-nc-admin
 collections:
   - import: collection admin-config
     collection_type: import

@@ -13,10 +13,3 @@ module:
       target: static
     - source: layouts
       target: layouts
-    - source: admin-collections/data
-      target: data
-    - source: admin-fields/data
-      target: data
-    - source: admin-hugo/data
-      target: data
-      
