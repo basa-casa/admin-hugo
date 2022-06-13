@@ -3,9 +3,9 @@ name: field_options
 identifier_field: name
 label: Field Options
 label_singular: Field Option
-description: Editor for all fields stored in data/netlifycms/fieldOptions, and
+description: Editor for all fields stored in data/netlifycms/fields, and
   imported to fieldTypes and collections for creating new fields.
-folder: data/netlifycms/fieldOptions
+folder: data/netlifycms/fields
 collection_type: folder
 fields:
   - field_type: import
