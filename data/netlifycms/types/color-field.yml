@@ -1,6 +1,0 @@
-label: Color
-name: "color"
-widget: object
-option_type: field-type
-fields:
-  - import: collection color_fields.fields

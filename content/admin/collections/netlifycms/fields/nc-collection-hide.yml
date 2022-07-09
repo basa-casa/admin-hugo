@@ -1,0 +1,9 @@
+label: Hide
+name: hide
+widget: boolean
+field_type: boolean
+component: collection
+
+hint: True hides a collection in the CMS UI. Useful when using the relation
+  widget to hide referenced collections.
+required: false

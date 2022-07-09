@@ -1,9 +1,0 @@
-label: Local Backend (Beta)
-name: local_backend
-widget: boolean
-field_type: boolean
-option_type: config
-required: false
-hint: Run npx netlify-proxy-server from the root directory of the above
-  repository, to have changes reflected in the local copy of the repository without committing. See
-  https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository

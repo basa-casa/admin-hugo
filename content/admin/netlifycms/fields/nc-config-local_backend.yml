@@ -1,0 +1,16 @@
+label: Local Backend (Beta)
+name: local_backend
+widget: object
+field_type: object
+namespace: nc
+component: config
+fields: 
+  - name: url
+    label: URL
+    widget: string
+    field_type: string
+    required: false
+required: false
+hint: Run npx netlify-proxy-server from the root directory of the above
+  repository, to have changes reflected in the local copy of the repository without committing. See
+  https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository

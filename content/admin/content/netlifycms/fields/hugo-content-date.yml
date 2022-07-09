@@ -1,0 +1,6 @@
+name: date
+namespace: hugo
+component: content
+widget: datetime
+field_type: datetime
+required: false

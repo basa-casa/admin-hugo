@@ -1,8 +1,0 @@
-label: Minimize Collapsed
-name: minimize_collapsed
-widget: boolean
-field_type: boolean
-option_type: field
-required: false
-
-hint: When true, collapsing the widget will hide all of it's entries instead of showing summaries.

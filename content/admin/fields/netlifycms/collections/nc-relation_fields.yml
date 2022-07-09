@@ -1,0 +1,66 @@
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+name: Relation Fields
+identifier_field: name
+label: Relation Fields
+label_singular: Relation Field
+collection_type: folder
+description: >
+  The relation widget allows you to reference items from another collection. It provides a search input with a list of entries from the collection you're referencing, and the list automatically updates with matched entries based on what you've typed.
+folder: "data/netlifycms/fields"
+fields:
+  - import: field nc-field-name
+    field_type: import
+  - import: field nc-field-label
+    field_type: import
+  - import: field nc-field-widget
+    field_type: import
+    extend:
+      default: relation
+      options:
+        - relation
+        - hidden
+  - import: field nc-field-field_type
+    field_type: import
+    extend:
+      default: relation
+  - import: field nc-field-required
+    field_type: import
+  - import: field nc-field-default
+    field_type: import
+  - import: field nc-field-hint      
+    field_type: import
+  - import: field nc-field-collection
+    field_type: import
+  - import: field nc-field-value_field
+    field_type: import
+  - import: field nc-field-search_fields
+    field_type: import
+  - import: field nc-field-file
+    field_type: import
+  - import: field nc-field-display_fields
+    field_type: import
+  - import: field nc-field-multiple
+    field_type: import
+  - import: field nc-field-min
+    field_type: import
+    extend:
+      hint: Minimum number of items; ignored if multiple is false
+  - import: field nc-field-max
+    field_type: import
+    extend:
+      hint: Maximum number of items; ignored if multiple is false   
+  - import: field nc-field-options_length
+    field_type: import
+filter:
+  field: field_type
+  value: relation
+create: true
+publish: false
+hide: false
+delete: true
+format: yml
+extension: yml
+editor:
+  preview: true
+summary: "{{filename}}"
+

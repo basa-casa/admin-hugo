@@ -1,0 +1,7 @@
+label: Number
+name: number
+widget: object
+component: field-type
+fields:
+  - import: collection nc-number_fields.fields
+    field_type: import

@@ -1,0 +1,15 @@
+label: Options
+name: options
+widget: list
+field_type: list
+minimize_collapsed: true
+hint: "Input a string for each option or an object with a key to show users and a value to store in the file, like { label: \"Key\", value: \"string\"}"
+summary: 'label:{{label}} value: {{value}}'
+add_to_top: true
+fields:
+  - name: label
+    label: label
+    widget: string
+  - name: value
+    label: value
+    widget: string

@@ -1,0 +1,7 @@
+label: Min
+name: min
+widget: number
+field_type: number
+component: field
+hint: Accepts a number for minimum value accepted.
+required: false

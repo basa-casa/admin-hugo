@@ -1,0 +1,7 @@
+label: List
+name: list
+widget: object
+component: field-type
+fields:
+  - import: collection nc-list_fields.fields
+    field_type: import

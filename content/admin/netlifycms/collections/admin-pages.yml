@@ -1,0 +1,36 @@
+name: admin-pages
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+description: Generates an instance of netlify-cms, at `/admin/{{slug}}` Use this collection to override the module-provided pages admin/content, admin/config, etc.
+label: Admin Pages
+label_singular: Admin Page
+collection_type: folder
+folder: content/admin
+identifier_field: title
+path: "{{slug}}/index"
+format: yaml-frontmatter
+fields:
+  - field_type: import
+    import: field hugo-content-title
+  - field_type: import
+    import: field hugo-content-type
+  - field_type: import
+    import: field hugo-content-menu
+  - field_type: import
+    import: field hugo-content-draft
+  - import: field nc-config-collections
+    field_type: import
+  - field_type: object
+    widget: object
+    label: config
+    name: config
+    required: false
+    collapsed: true
+    fields:
+      - import: set nc-config-fields.fields
+        field_type: import
+sortable_fields: [title]
+create: true
+delete: true
+hide: false
+nested:
+  depth: 4

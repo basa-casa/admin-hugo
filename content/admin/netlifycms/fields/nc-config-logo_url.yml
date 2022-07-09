@@ -1,0 +1,7 @@
+label: Logo URL
+name: logo_url
+widget: string
+hint: "Enter the URL to an image file to brand your CMS. "
+field_type: string
+component: config
+required: false

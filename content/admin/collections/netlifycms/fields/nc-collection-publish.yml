@@ -1,0 +1,8 @@
+label: "Publish" 
+name: publish 
+widget: boolean
+field_type: boolean
+component: collection
+
+required: false 
+hint: "For publish_mode: editorial_workflow only; false hides UI publishing controls for a collection."

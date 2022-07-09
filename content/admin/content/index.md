@@ -1,8 +1,11 @@
 ---
-title: "Content"
+title: Content
+draft: false
 type: netlifycms
-outputs:
-  - HTML
-  - netlifycms_config
-draft: true
+menu:
+  admin:
+    weight: 20
+collections:
+  - import: set admin-content-collections.collections
+    collection_type: import
 ---

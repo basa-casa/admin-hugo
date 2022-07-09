@@ -1,8 +1,0 @@
-label: Enable Alpha
-name: enableAlpha
-widget: boolean
-field_type: boolean
-option_type: field
-required: false
-
-hint: Enables Alpha editing.

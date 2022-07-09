@@ -1,6 +1,0 @@
-label: data/netlifycms/config.yml
-name: config
-file: data/netlifycms/config.yml
-fields:
-  - import: collection admin-config.fields
-    field_type: import

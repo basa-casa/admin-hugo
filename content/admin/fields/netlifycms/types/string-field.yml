@@ -1,0 +1,7 @@
+label: String
+name: 'string'
+widget: object
+component: field-type
+fields:
+  - import: collection nc-string_fields.fields
+    field_type: import

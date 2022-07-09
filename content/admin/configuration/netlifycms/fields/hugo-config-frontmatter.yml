@@ -1,0 +1,27 @@
+label: frontmatter
+name: frontmatter
+widget: object
+field_type: object
+collapsed: true
+required: false
+fields:
+  - field_type: import
+    import: field hugo-config-_merge 
+  - field_type: import
+    import: field hugo-config-frontmatter-date
+  - field_type: import
+    import: field hugo-config-frontmatter-date
+    extend: 
+      name: expiryDate
+      label: expiryDate
+  - field_type: import
+    import: field hugo-config-frontmatter-date
+    extend: 
+      name: lastmod
+      label: lastmod
+  - field_type: import
+    import: field hugo-config-frontmatter-date
+    extend: 
+      name: publishDate
+      label: publishDate
+hint: "[Docs](https://gohugo.io/getting-started/configuration/#configure-front-matter)"

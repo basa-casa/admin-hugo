@@ -1,0 +1,144 @@
+label: minify
+name: minify
+widget: object
+field_type: object
+collapsed: true
+required: false
+fields:
+  - name: disableCSS
+    label: disableCSS
+    widget: boolean
+    required: false
+  - name: disableHTML
+    label: disableHTML
+    widget: boolean
+    required: false
+  - name: disableJS
+    label: disableJS
+    widget: boolean
+    required: false
+  - name: disableJSON
+    label: disableJSON
+    widget: boolean
+    required: false
+  - name: disableSVG
+    label: disableSVG
+    widget: boolean
+    required: false
+  - name: disableXML
+    label: disableXML
+    widget: boolean
+    required: false
+  - name: minifyOutput
+    label: minifyOutput
+    widget: boolean
+    required: false
+  - name: tdewolff
+    label: tdewolff
+    widget: object
+    required: false
+    collapsed: true
+    hint: "[Library Docs](https://github.com/tdewolff/minify#html)"
+    fields:
+      - name: css
+        label: css
+        widget: object
+        required: false
+        fields:
+          - name: keepCSS2
+            label: keepCSS2
+            widget: boolean
+            required: false
+          - name: precision
+            label: precision
+            widget: number
+            hint: Precision number of significant digits to preserve for numbers, 0 means no trimming.
+            required: false
+      - name: html
+        label: html
+        widget: object
+        required: false
+        fields:
+          - name: keepComments
+            label: keepComments
+            widget: boolean
+            required: false
+          - name: keepConditionalComments
+            label: keepConditionalComments
+            widget: boolean
+            required: false
+          - name: keepDefaultAttrVals
+            label: keepDefaultAttrVals
+            widget: boolean
+            required: false
+          - name: keepDocumentTags
+            label: keepDocumentTags
+            widget: boolean
+            required: false
+          - name: keepEndTags
+            label: keepEndTags
+            widget: boolean
+            required: false
+          - name: keepQuotes
+            label: keepQuotes
+            widget: boolean
+            required: false
+          - name: keepWhitespace
+            label: keepWhitespace
+            widget: boolean
+            required: false
+      - name: js
+        label: js
+        widget: object
+        required: false
+        fields:
+          - name: keepVarNames
+            label: keepVarNames
+            widget: boolean
+            required: false
+          - name: noNullishOperator
+            label: noNullishOperator
+            widget: boolean
+            required: false
+          - name: precision
+            label: precision
+            widget: number
+            hint: Precision number of significant digits to preserve for numbers, 0 means no trimming.
+            required: false
+      - name: json
+        label: json
+        widget: object
+        required: false
+        fields:
+          - name: keepNumbers
+            label: keepNumbers
+            widget: boolean
+            required: false
+          - name: precision
+            label: precision
+            widget: number
+            hint: Precision number of significant digits to preserve for numbers, 0 means no trimming.
+            required: false
+      - name: svg
+        label: svg
+        widget: object
+        required: false
+        fields:
+          - name: keepComments
+            label: keepComments
+            widget: boolean
+            required: false
+          - name: precision
+            label: precision
+            widget: number
+            hint: Precision number of significant digits to preserve for numbers, 0 means no trimming.
+            required: false
+      - name: xml
+        label: xml
+        widget: object
+        required: false
+        fields:
+          - name: keepWhitespace
+            label: keepWhitespace
+            widget: boolean
+            required: false

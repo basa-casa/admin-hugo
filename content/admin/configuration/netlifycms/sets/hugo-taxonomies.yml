@@ -1,0 +1,11 @@
+taxonomies:
+  - widget: string
+    field_type: string
+    required: false
+    name: tag
+    default: tags
+  - widget: string
+    field_type: string
+    required: false
+    name: category
+    default: categories

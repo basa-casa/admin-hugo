@@ -1,0 +1,35 @@
+name: Fields Collections
+collection_type: set
+collections:
+  - import: collection nc-string_fields
+    collection_type: import
+  - import: collection nc-boolean_fields
+    collection_type: import
+  - import: collection nc-select_fields
+    collection_type: import
+  - import: collection nc-object_fields
+    collection_type: import
+  - import: collection nc-list_fields
+    collection_type: import
+  - import: collection nc-list_variable_types_fields
+    collection_type: import
+  - import: collection nc-number_fields
+    collection_type: import
+  - import: collection nc-datetime_fields
+    collection_type: import
+  - import: collection nc-color_fields
+    collection_type: import
+  - import: collection nc-text_fields
+    collection_type: import
+  - import: collection nc-image_fields
+    collection_type: import
+  - import: collection nc-file_fields
+    collection_type: import
+  - import: collection nc-markdown_fields
+    collection_type: import
+  - import: collection nc-relation_fields
+    collection_type: import
+  - import: collection nc-code_fields
+    collection_type: import
+  - import: collection nc-map_fields
+    collection_type: import

@@ -1,0 +1,21 @@
+label: _target
+name: _target
+widget: object
+field_type: object
+required: false
+fields:
+  - label: kind
+    name: kind
+    widget: string
+    field_type: string
+    required: false
+  - label: lang
+    name: lang
+    widget: string
+    field_type: string
+    required: false
+  - label: path
+    name: path
+    widget: string
+    field_type: string
+    required: false

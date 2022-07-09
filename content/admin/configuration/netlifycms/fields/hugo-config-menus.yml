@@ -1,0 +1,34 @@
+name: main
+label_singular: item
+widget: list
+required: false
+fields:
+  - label: title
+    name: title
+    widget: string
+    required: false
+  - label: weight
+    name: weight
+    widget: number
+    step: 10
+    required: false
+  - label: url
+    name: url
+    widget: string
+    required: false
+  - label: page Ref
+    name: pageRef
+    widget: string
+    required: false
+  - label: identifier
+    name: identifier
+    widget: string
+    required: false
+  - label: pre
+    name: pre
+    widget: string
+    required: false
+  - label: post
+    name: post
+    widget: string
+    required: false

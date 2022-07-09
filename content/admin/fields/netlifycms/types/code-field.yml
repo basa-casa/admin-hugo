@@ -1,0 +1,7 @@
+label: Code 
+name: code
+widget: object
+component: field-type
+fields:
+  - import: collection nc-code_fields.fields
+    field_type: import

@@ -1,0 +1,6 @@
+label: Environment
+name: destination
+widget: string
+field_type: string
+required: false
+hint: The directory to where netlifycms will write the config file, within '/config'. See https://gohugo.io/getting-started/configuration/#configuration-directory

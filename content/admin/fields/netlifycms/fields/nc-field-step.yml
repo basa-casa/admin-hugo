@@ -1,0 +1,9 @@
+label: Step
+name: step
+widget: number
+field_type: number
+component: field
+hint: Accepts a number for stepping up/down values in the input; 1 by default.
+required: false
+step: 0.01
+value_type: float

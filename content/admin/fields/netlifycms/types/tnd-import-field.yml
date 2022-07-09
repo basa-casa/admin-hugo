@@ -1,0 +1,38 @@
+label: Import
+name: import
+widget: object
+component: field-type
+fields:
+  - name: import
+    label: Import
+    widget: string
+    field_type: string
+    hint: Pattern\:\ "(singularized) dirname filename". ex. "field body" will import data/netlifycms/fields/body.yml
+  - import: field nc-field-field_type
+    field_type: import
+    extend:
+      default: import 
+  - name: extend
+    label: Extend
+    widget: object
+    field_type: object
+    collapsed: true
+    required: false
+    hint: "Only common field options may be extended here. For further control, consider cloning the field or editing the'extend:' object directly in the file."
+    fields:
+      - import: field nc-field-name
+        extend:
+          required: false
+        field_type: import
+      - import: field nc-field-label
+        field_type: import
+      - import: field nc-field-widget
+        field_type: import
+        extend:
+          required: false
+      - import: field nc-field-hint
+        field_type: import
+      - import: field nc-field-default
+        field_type: import
+      - import: field nc-field-comment
+        field_type: import

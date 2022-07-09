@@ -1,0 +1,11 @@
+name: mediaTypes
+label: Media Types
+widget: object
+field_type: object
+hint: "[Edit MediaTypes](#/collections/hugo-config-objects/entries/mediaTypes)"
+required: false
+collapsed: true
+fields:
+  - field_type: import
+    import: field hugo-config-_merge
+   

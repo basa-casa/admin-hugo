@@ -1,0 +1,4 @@
+cascade:
+  - import: field hugo-cascade-target
+    field_type: import
+  - {}

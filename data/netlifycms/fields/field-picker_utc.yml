@@ -1,7 +1,0 @@
-label: Picker UTC
-name: picker_utc
-widget: boolean
-field_type: boolean
-option_type: field
-
-hint: If true use default locale format, false hides time-picker.

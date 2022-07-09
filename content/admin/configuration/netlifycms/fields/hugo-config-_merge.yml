@@ -1,0 +1,9 @@
+label: _merge
+name: _merge
+widget: select
+required: false
+hint: "[Hugo Merge Docs](https://gohugo.io/getting-started/configuration/#merge-configuration-from-themes)"
+options: 
+  - none
+  - shallow
+  - deep

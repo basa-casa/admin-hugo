@@ -1,0 +1,6 @@
+label: Default Language
+name: default_language
+widget: string
+field_type: string
+component: field
+required: false

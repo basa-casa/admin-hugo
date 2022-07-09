@@ -1,7 +1,0 @@
-label: Code 
-name: code
-widget: object
-option_type: field-type
-fields:
-  - import: collection code_fields.fields
-    field_type: import

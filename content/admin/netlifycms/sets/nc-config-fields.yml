@@ -1,0 +1,28 @@
+name: NetlifyCMS Config Fields
+fields:
+  - import: field nc-config-local_backend
+    field_type: import
+  - import: field nc-config-backend
+    field_type: import
+  - import: field nc-config-publish_mode
+    field_type: import
+  - import: field nc-config-media_folder
+    field_type: import
+  - import: field nc-config-public_folder
+    field_type: import
+  - import: field nc-config-media_library
+    field_type: import
+  - import: field nc-config-site_url
+    field_type: import
+  - import: field nc-config-display_url
+    field_type: import
+  - import: field nc-config-logo_url
+    field_type: import
+  - import: field nc-config-locale
+    field_type: import
+  - import: field nc-config-show_preview_links
+    field_type: import
+  - import: field nc-config-slug
+    field_type: import
+  - import: field nc-config-tnd_netlifycms
+    field_type: import

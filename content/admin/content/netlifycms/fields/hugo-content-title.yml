@@ -1,0 +1,5 @@
+name: title
+namespace: hugo
+component: content
+widget: string
+field_type: string

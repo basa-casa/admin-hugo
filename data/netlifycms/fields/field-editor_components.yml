@@ -1,8 +1,0 @@
-label: Editor Components
-name: editor_components
-widget: list
-field_type: list
-option_type: field
-default: [image, code-block]
-required: false
-hint:  An array of strings representing the names of editor components to display (all shown by default). Netlify CMS includes image and code-block editor components by default, and custom components may be created and registered.

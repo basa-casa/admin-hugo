@@ -1,0 +1,17 @@
+name: kind-name
+widget: select
+field_type: select
+required: false
+multiple: true
+options:
+  - HTML
+  - AMP
+  - CSS
+  - CSV
+  - Calendar
+  - JSON
+  - MARKDOWN
+  - ROBOTS
+  - RSS
+  - Sitemap
+  - WebAppManifest

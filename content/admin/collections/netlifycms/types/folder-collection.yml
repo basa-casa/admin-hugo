@@ -1,0 +1,5 @@
+label: "Folder Collection"
+name: folder
+component: collection-type
+fields:
+  - import: collection nc-folder_collections.fields

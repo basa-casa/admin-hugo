@@ -1,6 +1,0 @@
-label: Config File Destination
-name: destination
-widget: string
-field_type: string
-required: false
-hint: The directory to where netlifycms will write the config file, within '/config'. 

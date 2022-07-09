@@ -1,0 +1,13 @@
+label: Editor
+name: editor
+widget: object
+field_type: object
+component: collection
+required: false
+fields:
+  - label: Preview
+    name: preview
+    widget: boolean
+    field_type: boolean 
+    required: false
+    hint: "False disables the preview pane for this collection or file."

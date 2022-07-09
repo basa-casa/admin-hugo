@@ -1,0 +1,7 @@
+label: Pattern
+name: pattern
+widget: string
+field_type: string
+component: field
+required: false
+hint: Add field validation by specifying a list with a regex pattern and an error message. e.g., ['.{20,}', "Must have at least 20 characters"]

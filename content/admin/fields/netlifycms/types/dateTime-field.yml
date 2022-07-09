@@ -1,0 +1,7 @@
+label: Date Time
+name: dateTime
+widget: object
+component: field-type
+fields:
+  - import: collection nc-datetime_fields.fields
+    field_type: import

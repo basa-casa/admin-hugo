@@ -1,7 +1,0 @@
-label: Map
-name: map
-widget: object
-option_type: field-type
-fields:
-  - import: collection map_fields.fields
-    field_type: import

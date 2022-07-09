@@ -1,0 +1,11 @@
+label: Option Type
+name: option_type
+widget: select
+field_type: select
+component: field
+options:
+  - { label: "CMS Option", value: "config" }
+  - { label: "Collection Option", value: "collection" }
+  - { label: "Field Option", value: "field" }
+  - { label: "Field Types", value: "field" }
+  - { label: "Collection Types", value: "collection"}

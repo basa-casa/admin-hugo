@@ -16,11 +16,11 @@
       {{- end -}}
 */}}
 {{ $config := dict }}
-{{ with partial "tnd-netlifycms/private/GetConfig" . }}
+{{ with partial "tnd-netlifycms/private/ExtractConfig" . }}
   {{ $config = . }}
 {{ end }}
 
-{{ with $config.collections }}
+{{ with .Params.collections }}
   {{ with partial "tnd-netlifycms/private/parse" . }}
     {{ $config = merge $config (dict "collections" .) }}
   {{ end }}

@@ -1,6 +1,0 @@
-label: Decimals
-name: decimals
-widget: number
-field_type: number
-option_type: field
-hint: Specify precision of saved coordinates; defaults to 7 decimals.

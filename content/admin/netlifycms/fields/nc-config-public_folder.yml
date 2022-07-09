@@ -1,0 +1,8 @@
+label: Public Folder
+name: public_folder
+widget: string
+hint: Specifies the folder path where the files uploaded by the media library
+  will be accessed, relative to the base of the built site.
+field_type: string
+component: config
+required: false

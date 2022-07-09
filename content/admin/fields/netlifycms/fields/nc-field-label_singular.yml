@@ -1,0 +1,7 @@
+label: "Label Singular" 
+name: label_singular 
+required: false
+widget: string
+field_type: string
+component: field
+hint: "Singular label for certain elements in the editor; defaults to the value of label."

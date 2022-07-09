@@ -1,0 +1,113 @@
+label: module
+name: module
+widget: object
+field_type: object
+required: false
+collapsed: true
+fields:
+  - field_type: import
+    import: field hugo-config-_merge 
+  - label: imports
+    name: imports
+    hint: "https://gohugo.io/hugo-modules/configuration/#module-config-imports"
+    field_type: list
+    widget: list
+    fields:
+      - name: path
+        label: path
+        hint: "Can be either a valid Go Module module path, e.g. github.com/gohugoio/myShortcodes, or the directory name for the module as stored in your themes folder."
+        field_type: string
+        widget: string
+        required: false
+      - import: field hugo-config-module-mounts
+        field_type: import
+      - name: ignoreConfig
+        label: ignoreConfig
+        field_type: boolean
+        widget: boolean
+        required: false
+      - name: ignoreImports
+        label: ignoreImports
+        field_type: boolean
+        widget: boolean
+        required: false
+      - name: disable
+        label: disable
+        field_type: boolean
+        widget: boolean
+        required: false
+      - name: noMounts
+        label: noMounts
+        field_type: boolean
+        widget: boolean
+        required: false
+      - name: noVendor
+        label: noVendor
+        field_type: boolean
+        widget: boolean
+        required: false
+  - import: field hugo-config-module-mounts
+    field_type: import
+  - label: hugoVersion
+    name: hugoVersion
+    hint: "https://gohugo.io/hugo-modules/configuration/#module-config-hugoversion"
+    field_type: object
+    widget: object
+    fields:
+      - name: extended
+        label: extended
+        widget: boolean
+        field_type: boolean
+        required: false
+      - import: field nc-field-min
+        field_type: import
+        extend:
+          field_type: string
+          widget: string
+      - import: field nc-field-max
+        field_type: import
+        extend:
+          field_type: string
+          widget: string
+  - label: noProxy
+    name: noProxy
+    hint: "Comma separated glob list matching paths that should not use the proxy configured above."
+    field_type: string
+    widget: string
+    required: false
+  - label: noVendor
+    name: noVendor
+    hint: "A optional Glob pattern matching module paths to skip when vendoring, e.g. “github.com/**”"
+    field_type: string
+    widget: string
+    required: false
+  - label: vendorClosest
+    name: vendorClosest
+    hint: "When enabled, we will pick the vendored module closest to the module using it. The default behaviour is to pick the first. Note that there can still be only one dependency of a given module path, so once it is in use it cannot be redefined."
+    field_type: boolean
+    widget: boolean
+    required: false
+  - label: private
+    name: private
+    hint: "Comma separated glob list matching paths that should be treated as private."
+    field_type: string
+    widget: string
+    required: false
+  - label: proxy
+    name: proxy
+    hint: "Defines the proxy server to use to download remote modules. Default is direct, which means “git clone” and similar."
+    field_type: string
+    widget: string
+    required: false
+  - label: replacements
+    name: replacements
+    hint: "A comma separated (or a slice) list of module path to directory replacement mapping, e.g. github.com/bep/my-theme -> ../..,github.com/bep/shortcodes -> /some/path. This is mostly useful for temporary locally development of a module, and then it makes sense to set it as an OS environment variable, e.g: env HUGO_MODULE_REPLACEMENTS=\"github.com/bep/my-theme -> ../..\". Any relative path is relate to themesDir, and absolute paths are allowed."
+    field_type: string
+    widget: string
+    required: false
+  - label: workspace
+    name: workspace
+    hint: "The workspace file to use. This enables Go workspace mode. Note that this can also be set via OS env, e.g. export HUGO_MODULE_WORKSPACE=/my/hugo.work This only works with Go 1.18+."
+    field_type: string
+    widget: string
+    required: false

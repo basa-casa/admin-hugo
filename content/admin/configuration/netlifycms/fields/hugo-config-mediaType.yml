@@ -1,0 +1,10 @@
+name: contents/format
+widget: object
+field_type: object
+required: false
+fields:
+  - field_type: list
+    name: suffixes
+    label: suffixes
+    required: false
+   

@@ -1,0 +1,50 @@
+name: date_fields
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+description: |
+  The datetime widget translates a datetime picker to a datetime string.
+label: Date Fields
+label_singular: Date Field
+collection_type: folder
+folder: data/netlifycms/fields
+filter:
+  field: field_type
+  value: datetime
+identifier_field: name
+format: yml
+extension: yml
+fields:
+  - import: field nc-field-name
+    field_type: import
+  - import: field nc-field-label
+    field_type: import
+  - import: field nc-field-widget
+    field_type: import
+    extend:
+      default: datetime
+  - import: field nc-field-field_type
+    field_type: import
+    extend:
+      default: datetime
+  - import: field nc-field-required
+    field_type: import
+  - import: field nc-field-default
+    field_type: import
+    extend:
+      widget: datetime
+  - import: field nc-field-hint
+    field_type: import
+  - import: field nc-field-format
+    field_type: import
+  - import: field nc-field-date_format
+    field_type: import
+  - import: field nc-field-time_format
+    field_type: import
+  - import: field nc-field-picker_utc
+    field_type: import
+create: true
+delete: true
+publish: false
+hide: false
+editor:
+  preview: true
+summary: "{{filename}}"

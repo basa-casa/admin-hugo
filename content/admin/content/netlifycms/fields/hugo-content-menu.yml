@@ -1,0 +1,16 @@
+name: menu
+label: menu
+widget: object
+required: false
+collapsed: true
+hint: https://gohugo.io/variables/menus/#menu-entry-variables
+fields:
+  - label: admin
+    name: admin
+    widget: object
+    required: false
+    collapsed: true
+    hint: Adds to the navigation menu for /admin pages.
+    fields: 
+      - import: field hugo-config-menus.fields
+        field_type: import

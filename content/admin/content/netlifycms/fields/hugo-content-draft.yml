@@ -1,0 +1,7 @@
+name: draft
+namespace: hugo
+component: content
+label: Draft
+widget: boolean
+field_type: boolean
+required: false

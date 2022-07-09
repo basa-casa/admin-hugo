@@ -1,0 +1,16 @@
+label: markup
+name: markup
+widget: object
+field_type: object
+required: false
+fields:
+  - field_type: import
+    import: field hugo-config-_merge 
+  - field_type: import
+    import: field hugo-config-defaultmarkdownhandler
+  - field_type: import
+    import: field hugo-config-goldmark
+  - field_type: import
+    import: field hugo-config-highlight
+  - field_type: import
+    import: field hugo-config-tableofcontents

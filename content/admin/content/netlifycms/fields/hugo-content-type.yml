@@ -1,0 +1,5 @@
+name: type
+widget: string
+field_type: string
+required: false
+hint: change to select

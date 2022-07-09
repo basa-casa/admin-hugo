@@ -1,0 +1,15 @@
+label: "View Groups" 
+name: view_groups 
+widget: list 
+field_type: list 
+component: collection
+required: false
+collapsed: true
+hint: "An optional list of predefined view groups to show in the UI."
+fields: 
+  - import: field nc-field-label
+    field_type: import
+  - import: field nc-collection-field
+    field_type: import
+  - import: field nc-field-pattern
+    field_type: import

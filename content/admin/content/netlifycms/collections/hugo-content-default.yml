@@ -1,0 +1,30 @@
+name: hugo-content-default
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+description: The NetlifyCMS equivalent of `hugo new page-title.md`
+label: Content
+collection_type: folder
+folder: content
+path: "{{path}}/{{slug}}"
+slug: "{{slug}}"
+format: yaml-frontmatter
+extension: md
+fields:
+  - field_type: import
+    import: field hugo-content-title
+  - field_type: import
+    import: field hugo-content-date
+  - field_type: import
+    import: field hugo-content-draft
+  - field_type: import
+    import: field body
+  - field_type: string
+    widget: string
+    required: false
+    name: path
+    label: path
+    hint: Specify the directory under {{folder}} you want this content.
+create: true
+delete: false
+preview_path_date_field: ""
+nested:
+  depth: 5

@@ -1,7 +1,0 @@
-label: Media Folder (Beta)
-name: media_folder
-widget: string
-required: false
-field_type: string
-option_type: collection
-hint: "Specifies a relative media folder for the collection (for static site generators like Gatsby that work best when using relative image paths). Note: When specifying a path on a folder collection, media_folder defaults to an empty string."

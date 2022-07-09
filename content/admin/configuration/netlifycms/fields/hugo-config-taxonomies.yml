@@ -1,0 +1,10 @@
+label: Taxonomies
+name: taxonomies
+widget: object
+field_type: object
+required: false
+hint: "[Enter new taxonomies here.](/admin/configuration/#/collections/hugo-config-directory/entries/Taxonomizer) Return here after site rebuild to activate taxonomies, by adding their plural form in the new field that appears."
+allow_add: true
+fields:
+  - field_type: import
+    import: set hugo-taxonomies.taxonomies

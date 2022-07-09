@@ -1,7 +1,0 @@
-label: Type Key 
-name: typeKey
-widget: string
-field_type: string
-option_type: field
-required: false
-hint: The name of the field that will be added to every item in list representing the name of the object widget that item belongs to. Ignored if types is not defined. Default is type.

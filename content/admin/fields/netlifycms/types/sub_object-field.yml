@@ -1,0 +1,22 @@
+label: Object
+name: object
+widget: object
+component: field-type
+fields:
+  - import: field nc-field-name
+  - import: field nc-field-label
+  - import: field nc-field-sub_fields
+  - import: field nc-field-widget
+    extend:
+      default: object
+      widget: select
+      options:
+        - object
+        - hidden
+  - import: field nc-field-required
+  - import: field nc-field-default
+  - import: field nc-field-hint      
+  - import: field nc-field-collapsed
+  - import: field nc-field-summary
+    extend:
+      hint: specify the label displayed when the object is collapsed

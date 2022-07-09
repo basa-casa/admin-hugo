@@ -1,7 +1,0 @@
-label: Pattern
-name: pattern
-widget: string
-field_type: string
-option_type: field
-required: false
-hint: Add field validation by specifying a list with a regex pattern and an error message. e.g., ['.{20,}', "Must have at least 20 characters"]

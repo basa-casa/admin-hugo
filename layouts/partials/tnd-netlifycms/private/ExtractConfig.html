@@ -1,0 +1,22 @@
+{{/*
+  GetConfig returns the config as set in data/netlifycms/config.yaml
+
+  @author @regisphilibert
+
+  @context Any
+
+  @return Map
+
+  @access private
+
+  @example - Go Template
+    {{ with partial "tnd-netlifycms/private/GetConfig" . }}
+      {{ $config = . }}
+    {{ end }}
+*/}}
+{{ $return := "" }}
+{{ with .Params.config }}
+  {{ $return = .  }}
+{{ end }}
+
+{{ return $return }}

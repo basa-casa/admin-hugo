@@ -1,7 +1,0 @@
-label: Markdown
-name: markdown
-widget: object
-option_type: field-type
-fields:
-  - import: collection markdown_fields.fields
-    field_type: import

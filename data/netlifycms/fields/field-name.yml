@@ -1,6 +1,0 @@
-label: Name
-name: name
-widget: string
-field_type: string
-option_type: field
-required: true

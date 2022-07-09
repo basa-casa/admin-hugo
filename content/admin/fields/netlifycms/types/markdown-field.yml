@@ -1,0 +1,7 @@
+label: Markdown
+name: markdown
+widget: object
+component: field-type
+fields:
+  - import: collection nc-markdown_fields.fields
+    field_type: import

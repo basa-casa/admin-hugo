@@ -1,0 +1,138 @@
+name: hugo_configuration
+# Netlify CMS Folder Collection. See https://www.netlifycms.org/docs/collection-types#folder-collections
+description: Controller for Hugo {{slug}}.{{extension}} in
+  /config/{{destination}} (usually config.yml or .toml)
+label: Hugo Configuration
+collection_type: folder
+folder: config
+identifier_field: slug
+path: "{{destination}}/{{slug}}"
+slug: "{{fields.slug}}"
+format: yml
+extension: yml
+fields:
+  - field_type: import
+    import: field hugo-config-mediaTypes
+  - field_type: import
+    import: field hugo-config-outputFormats
+  - field_type: import
+    import: field hugo-config-outputs
+  - field_type: import
+    import: field hugo-config-destination
+  - field_type: import
+    import: field nc-collection-slug
+    extend:
+      default: config
+  - field_type: import
+    import: field hugo-config-title
+  - field_type: import
+    import: field hugo-config-baseurl
+  - field_type: import
+    import: field hugo-config-languagecode
+  - field_type: import
+    import: field hugo-config-module
+  - field_type: import
+    import: field hugo-config-taxonomies
+  - field_type: import
+    import: field hugo-config-menu
+  - field_type: import
+    import: field hugo-config-minify  
+  - field_type: import
+    import: field hugo-config-cascade
+  - field_type: import
+    import: field hugo-config-frontmatter
+  - field_type: import
+    import: field hugo-config-theme
+  - field_type: import
+    import: field hugo-config-build
+  - field_type: import
+    import: field hugo-config-builddrafts
+  - field_type: import
+    import: field hugo-config-buildexpired
+  - field_type: import
+    import: field hugo-config-buildfuture
+  - field_type: import
+    import: field hugo-config-canonifyurls
+  - field_type: import
+    import: field hugo-config-defaultcontentlanguage
+  - field_type: import
+    import: field hugo-config-defaultcontentlanguageinsubdir
+  - field_type: import
+    import: field hugo-config-disablealiases
+  - field_type: import
+    import: field hugo-config-disablekinds
+  - field_type: import
+    import: field hugo-config-disablelivereload
+  - field_type: import
+    import: field hugo-config-disablepathtolower
+  - field_type: import
+    import: field hugo-config-enableemoji
+  - field_type: import
+    import: field hugo-config-enablegitinfo
+  - field_type: import
+    import: field hugo-config-enableinlineshortcodes
+  - field_type: import
+    import: field hugo-config-enablemissingtranslationplaceholders
+  - field_type: import
+    import: field hugo-config-enablerobotstxt
+  - field_type: import
+    import: field hugo-config-footnoteanchorprefix
+  - field_type: import
+    import: field hugo-config-footnotereturnlinkcontents
+  - field_type: import
+    import: field hugo-config-googleanalytics
+  - field_type: import
+    import: field hugo-config-hascjklanguage
+  - field_type: import
+    import: field hugo-config-newcontenteditor
+  - field_type: import
+    import: field hugo-config-nochmod
+  - field_type: import
+    import: field hugo-config-notimes
+  - field_type: import
+    import: field hugo-config-paginate
+  - field_type: import
+    import: field hugo-config-paginatepath
+  - field_type: import
+    import: field hugo-config-pluralizelisttitles
+  - field_type: import
+    import: field hugo-config-reflinkserrorlevel
+  - field_type: import
+    import: field hugo-config-reflinksnotfoundurl
+  - field_type: import
+    import: field hugo-config-relativeurls
+  - field_type: import
+    import: field hugo-config-rsslimit
+  - field_type: import
+    import: field hugo-config-sitemap
+  - field_type: import
+    import: field hugo-config-summarylength
+  - field_type: import
+    import: field hugo-config-timeout
+  - field_type: import
+    import: field hugo-config-timezone
+  - field_type: import
+    import: field hugo-config-titlecasestyle
+  - field_type: import
+    import: field hugo-config-uglyurls
+  - field_type: import
+    import: field hugo-config-watch
+  - field_type: import
+    import: field hugo-config-archetypedir
+  - field_type: import
+    import: field hugo-config-assetdir
+  - field_type: import
+    import: field hugo-config-contentdir
+  - field_type: import
+    import: field hugo-config-datadir
+  - field_type: import
+    import: field hugo-config-themesdir
+create: true
+delete: true
+publish: true
+hide: false
+editor:
+  preview: true
+summary: "{{destination}}/{{slug}}.{{extension}}"
+nested:
+  depth: 3

@@ -1,0 +1,30 @@
+# The Fields Field Option (subfields)
+name: fields
+label: Sub-Fields
+widget: list
+field_type: list_variable_types
+component: field
+summary: "{{field_type}} field: {{name}}{{import}}"
+minimize_collapsed: true
+label_singular: Sub-Field
+typeKey: field_type
+add_to_top: true
+types:
+  - import: type tnd-import-field
+    field_type: import
+  - import: type boolean-field
+    field_type: import
+  - import: type string-field
+    field_type: import
+  - import: type select-field
+    field_type: import
+  - import: type number-field
+    field_type: import
+  - import: type text-field
+    field_type: import
+  - import: type sub_list-field
+    field_type: import
+  - import: type relation-field
+    field_type: import
+  - import: type sub_object-field
+    field_type: import

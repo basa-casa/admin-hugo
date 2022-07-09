@@ -1,0 +1,132 @@
+# Netlify CMS Files Collection. See https://www.netlifycms.org/docs/collection-types#file-collections
+name: hugo-config-directory
+label: config/_default
+collection_type: files
+description: ""
+files:
+  - type: file
+    name: Taxonomies
+    label: Taxonomies
+    file: config/_default/taxonmies.yml
+    fields:
+      - import: set hugo-taxonomies.taxonomies
+    delete: false
+  - type: file
+    name: Cascade
+    label: Cascade
+    file: config/_default/cascade.yml
+    fields:
+      - import: set hugo-cascades.cascade
+    delete: false
+  - type: file
+    name: Frontmatter
+    label: Frontmatter
+    file: config/_default/frontmatter.yml
+    fields:
+      - import: field hugo-config-frontmatter.fields
+    delete: false
+  # - type: file
+  #   name: Languages
+  #   label: Languages
+  #   file: config/_default/languages.yml
+  #   fields:
+  #     - import: set hugo-languages.languages
+  #   delete: false
+  # - type: file
+  #   name: Imaging
+  #   label: Imaging
+  #   file: config/_default/imaging.yml
+  #   fields:
+  #     - import: field hugo-config-imaging.fields
+  #   delete: false
+  # - type: file
+  #   name: Markup
+  #   label: Markup
+  #   file: config/_default/markup.yml
+  #   fields:
+  #     - import: field hugo-config-markup.fields
+  #   delete: false
+  # - type: file
+  #   name: mediatypes
+  #   label: mediatypes
+  #   file: config/_default/mediaTypes.yml
+  #   fields:
+  #     - import: set hugo-mediaTypes.mediaTypes
+  #   delete: false
+  # - type: file
+  #   name: Menus
+  #   label: Menus
+  #   file: config/_default/menus.yml
+  #   fields:
+  #     - import: set hugo-menus.menus
+  #   delete: false
+  # - type: file
+  #   name: Minify
+  #   label: Minify
+  #   file: config/_default/minify.yml
+  #   fields:
+  #     - import: field hugo-config-minify.fields
+  #   delete: false
+  # - type: file
+  #   name: Module
+  #   label: Module
+  #   file: config/_default/module.yml
+  #   fields:
+  #     - import: field hugo-config-module.fields
+  #   delete: false
+  # - type: file
+  #   name: Outputformats
+  #   label: Outputformats
+  #   file: config/_default/outputFormats.yml
+  #   fields:
+  #     - import: set hugo-outputFormats.outputFormats
+  #   delete: false
+  # - type: file
+  #   name: Params
+  #   label: Params
+  #   file: config/_default/params.yml
+  #   fields:
+  #     - import: set hugo-params.params
+  #   delete: false
+  # - type: file
+  #   name: Permalinks
+  #   label: Permalinks
+  #   file: config/_default/permalinks.yml
+  #   fields:
+  #     - import: set hugo-permalinks.permalinks
+  #   delete: false
+  # - type: file
+  #   name: Related
+  #   label: Related
+  #   file: config/_default/related.yml
+  #   fields:
+  #     - import: field hugo-config-related.fields
+  #   delete: false
+  # - type: file
+  #   name: Sitemap
+  #   label: Sitemap
+  #   file: config/_default/sitemap.yml
+  #   fields:
+  #     - import: field hugo-config-sitemap.fields
+  #   delete: false
+  # - type: file
+  #   name: Privacy
+  #   label: Privacy
+  #   file: config/_default/privacy.yml
+  #   fields:
+  #     - import: field hugo-config-privacy.fields
+  #   delete: false
+  # - type: file
+  #   name: Security
+  #   label: Security
+  #   file: config/_default/security.yml
+  #   fields:
+  #     - import: field hugo-config-security.fields
+  #   delete: false
+  # - type: file
+  #   name: Taxonomies
+  #   label: Taxonomies
+  #   file: config/_default/taxonomies.yml
+  #   fields:
+  #     - import: set hugo-taxonomies.taxonomies
+  #   delete: false

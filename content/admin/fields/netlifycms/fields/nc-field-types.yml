@@ -1,0 +1,9 @@
+label: Types
+name: types
+widget: list
+field_type: list
+component: field
+hint: "A nested list of object widgets. Every object widget may define different sets of fields."
+fields:
+  - import: collection nc-object_fields.fields
+    field_type: import

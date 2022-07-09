@@ -1,7 +1,0 @@
-label: Default
-name: default
-widget: string
-field_type: string
-option_type: field
-required: false
-hint: Add a default value for the field.

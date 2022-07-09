@@ -1,0 +1,23 @@
+label: outputs
+name: outputs
+widget: object
+field_type: object
+required: false
+collapsed: true
+hint: "[Hugo Docs](https://gohugo.io/templates/output-formats/#customizing-output-formats)"
+fields:
+  - import: field hugo-config-outputs-select
+    extend:
+      name: page
+  - import: field hugo-config-outputs-select
+    extend:
+      name: home
+  - import: field hugo-config-outputs-select
+    extend:
+      name: section
+  - import: field hugo-config-outputs-select
+    extend:
+      name: taxonomy
+  - import: field hugo-config-outputs-select
+    extend:
+      name: term

@@ -1,0 +1,7 @@
+label: Required
+name: required
+widget: boolean
+field_type: boolean
+component: field
+required: false
+default: false
