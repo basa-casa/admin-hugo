@@ -1,0 +1,19 @@
+# Ideally this file is generated based on the sections present in the site. 
+# {{ with sections }}
+  # name: {{ section }}
+  # label: {{ section }}
+  # widget: string
+  # required: false
+  # hint: https://gohugo.io/content-management/urls#permalinks
+label: Permalinks
+name: permalinks
+widget: object
+field_type: object
+required: false
+hint: "[Hugo Docs](https://gohugo.io/content-management/urls/#permalinks)"
+fields:
+  - name: /
+    label: Root section
+    widget: string
+    required: false
+

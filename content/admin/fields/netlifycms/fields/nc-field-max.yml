@@ -1,7 +1,0 @@
-label: Max
-name: max
-widget: number
-field_type: number
-component: field
-hint: Accepts a number for maximum value accepted.
-required: false

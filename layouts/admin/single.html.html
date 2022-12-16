@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Site.Title }} {{ .Section }} {{ .Title }}</title>
+    <!-- Include the script that enables Netlify Identity on this page. -->
+    {{/*  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8">  */}}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    {{ partial "admin/menu.html" . }}
+    <section id="scms-root"></section>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    {{- $version := partial "bc-scms/private/GetCMSVersion" . "bc-scms/private/GetCMSVersion" -}}
+    {{/* Hugo keeps escaping the `^` character potentially used to specify CMS version (`^2.0.0`) in spite of
+      safeHTML, safeHTMLAttr and the like. Passing the whole tag through `printf` fixes it... */}}
+      {{- $cdn := printf `<script src="https://unpkg.com/netlify-cms@%s/dist/netlify-cms.js"></script>` $version -}}
+      {{ $cdn | safeHTML }}
+      {{ partial "bc-scms/scripts.html" . }}
+    {{/*  <!-- Include the script that builds the page and powers Static CMS -->
+    <script src="https://unpkg.com/@staticcms/core@1.0.0-beta2/dist/static-cms-core.js"></script>
+    <script>
+      window.CMS.init();
+    </script>  */}}
+    </body>
+</html> 

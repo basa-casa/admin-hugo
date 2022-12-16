@@ -1,0 +1,8 @@
+name: description
+namespace: nc
+label: Description
+widget: text
+required: false
+field_type: text
+hint: Text displayed below the label when viewing a collection. Useful for
+  adding instructions prior to content creation or editing.

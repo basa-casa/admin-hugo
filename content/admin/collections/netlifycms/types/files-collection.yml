@@ -1,6 +1,0 @@
-label: "Files Collection"
-name: files
-component: collection-type
-fields: 
-  - import: collection nc-files_collections.fields
-    field_type: import

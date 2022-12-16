@@ -1,0 +1,6 @@
+name: description
+slug: hugo-config-params-description
+widget: text
+field_type: text
+required: false
+hint: Site description. Used by the opengraph partial. 

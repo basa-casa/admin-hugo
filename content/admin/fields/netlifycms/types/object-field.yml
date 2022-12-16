@@ -1,6 +1,0 @@
-label: Object
-name: object
-widget: object
-component: field-type
-fields:
- - import: collection nc-object_fields.fields

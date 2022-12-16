@@ -1,7 +1,0 @@
-label: List (Variable Types)(Beta)
-name: list_variable_types
-widget: object
-component: field-type
-fields:
-  - import: collection nc-list_variable_types_fields.fields
-    field_type: import

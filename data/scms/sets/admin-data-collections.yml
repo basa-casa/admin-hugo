@@ -1,0 +1,5 @@
+name: Admin Data collections
+collection_type: set
+collections:
+  - import: collection hugo-data-default
+    collection_type: import

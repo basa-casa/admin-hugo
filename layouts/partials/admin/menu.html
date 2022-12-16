@@ -1,9 +1,9 @@
 <div style="position:sticky;top:0px;">
-    <nav>
+    <nav class="menu">
         {{ range .Site.Menus.admin }}
-            <li style="display:inline;padding:10px;">
+            <li class="menu-item"style="display:inline;padding:20px;">
                 <a href="{{ .URL }}" title="{{ .Title }}">
-                {{- .Title -}}
+                {{- .Name -}}
                 </a>
             </li>
         {{ end }}

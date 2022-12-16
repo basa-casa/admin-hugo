@@ -1,0 +1,6 @@
+label: Text
+name: text
+widget: object
+fields:
+  - import: collection scms-text-fields.fields
+    field_type: import 

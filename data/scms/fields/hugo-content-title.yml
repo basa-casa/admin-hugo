@@ -1,0 +1,4 @@
+name: title
+namespace: hugo
+widget: string
+field_type: string

@@ -1,0 +1,13 @@
+name: menu
+label: Non-Content Menu Items
+label_singular: Menu Item
+widget: object
+field_type: object
+hint: "[Edit Menus](#/collections/hugo-config-objects/entries/Menu)"
+required: false
+collapsed: true
+summary: "{{fields.fields.extend.name}}"
+fields:
+  - import: field hugo-config-_merge 
+    field_type: import
+  - import: field hugo-config-menus

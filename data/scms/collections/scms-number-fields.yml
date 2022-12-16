@@ -1,0 +1,52 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: Number Fields
+identifier_field: name
+label: Number Fields
+label_singular: Number Field
+collection_type: folder
+description: >
+  The number widget uses an HTML number input, saving the value as a string, integer, or floating point number.
+folder: "data/scms/fields"
+fields:
+  - import: field scms-field-name
+    field_type: import
+  - import: field scms-field-label
+    field_type: import
+  - import: field scms-field-widget
+    field_type: import
+    extend:
+      default: number
+  - import: field scms-field-field_type
+    field_type: import
+    extend:
+      default: number
+  - import: field scms-field-required
+    field_type: import
+  - import: field scms-field-default
+    field_type: import
+    extend: 
+      widget: number
+  - import: field scms-field-hint
+    field_type: import
+  - import: field scms-field-value_type
+    field_type: import
+  - import: field scms-field-min
+    field_type: import
+  - import: field scms-field-max
+    field_type: import
+  - import: field scms-field-step
+    field_type: import
+filter:
+  field: field_type
+  value: number
+create: true
+publish: false
+hide: false
+delete: true
+format: yml
+extension: yml
+
+editor:
+  preview: true
+summary: "{{filename}}"
+

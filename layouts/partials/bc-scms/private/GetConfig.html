@@ -1,0 +1,22 @@
+{{/*
+  GetConfig returns the config as set in data/scms/config.yaml
+
+  @author @regisphilibert
+
+  @context Any
+
+  @return Map
+
+  @access private
+
+  @example - Go Template
+    {{ with partial "bc-scms/private/GetConfig" . }}
+      {{ $config = . }}
+    {{ end }}
+*/}}
+{{ $return := "" }}
+{{ with .Resources.Get "config.yml" | transform.Unmarshal }}
+  {{ $return = .  }}
+{{ end }}
+
+{{ return $return }}

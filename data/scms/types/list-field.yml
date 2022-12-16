@@ -1,0 +1,6 @@
+label: List
+name: list
+widget: object
+fields:
+  - import: collection scms-list-fields.fields
+    field_type: import

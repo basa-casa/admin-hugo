@@ -1,48 +1,31 @@
-title: Brian's Awesome test site
-slug: config
+buildDrafts: true
+Params:
+  stylesheetUrl: https://cdn.jsdelivr.net/npm/holiday.css@0.9.8
+cleanDestinationDir: true
 destination: _default
-cascade:
-  - type: aliases
-    _target:
-      kind: section
+slug: config
 module:
   imports:
     - path: github.com/theNewDynamic/hugo-module-tnd-netlifycms
-  mounts:
-    - source: content/admin
-      target: content/admin
-    - source: layouts
-      target: layouts
-    - source: static
-      target: static
-    - source: archetypes
-      target: archetypes
-    - source: assets
-      target: assets
-    - source: content/admin
-      target: data
-      excludeFiles: /**.md
-    - source: content/admin/configuration
-      target: data
-      excludeFiles: /**.md
-    - source: content/admin/data
-      target: data
-      excludeFiles: /**.md
-    - source: content/admin/collections
-      target: data
-      excludeFiles: /**.md
-    - source: content/admin/fields
-      target: data
-      excludeFiles: /**.md
-    # - source: content/admin/archetypes/data
-    #   target: data
-      # excludeFiles: /**.md
-    - source: content/admin/content
-      target: data
-      excludeFiles: /**.md
-    # - source: content/admin/layouts/data
-    #   target: data
-    #   excludeFiles: /**.md
-    # - source: content/admin/themes/data
-    #   target: data
-    #   excludeFiles: /**.md
+renderToDisk: true
+enableGitInfo: true
+outputFormats:
+  help:
+    basename: index
+    mediatype: text/html
+    notAlternative: false
+    path: admin/help
+    isHTML: true
+  scms_debug:
+    baseName: config
+    isPlainText: true
+    mediatype: text/html
+    notAlternative: false
+  scms_config:
+    baseName: config
+    isPlainText: true
+    mediatype: application/yaml
+    notAlternative: false
+taxonomies:
+  field: fields
+disableFastRender: true

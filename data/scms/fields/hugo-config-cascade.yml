@@ -1,0 +1,10 @@
+widget: list
+label: Hugo Config Cascades
+name: cascade
+required: false
+fields: 
+  - name: aliases
+    fields: 
+      - import: field hugo-content-aliases
+        field_type: import
+        

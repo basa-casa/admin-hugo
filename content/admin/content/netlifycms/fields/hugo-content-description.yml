@@ -1,8 +1,0 @@
-name: description
-slug: hugo-content-description
-namespace: hugo
-component: content
-widget: text
-field_type: text
-required: false
-hint: the description for the content.

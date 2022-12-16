@@ -1,0 +1,41 @@
+label: sitemap
+name: sitemap
+widget: object
+field_type: object
+required: false
+hint: The same fields can be specified in an individual content file’s front
+  matter in order to override the value assigned to that piece of content at
+  render time.
+fields:
+  - import: field hugo-config-_merge 
+    field_type: import
+  - field_type: select
+    widget: select
+    required: false
+    multiple: false
+    name: changefreq
+    label: changefreq
+    hint: "Tells search engines how often to revisit your site's individual pages. "
+    options:
+      - never
+      - yearly
+      - monthly
+      - weekly
+      - daily
+      - hourly
+      - always
+  - max: 1
+    widget: number
+    value_type: float
+    name: priority
+    step: 0.1
+    min: 0
+    label: priority
+    field_type: number
+    required: false
+  - field_type: string
+    widget: string
+    required: false
+    name: filename
+    label: filename
+    hint: Usually sitemap.xml.

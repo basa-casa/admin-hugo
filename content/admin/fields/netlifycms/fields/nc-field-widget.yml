@@ -1,7 +1,0 @@
-label: Widget
-name: widget
-widget: string
-hint: See https://www.netlifycms.org/docs/widgets/. Widget fields should only change to equivalent data types.
-field_type: string
-component: field
-required: true

@@ -1,0 +1,10 @@
+label: params
+name: params
+widget: object
+field_type: object
+required: false
+collapsed: true
+hint: "[Edit params fields](#/collections/hugo-config-objects/entries/params) | [Hugo Site Params Docs](https://gohugo.io/variables/site/#example-siteparams)"
+fields:
+  - import: field hugo-config-params-description
+    field_type: import

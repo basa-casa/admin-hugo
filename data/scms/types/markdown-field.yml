@@ -1,0 +1,6 @@
+label: Markdown
+name: markdown
+widget: object
+fields:
+  - import: collection scms-markdown-fields.fields
+    field_type: import

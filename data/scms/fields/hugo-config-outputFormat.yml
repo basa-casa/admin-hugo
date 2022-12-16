@@ -1,0 +1,52 @@
+name: formatname
+widget: object
+field_type: object
+required: false
+summary: "{{mediaType}}"
+fields:
+  - name: mediaType
+    widget: string
+    required: false
+    hint: this must match the Type of a defined media type.
+  - name: path
+    widget: string
+    required: false
+    hint: sub path to save the output files.
+  - name: baseName
+    widget: string
+    required: false
+    hint: "the base filename for the list filenames (homepage, etc.). Default: index."
+  - name: rel
+    widget: string
+    required: false
+    hint: "can be used to create rel values in link tags. Default: alternate."
+  - name: protocol
+    widget: string
+    required: false
+    hint: will replace the “http://” or “https://” in your baseURL for this output format.
+  - name: isPlainText
+    widget: boolean
+    required: false
+    hint: "use Go’s plain text templates parser for the templates. Default: false."
+  - name: isHTML
+    widget: boolean
+    required: false
+    hint: "used in situations only relevant for HTML-type formats; e.g., page aliases. Default: false."
+  - name: noUgly
+    widget: boolean
+    required: false
+    hint: "used to turn off ugly URLs If uglyURLs is set to true in your site. Default: false."
+  - name: notAlternative
+    widget: boolean
+    required: false
+    hint: "enable if it doesn’t make sense to include this format in an AlternativeOutputFormats format listing on Page (e.g., with CSS). Note that we use the term alternative and not alternate here, as it does not necessarily replace the other format. Default: false."
+  - name: permalinkable
+    widget: boolean
+    required: false
+    hint: "make .Permalink and .RelPermalink return the rendering Output Format rather than main (see below). This is enabled by default for HTML and AMP. Default: false."
+  - name: weight
+    widget: number
+    required: false
+    hint: Setting this to a non-zero value will be used as the first sort criteria.
+
+   

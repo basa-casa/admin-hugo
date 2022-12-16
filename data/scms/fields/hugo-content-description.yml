@@ -1,0 +1,6 @@
+name: description
+slug: hugo-content-description
+widget: text
+field_type: text
+required: false
+hint: the description for the content.

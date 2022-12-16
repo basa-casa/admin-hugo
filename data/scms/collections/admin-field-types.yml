@@ -1,0 +1,28 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: field_types
+identifier_field: name
+label: Field Types
+label_singular: Field Type
+description: Field Types are object fields for obtaining fields lists stored in `scms-collection-fields.yml`, etc. 
+folder: "data/scms/types"
+collection_type: folder
+fields:
+  - import: field scms-field-name
+    field_type: import
+  - import: field scms-field-label
+    field_type: import
+  - import: field scms-field-widget
+    field_type: import
+    extend: 
+      default: object
+  - import: field scms-field-fields
+    field_type: import
+create: false
+publish: false
+hide: false
+delete: false
+format: yml
+extension: yml
+editor:
+  preview: true
+summary: "{{label}}"

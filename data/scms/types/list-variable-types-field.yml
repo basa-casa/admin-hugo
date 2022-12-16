@@ -1,0 +1,6 @@
+label: List (Variable Types)(Beta)
+name: list-variable-types
+widget: object
+fields:
+  - import: collection scms-list-variable-types-fields.fields
+    field_type: import

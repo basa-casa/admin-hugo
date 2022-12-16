@@ -1,0 +1,4 @@
+languages:
+  - import: field hugo-language
+    field_type: import
+ 

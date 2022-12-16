@@ -1,0 +1,45 @@
+label: related
+name: related
+widget: object
+field_type: object
+required: false
+fields: 
+  - name: threshold
+    widget: number
+    field_type: number
+    required: false 
+    hint:  A value between 0-100. Lower value will give more, but maybe not so relevant, matches.
+  - name: includeNewer
+    widget: boolean
+    field_type: boolean
+    required: false 
+    hint:  Set to true to include **pages newer than the current page** in the related content listing. This will mean that the output for older posts may change as new related content gets added.
+  - name: toLower
+    widget: boolean
+    field_type: boolean
+    required: false 
+    hint: Set to true to lower case keywords in both the indexes and the queries. This may give more accurate results at a slight performance penalty. Note that this can also be set per index.
+  - name: indices
+    widget: list
+    field_type: list
+    required: false
+    fields: 
+      - name: name
+        widget: string
+        field_type: string
+        required: false
+        hint:  The index name. This value maps directly to a page param. Hugo supports string values (`author` in the example) and lists (`tags`, `keywords` etc.) and time and date objects.
+      - name: weight
+        widget: number
+        field_type: number
+        hint: An integer weight that indicates _how important_ this parameter is relative to the other parameters.  It can be 0, which has the effect of turning this index off, or even negative. Test with different values to see what fits your content best.
+      - name: pattern
+        widget: string
+        field_type: string
+        required: false
+        hint: This is currently only relevant for dates. When listing related content, we may want to list content that is also close in time. Setting "2006" (default value for date indexes) as the pattern for a date index will add weight to pages published in the same year. For busier blogs, "200601" (year and month) may be a better default.
+      - name: toLower
+        widget: boolean
+        field_type: boolean
+        required: false
+        hint: See above.

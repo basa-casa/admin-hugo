@@ -1,0 +1,17 @@
+name: collections
+label: Collections
+widget: list
+field_type: list-variable-types
+required: true
+summary: "{{type}} {{import}}"
+minimize_collapsed: true
+label_singular: Collection
+typeKey: collection_type
+hint: "Create new and see available collections for imports: ----> [Folder Collections](./#/collections/folder-collections) ---->  [Files Collections](./#/collections/files_collections)." 
+types:
+  - import: type tnd-import-collection
+    type: import
+  - import: type folder-collection
+    type: import
+  - import: type files-collection
+    type: import

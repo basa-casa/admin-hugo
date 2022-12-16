@@ -1,0 +1,21 @@
+label: imaging
+name: imaging
+widget: object
+field_type: object
+collapsed: true
+required: false
+fields:
+  - import: field hugo-config-_merge 
+    field_type: import
+  - import: field hugo-config-resamplefilter
+    field_type: import
+  - import: field hugo-config-quality
+    field_type: import
+  - import: field hugo-config-hint
+    field_type: import
+  - import: field hugo-config-anchor
+    field_type: import
+  - import: field hugo-config-bgcolor
+    field_type: import
+  - import: field hugo-config-exif
+    field_type: import

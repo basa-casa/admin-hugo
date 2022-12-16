@@ -1,0 +1,108 @@
+label: goldmark
+name: goldmark
+widget: object
+field_type: object
+required: false
+hint: See https://gohugo.io/getting-started/configuration-markup.
+fields:
+  - field_type: object
+    widget: object
+    required: true
+    collapsed: true
+    name: extensions
+    label: extensions
+    fields:
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: definitionList
+        label: definitionList
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: footnote
+        label: footnote
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: linkify
+        label: linkify
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: strikethrough
+        label: strikethrough
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: table
+        label: table
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: taskList
+        label: taskList
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: typographer
+        label: typographer
+  - field_type: object
+    widget: object
+    required: true
+    collapsed: true
+    name: parser
+    label: parser
+    fields:
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: autoHeadingID
+        label: autoHeadingID
+      - field_type: select
+        widget: select
+        required: false
+        name: autoHeadingIDType
+        label: autoHeadingIDType
+        options:
+          - github
+          - github-ascii
+          - blackfriday
+      - name: attribute
+        field_type: object
+        widget: object
+        colleapsed: true
+        required: false
+        fields:
+          - field_type: boolean
+            widget: boolean
+            required: false
+            name: block
+            label: block
+          - field_type: boolean
+            widget: boolean
+            required: false
+            name: title
+            label: title
+  - field_type: object
+    widget: object
+    required: true
+    collapsed: true
+    name: renderer
+    label: renderer
+    fields:
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: hardWraps
+        label: hardWraps
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: unsafe
+        label: unsafe
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: xhtml
+        label: xhtml

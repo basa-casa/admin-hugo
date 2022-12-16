@@ -1,0 +1,76 @@
+name: privacy
+label: privacy
+widget: object
+required: false
+hint: "[Hugo and the GDPR](https://gohugo.io/about/hugo-and-gdpr/)"
+collapsed: true
+fields: 
+  - name: disqus
+    widget: object
+    required: false
+    fields: 
+      - name: disable
+        widget: boolean
+        required: false
+  - name: googleAnalytics
+    widget: object
+    required: false
+    fields: 
+      - name: anonymizeIP
+        widget: boolean
+        required: false
+      - name: disable
+        widget: boolean
+        required: false
+      - name: respectDoNotTrack
+        widget: boolean
+        required: false
+      - name: useSessionStorage
+        widget: boolean
+        required: false
+  - name: instagram
+    widget: object
+    required: false
+    fields: 
+      - name: disable
+        widget: boolean
+        required: false
+      - name: simple
+        widget: boolean
+        required: false
+  - name: twitter
+    widget: object
+    required: false
+    fields: 
+      - name: disable
+        widget: boolean
+        required: false
+      - name: enableDNT
+        widget: boolean
+        required: false
+      - name: simple
+        widget: boolean
+        required: false
+  - name: vimeo
+    widget: object
+    required: false
+    fields: 
+      - name: disable
+        widget: boolean
+        required: false
+      - name: enableDNT
+        widget: boolean
+        required: false
+      - name: simple
+        widget: boolean
+        required: false
+  - name: youtube
+    widget: object
+    required: false
+    fields: 
+      - name: disable
+        widget: boolean
+        required: false
+      - name: privacyEnhanced
+        widget: boolean
+        required: false

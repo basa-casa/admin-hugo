@@ -1,0 +1,25 @@
+name: hugo-content-default
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+description: The scms equivalent of `hugo new page-title.md`
+label: Content
+collection_type: folder
+folder: content
+path: "{{destination}}/{{slug}}"
+slug: "{{fields.slug}}"
+format: yaml-frontmatter
+extension: md
+fields:
+  - import: field scms-collection-destination
+    field_type: import
+  - import: field hugo-content-title
+    field_type: import
+  - import: field hugo-content-date
+    field_type: import
+  - import: field hugo-content-draft
+    field_type: import
+  - import: field hugo-content-body
+    field_type: import
+create: true
+delete: false
+preview_path_date_field: ""
+

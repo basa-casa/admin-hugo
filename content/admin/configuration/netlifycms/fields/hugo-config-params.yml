@@ -1,9 +1,0 @@
-label: params
-name: params
-widget: object
-field_type: object
-required: false
-hint: https://gohugo.io/variables/site/#example-siteparams
-fields:
-  - import: field hugo-config-params-description
-    field_type: import

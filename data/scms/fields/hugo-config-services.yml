@@ -1,0 +1,47 @@
+name: services
+label: services
+widget: object
+field_type: object
+required: false
+collapsed: true
+fields:
+  - name: disqus
+    widget: object
+    required: false
+    fields:
+      - name: shortname
+        widget: string
+        required: false
+  - name: googleAnalytics
+    widget: object
+    required: false
+    fields:
+      - name: id
+        widget: string
+        required: false
+  - name: instagram
+    widget: object
+    required: false
+    fields:
+      - name: disableInlineCSS
+        widget: boolean
+        required: false
+      - name: accessToken
+        widget: string
+        required: false
+        hint: "If you are using a Client Access Token, remember that you must combine it with your App ID using a pipe symbol (<APPID>|<CLIENTTOKEN>) otherwise the request will fail."
+  - name: twitter
+    widget: object
+    required: false
+    fields:
+      - name: disableInlineCSS
+        widget: boolean
+        required: false
+  - name: rss
+    widget: object
+    required: false
+    fields:
+      - name: limit
+        widget: number
+        required: false
+        value_type: int

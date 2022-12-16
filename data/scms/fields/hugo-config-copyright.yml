@@ -1,0 +1,6 @@
+label: copyright
+name: copyright
+widget: string
+field_type: string
+required: false
+hint: Copyright notice for your site, typically displayed in the footer.

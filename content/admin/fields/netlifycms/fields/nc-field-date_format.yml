@@ -1,7 +1,0 @@
-label: Date Format
-name: date_format
-widget: string
-field_type: string
-component: field
-required: false
-hint: Sets date display format in UI; boolean or Moment.js tokens. If true use default locale format.

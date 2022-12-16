@@ -1,5 +1,0 @@
-name: aliases
-namespace: hugo
-component: content
-widget: list
-field_type: list

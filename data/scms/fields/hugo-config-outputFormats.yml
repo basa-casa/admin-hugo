@@ -1,0 +1,17 @@
+name: outputFormats
+label: Output Formats
+widget: object
+field_type: object
+hint: "Configure Output Formats[Add outputFormats](#/collections/hugo-config-objects/entries/outputFormats)"
+summary: "{{fields.import.extend.name}}"
+required: false
+collapsed: true
+fields:
+  - import: field hugo-config-_merge
+    field_type: import
+  - import: field hugo-config-outputFormat
+    extend:
+      name: one
+  - import: field hugo-config-outputFormat
+    extend:
+      name: two

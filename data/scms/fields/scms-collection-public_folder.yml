@@ -1,0 +1,6 @@
+label: Public Folder (Beta)
+name: public_folder
+widget: string
+required: false
+field_type: string
+hint: See https://www.scms.org/docs/beta-features/#folder-collections-media-and-public-folder. 

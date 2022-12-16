@@ -1,11 +1,10 @@
 ---
 title: Data
 draft: false
-type: netlifycms
 menu:
   admin:
-    weight: 20
+    weight: 50
 collections:
-  - import: set admin-data-collections.collections
+  - import: collection hugo-data-default
     collection_type: import
 ---

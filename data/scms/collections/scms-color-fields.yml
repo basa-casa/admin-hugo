@@ -1,0 +1,47 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: color_fields
+identifier_field: name
+label: Color Fields
+label_singular: Color Field
+description: |+
+  The color widget translates a color picker to a color string.
+folder: "data/scms/fields"
+collection_type: folder
+fields:
+  - import: field scms-field-name
+    field_type: import
+  - import: field scms-field-label
+    field_type: import
+  - import: field scms-field-widget
+    field_type: import
+    extend:
+      default: color
+  - import: field scms-field-field_type
+    field_type: import
+    extend:
+      default: color
+  - import: field scms-field-required
+    field_type: import
+  - import: field scms-field-default
+    field_type: import
+    extend: 
+      widget: color
+  - import: field scms-field-hint
+    field_type: import
+  - import: field scms-field-allowInput
+    field_type: import
+  - import: field scms-field-enableAlpha
+    field_type: import
+filter:
+  field: field_type
+  value: color
+create: true
+publish: false
+hide: false
+delete: true
+format: yml
+extension: yml
+
+editor:
+  preview: true
+summary: "{{filename}}"

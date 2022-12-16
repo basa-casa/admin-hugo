@@ -1,0 +1,7 @@
+label: Delete
+name: delete
+widget: boolean
+
+required: false
+field_type: boolean
+hint: False prevents users from deleting items in a collection.

@@ -1,0 +1,6 @@
+label: Number
+name: number
+widget: object
+fields:
+  - import: collection scms-number-fields.fields
+    field_type: import

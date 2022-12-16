@@ -1,7 +1,0 @@
-label: Boolean 
-name: boolean
-widget: object
-component: field-type
-fields:
-  - import: collection nc-boolean_fields.fields
-    field_type: import

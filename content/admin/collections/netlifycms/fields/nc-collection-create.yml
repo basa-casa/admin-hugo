@@ -1,8 +1,0 @@
-label: Create
-name: create
-widget: boolean
-field_type: boolean
-component: collection
-
-required: false
-hint: True allows users to create new items in the collection.

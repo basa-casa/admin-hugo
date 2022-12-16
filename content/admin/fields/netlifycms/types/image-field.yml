@@ -1,7 +1,0 @@
-name: image
-label: Image
-widget: object
-component: field-type
-fields:
-  - import: collection nc-image_fields.fields
-    field_type: import

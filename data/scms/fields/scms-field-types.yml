@@ -1,0 +1,16 @@
+label: Types
+name: types
+widget: list
+field_type: list_variable_types
+hint: "A nested list of object widgets. Every object widget may define different sets of fields."
+typeKey: field_type
+types:
+  - import: type tnd-import-field
+    field_type: import
+  - name: object
+    label: type
+    widget: object
+    field_type: object
+    fields:
+      - import: collection scms-object-fields.fields
+        field_type: import

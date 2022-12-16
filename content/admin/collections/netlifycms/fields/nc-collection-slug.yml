@@ -1,6 +1,0 @@
-label: Slug 
-name: slug 
-widget: string 
-field_type: string 
-required: false
-hint: "See https://www.netlifycms.org/docs/configuration-options/#slug"

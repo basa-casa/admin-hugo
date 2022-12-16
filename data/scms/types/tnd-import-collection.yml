@@ -1,0 +1,31 @@
+label: Import
+name: import
+fields:
+  - name: import
+    widget: string
+    field_type: string
+    hint: "enter `collection filename`, i.e. `collection hugo-content-default" 
+  - import: field scms-collection-collection_type
+    field_type: import
+    extend:
+      default: import
+      widget: hidden
+  - name: extend
+    widget: object
+    field_type: object
+    required: false
+    collapsed: true
+    fields:
+      - import: field scms-field-name
+        extend: 
+          required: false
+        field_type: import
+      - import: field scms-field-label
+        field_type: import
+      - import: field scms-collection-description
+        field_type: import
+      - import: field scms-collection-folder
+        field_type: import
+        extend: 
+          required: false
+      

@@ -1,7 +1,0 @@
-label: File
-name: file
-widget: object
-component: field-type
-fields:
-  - import: collection nc-file_fields.fields
-    field_type: import

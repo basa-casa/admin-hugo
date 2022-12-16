@@ -1,0 +1,5 @@
+label: Decimals
+name: decimals
+widget: number
+field_type: number
+hint: Specify precision of saved coordinates; defaults to 7 decimals.

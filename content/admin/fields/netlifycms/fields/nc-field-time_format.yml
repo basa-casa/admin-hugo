@@ -1,7 +1,0 @@
-label: Time Format
-name: time_format
-widget: string
-field_type: string
-component: field
-hint: Sets time display format in UI; boolean or Moment.js tokens. 
-required: false

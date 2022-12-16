@@ -1,7 +1,0 @@
-label: Text
-name: text
-widget: object
-component: field-type
-fields:
-  - import: collection nc-text_fields.fields
-    field_type: import 

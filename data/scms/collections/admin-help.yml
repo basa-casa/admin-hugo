@@ -1,0 +1,22 @@
+name: admin-help
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+description: Help page editor for Admin Pages. These deploy to the site at `/admin/help/admin/{.Name}`.
+label: Admin Help Editor
+label_singular: Admin Help
+collection_type: folder
+folder: content/admin
+identifier_field: title
+path: "{{slug}}/index"
+format: yaml-frontmatter
+fields:
+  - import: field hugo-content-title
+    field_type: import
+    extend:
+      hint: Changes the name of the CMS
+  - import: field hugo-content-body
+    field_type: import
+    extend:
+      label: Help
+create: false
+delete: false
+hide: false

@@ -1,6 +1,0 @@
-label: Value Field
-name: value_field
-widget: string
-field_type: string
-component: field
-hint: The name of the field from the referenced collection whose value will be stored for the relation. For nested fields, separate each subfield with a . (e.g. name.first). For list fields use a wildcard * to target all list items (e.g. categories.*).

@@ -1,0 +1,6 @@
+label: Max
+name: max
+widget: number
+field_type: number
+hint: Accepts a number for maximum value accepted.
+required: false

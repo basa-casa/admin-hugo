@@ -1,0 +1,6 @@
+label: Comment
+name: comment
+widget: string
+field_type: string
+required: false
+hint: "# Comment line to add before the field (only supported for yaml)"

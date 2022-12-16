@@ -1,26 +1,41 @@
 ---
 title: "Admin"
-type: netlifycms
 menu:
   admin:
     weight: 10
 collections:
-  - collection_type: import
-    import: collection admin-pages
+ - import: collection admin-pages
+   collection_type: import
 cascade:
 - outputs:
     - HTML
-    - netlifycms_config
+    - scms_config
+    - help
   config:
     local_backend: true
     backend:
       branch: main
-      name: github
+      name: test-repo
+      repo: basa-casa/hugo-scms-admin
     media_folder: assets/img
     public_folder: img
     site_url: ../../
     display_url: /
-    logo_url: /img/nc-admin.png
-    collections: 
-      - import: collection hugo-content-default
+    logo_url: /img/hugo-scms-admin.png
 --- 
+
+
+The `admin-pages` collectiongenerates instances of StaticCMS (scms), at `/admin/{{slug}}` by providing a title and collection import definitions. 
+```yaml
+{{< readfile file="/data/scms/collections/admin-pages.yml" >}}
+```
+
+## Create collections 
+[Admin Collections](/admin/collections) has collections for creating folder collections, files collections, and collection sets. 
+```yaml
+{{< readfile file="/content/admin/collections/index.md" >}}
+```
+You can also create collections while editing admin pages, but only field `types:` from `/data/scms/fields/scms-collection-fields_primitive.yml` will be available. 
+```yaml
+{{< readfile file="/data/scms/fields/scms-collection-fields_primitive.yml" >}}
+```

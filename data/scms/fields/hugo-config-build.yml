@@ -1,0 +1,27 @@
+label: build
+name: build
+widget: object
+required: false
+collapsed: true
+fields:
+  - import: field hugo-config-_merge 
+    field_type: import
+  - label: use Resource Cache When
+    name: useResourceCacheWhen
+    widget: select
+    required: false
+    options:
+      - never
+      - always
+      - fallback
+    hint: When to use the cached resources in /resources/_gen for PostCSS and ToCSS. Valid values are never, always and fallback. The last value means that the cache will be tried if PostCSS/extended version is not available.
+  - label: write Stats
+    name: writeStats
+    widget: boolean
+    required: false
+    hint: When enabled, a file named hugo_stats.json will be written to your project root with some aggregated data about the build, e.g. list of HTML entities published to be used to do CSS pruning. If you’re only using this for the production build, you should consider placing it below config/production. It’s also worth mentioning that, due to the nature of the partial server builds, new HTML entities will be added when you add or change them while the server is running, but the old values will not be removed until you restart the server or run a regular hugo build.
+  - label: no JS Config In Assets
+    name: nJSConfigInAssets
+    widget: boolean
+    required: false
+    hint: Turn off writing a jsconfig.json into your /assets folder with mapping of imports from running js.Build. This file is intended to help with intellisense/navigation inside code editors such as VS Code. Note that if you do not use js.Build, no file will be written.

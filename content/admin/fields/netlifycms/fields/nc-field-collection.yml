@@ -1,6 +1,0 @@
-label: Collection
-name: collection
-widget: string
-field_type: string
-component: field
-hint: Name of the referenced collection.

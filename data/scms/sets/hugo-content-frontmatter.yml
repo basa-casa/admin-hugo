@@ -1,0 +1,10 @@
+name: frontmatter
+slug: hugo-content-frontmatter
+widget: list
+field_type: list-variable-types
+required: false
+types:
+  - name: aliases
+    fields:
+      - import: field hugo-content-aliases
+        field_type: import

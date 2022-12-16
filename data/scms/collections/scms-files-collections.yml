@@ -1,0 +1,55 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: files_collections
+identifier_field: name
+label: Files Collections
+label_singular: Files Collection
+description: A files collection contains one or more uniquely configured files.
+  Each item in a files collection has an explicitly set path, filename, and
+  configuration. This can be useful for settings files or a custom landing page
+  with a unique content structure.
+folder: "data/scms/collections"
+collection_type: folder
+fields:
+  - import: field scms-field-name
+    field_type: import
+    extend:
+      comment: Netlify CMS Files Collection. See
+        https://www.scms.org/docs/collection-types#file-collections
+  - import: field scms-field-label
+    field_type: import
+    extend: 
+      required: true
+  - import: field scms-collection-collection_type
+    field_type: import
+    extend:
+      default: files
+  - import: field scms-collection-description
+    field_type: import
+  - import: field scms-collection-files
+    field_type: import
+  - import: field scms-collection-publish
+    field_type: import
+  - import: field scms-collection-hide
+    field_type: import
+  - import: field scms-collection-delete
+    field_type: import
+  - import: field scms-collection-editor
+    field_type: import
+  - import: field scms-field-summary
+    field_type: import
+    extend:
+      hint: This setting allows the customization of the collection list view in the
+        CMS UI. Enter a string with templates can be used to include values of
+        different fields, e.g. {{title}}.
+filter:
+  field: collection_type
+  value: files
+create: true
+publish: true
+hide: false
+delete: true
+format: yml
+extension: yml
+editor:
+  preview: false
+summary: "{{label}}"

@@ -1,0 +1,30 @@
+# The Fields Field
+name: fields
+label: Fields
+widget: list
+field_type: list-variable-types
+summary: "{{field_type}}: {{name}}{{import}}"
+minimize_collapsed: true
+label_singular: Field
+typeKey: field_type
+types:
+  - import: type tnd-import-field
+    field_type: import
+  - import: type string-field
+    field_type: import
+  - import: type text-field
+    field_type: import
+  - import: type boolean-field
+    field_type: import
+  - import: type select-field
+    field_type: import
+  - import: type list-field
+    field_type: import
+  - import: type list-variable-types-field
+    field_type: import
+  - import: type number-field
+    field_type: import
+  - import: type relation-field
+    field_type: import
+  - import: type object-field
+    field_type: import

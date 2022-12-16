@@ -1,0 +1,24 @@
+widget: object
+hint: "Activate taxonomies by entering their plural form here. [Create taxonomy fields here.](/admin/configuration/#/collections/hugo-config-directory/entries/Taxonomies\
+  omizer) "
+name: taxonomies
+allow_add: true
+label: Taxonomies
+collapsed: true
+fields:
+  - widget: string
+    field_type: string
+    required: false
+    name: tag
+    default: tags
+  - widget: string
+    field_type: string
+    required: false
+    name: category
+    default: categories
+  - widget: string
+    field_type: string
+    required: false
+    name: field
+field_type: object
+required: false

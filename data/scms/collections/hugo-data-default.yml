@@ -1,0 +1,22 @@
+name: hugo-data-default
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+description: yml files. 
+label: Data
+collection_type: folder
+folder: data
+path: "{{path}}/{{slug}}"
+slug: "{{slug}}"
+format: yml
+extension: yml
+fields:
+  - import: field hugo-content-title
+    field_type: import
+  - field_type: parent
+    widget: parent
+    required: false
+    name: parent
+    label: path
+    hint: Specify the directory under {{folder}} you want this content.
+create: true
+delete: false
+preview_path_date_field: ""

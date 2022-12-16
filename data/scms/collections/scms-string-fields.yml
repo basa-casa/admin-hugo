@@ -1,0 +1,41 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: scms-string-fields
+fields:
+  - import: field scms-field-name
+    field_type: import
+  - import: field scms-field-label
+    field_type: import
+  - import: field scms-field-widget
+    field_type: import
+    extend:
+      default: string
+  - import: field scms-field-required
+    field_type: import
+  - import: field scms-field-default
+    field_type: import
+  - import: field scms-field-hint
+    field_type: import
+  - import: field scms-field-comment
+    field_type: import
+  - import: field scms-field-pattern
+    field_type: import
+folder: data/scms/fields
+description: >
+  The string widget translates a basic text input to a string value.
+  For larger textarea inputs, use the text widget.
+label: String Fields
+label_singular: String Field
+collection_type: folder
+filter:
+  field: field_type
+  value: string
+identifier_field: name
+format: yml
+extension: yml
+create: true
+delete: true
+publish: false
+hide: false
+editor:
+  preview: true
+summary: "{{filename}}"

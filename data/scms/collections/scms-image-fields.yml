@@ -1,0 +1,70 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: Image Fields
+identifier_field: name
+label: Image Fields
+label_singular: Image Field
+collection_type: folder
+description: >
+  The image widget allows editors to upload an image or select an existing one from the media library. The path to the image file will be saved to the field as a string.
+folder: "data/scms/fields"
+fields:
+  - import: field scms-field-name
+    field_type: import
+  - import: field scms-field-label
+    field_type: import
+  - import: field scms-field-widget
+    field_type: import
+    extend:
+      default: image
+  - import: field scms-field-field_type
+    field_type: import
+    extend:
+      default: image
+  - import: field scms-field-required
+    field_type: import
+  - import: field scms-field-default
+    field_type: import
+    extend:
+      hint: accepts a file path string; defaults to null
+  - label: media library
+    field_type: object
+    name: media_library
+    widget: object
+    collapsed: true
+    fields:
+      - label: config
+        name: config
+        field_type: string  
+        widget: string
+        hint: media library settings to apply when a media library is opened by the
+          current widget
+        required: false
+      - label: allow multiple
+        name: allow_multiple
+        field_type: boolean  
+        widget: boolean
+        required: false
+  - import: field scms-config-media_folder
+    field_type: import
+    extend:
+      hint: File path where uploaded images will be saved specific to this control.
+        Paths can be relative to a collection folder (e.g. 'images' will add the
+        image to a sub-folder in the collection folder) or absolute with
+        reference to the base of the repo which needs to begin with / (e.g
+        '/static/images' will save uploaded images to the static folder in a sub
+        folder named images)
+    required: false
+filter:
+  field: field_type
+  value: image
+create: true
+publish: false
+hide: false
+delete: true
+format: yml
+extension: yml
+
+editor:
+  preview: true
+summary: "{{filename}}"
+

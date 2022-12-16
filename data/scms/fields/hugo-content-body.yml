@@ -1,0 +1,6 @@
+name: body
+slug: hugo-content-body
+widget: markdown
+field_type: markdown
+required: false
+hint: This is the main MD content, printed beneath the frontmatter delimiter in markdown files. 

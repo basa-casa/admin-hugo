@@ -1,6 +1,0 @@
-label: Color
-name: "color"
-widget: object
-component: field-type
-fields:
-  - import: collection nc-color_fields.fields

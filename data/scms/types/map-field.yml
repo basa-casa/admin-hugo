@@ -1,0 +1,6 @@
+label: Map
+name: map
+widget: object
+fields:
+  - import: collection scms-map-fields.fields
+    field_type: import

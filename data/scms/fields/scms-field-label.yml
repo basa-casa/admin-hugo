@@ -1,0 +1,6 @@
+label: Label
+name: label
+widget: string
+field_type: string
+required: false
+hint: "Label in the editor UI; defaults to the value of name."

@@ -1,53 +1,80 @@
 # /admin
-A [NetlifyCMS](https://netlifycms.org) generator, made with love, [Hugo](https://gohugo.io), NetlifyCMS, and [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
+A soon-to-be [StaticJsCMS](https://staticjscms.netlify.app/), currently [NetlifyCMS](https://netlifycms.org) generator and hugo configuration management interface, made with love, [Hugo](https://gohugo.io), NetlifyCMS, and ispired by [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
 ## Prerequisites
-Go 1.14
-Hugo 0.61.0
-Node
+ - Hugo [] ([Installation instructions](https://gohugo.io/installation))
+
+ - Git [] ([Installation instructions](https://github.com/git-guides/install-git))
+
+ - []A Hugo site tracked by Git
+    ```
+    hugo new site my-awesome-site
+    cd my-awesome-site
+    git init
+    hugo mod init github.com/username/my-awesome-site
+
+    # Replacing my-awesome-site with your site directory, and username with yours.
+    ```
+
 ## Installation
-1. Initialize your project as a hugo module with `hugo mod init`. 
 1. Import this module in your Hugo `config.toml`.
     ```toml
     [module]
         [[module.imports]]
-            path = "github.com/basa-casa/hugo-module-bc-nc-admin"
+            path = "github.com/basa-casa/hugo-scms-admin"
+    ```
+2. Vendor the module files for easier copying/overriding
+    ```
+    hugo mod vendor
+    ```
+3. Copy `/content/admin/_index.md` into your project
+    ```
+    cp _vendor/github.com/basa-casa/hugo-scms-admin/content/admin/_index.md content/admin/_index.md
+    ```
+4. Modify the `cascade.config` object to reflect your project. This controls the static cms backend and other settings common to each sub-cms. 
+5. Copy `/content/admin/content/index.md` into your project
+    ```
+    cp _vendor/github.com/basa-casa/hugo-scms-admin/content/admin/content/index.md content/admin/content/index.md
     ```
 
 ## Usage
 ### Getting Started
-1. Run `npx netlify-cms-proxy-server` and your `hugo server` commands from the root directory of your site repository.
-2. Open [/nc-admin](http://localhost:1313/admin).
+1. Run the development servers
+    ```
+    npx netlify-cms-proxy-server & hugo server && fg
+    ```
+    or
+    ```
+    cp _vendor/github.com/basa-casa/hugo-scms-admin/dev.sh dev.sh
+    ```
+    ```
+    sh dev.sh
+    ```
+2. Open [http://localhost:1313](http://localhost:1313)
 
-Your site now has four pages, at`/admin`, `/admin/content`, `/admin/structure`, and `/admin/configuration`. 
-
+Your site now has a mostly-blank **index page** at `/`, **CMS instances** at `/admin`, `/admin/collections`, `/admin/fields`, `/admin/content`, `/admin/configuration`, `/admin/data`, `/admin/help`, and **help pages** at 
+`/admin/help/admin/*` for each CMS.
 ### /admin
 
-Manages the setup of each /admin/{{cms}} with `collection admin-pages`
-This branch bundle cascades common netlify-CMS configuration settings down to each page below it. Override the module default at /admin/configuration/admin
+Manages the name, collections, and menu placement of each `/admin/{{cms}}/index.md`
 
 ### /admin/content
-### /admin/data/netlifycms/collections
-### /admin/data/netlifycms/fields
+
+Controls the collections available to content editors. You need to recreate this cms in /admin or by copying `/content/admin/content/index.md` from the module into your project and edit the list of collections.
+
+### /admin/collections
+
+Create and manage collections as individual `.yml` files in `/data/scms/collections` for import to any CMS. 
+
+### /admin/fields
+Has collections enabled for creating 16 different types of fields as individual `.yml` files in `/data/scms/fields` for import to any collection or parent field. 
+
 ### /admin/configuration
-Hugo Configs
-Hugo Environments
-### /admin/layouts
-Hugo Layouts
+Manage the Hugo configuration, with collections available for creating an individual config.(toml,yaml,json) files
 Hugo config.modules?
-### /admin/archetypes
-import collection set for admin/content, point each at `/archetypes`?
-### People
+Hugo Environments
 
-Manages users, roles, and permissions.
+### /admin/help
 
-### Reports
-
-Contains links to logs, update information, search information, and other information about the site’s status.
-
-
-### Help
-
-Lists help topics for installed modules that provide them.
-
+Edits the markdown body for each admin (_)index.md file, creating help pages at (/admin/help/admin)(http://localhost:1313/admin/help/admin/content) and the like.
 

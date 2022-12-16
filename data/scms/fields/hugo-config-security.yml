@@ -1,0 +1,51 @@
+name: security
+label: security policy
+widget: object
+field_type: object
+required: false
+collapsed: true
+fields: 
+  - name: enableInlineShortcodes
+    label: Enable Inline Shortcodes 
+    widget: boolean
+    required: false
+  - name: exec
+    widget: object
+    required: false
+    fields: 
+      - name: allow
+        widget: list
+        required: false
+        hint: >
+          - ^dart-sass-embedded$
+          - ^go$
+          - ^npx$
+          - ^postcss$
+      - name: osEnv
+        widget: list
+        required: false
+        hint: >
+          - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+  - name: funcs
+    widget: object
+    required: false
+    fields: 
+      - name: getenv
+        widget: list
+        required: false
+        hint: >
+          - ^HUGO_
+  - name: http
+    widget: object
+    required: false
+    fields: 
+      - name: methods
+        widget: list
+        required: false
+        hint: >
+          - (?i)GET|POST
+      - name: urls
+        widget: list
+        required: false
+        hint: >
+         - .*

@@ -1,0 +1,170 @@
+# Netlify CMS Files Collection. See https://www.scms.org/docs/collection-types#file-collections
+name: hugo-config-objects
+label: Hugo Config Objects
+collection_type: files
+description: "Creates user-named fields for configuration forms, for taxonomies, menus, cascades, output formats, media types, and parameters."
+files:
+  - type: file
+    name: Taxonomies
+    label: Taxonomies
+    file: data/scms/fields/hugo-config-taxonomies.yml
+    fields:
+      - field_type: list
+        widget: list
+        label_singular: Taxonomy
+        required: false
+        name: fields
+        Label: Taxonomies
+        fields:
+          - field_type: import
+            import: field scms-field-name
+          - field_type: import
+            import: field scms-field-widget
+            extend: 
+              default: string
+              widget: hidden
+          - field_type: import
+            import: field scms-field-field_type
+            extend: 
+              default: string
+              widget: hidden
+          - field_type: import
+            import: field scms-field-required
+            extend:
+              widget: hidden
+        hint: "Enter the singular form (i.e. \"tag\") for each taxonomy the site needs. Activate it by adding its plural form at [config/_default/config.yml](/admin/configuration/#/collections/hugo_configuration/entries/_default/config) or [config/_default/taxonomies.yml](/admin/configuration/#/collections/Hugo%20Config%20Directory/entries/taxomnomies)"
+    delete: false
+  - type: file
+    name: Cascade
+    label: Cascade
+    file: data/scms/fields/hugo-config-cascade.yml
+    fields:
+      - field_type: list
+        widget: list
+        label: Cascade
+        name: fields
+        required: false
+        fields: 
+          - import: field hugo-cascade-target
+            field_type: import
+          - import: field scms-collection-fields_primitive
+            field_type: import
+  - type: file
+    name: Menu
+    label: Menu
+    file: data/scms/fields/hugo-config-menu.yml
+    fields:
+      - field_type: list
+        widget: list
+        label: menus
+        name: fields
+        required: false
+        # summary: "{{fields.extend.fields.name}}"
+        fields: 
+          - name: import
+            label: Import 
+            widget: string
+            field_type: string
+            hint: DO NOT MODIFY - unique menus are defined in the extend.name field below.
+            default: field hugo-config-menus
+          - name: extend
+            label: extend
+            widget: object
+            field_type: object
+            fields: 
+              - import: field scms-field-name
+  - type: file
+    name: MediaTypes
+    label: MediaTypes
+    file: data/scms/fields/hugo-config-mediaTypes.yml
+    fields:
+      - field_type: list
+        widget: list
+        label: MediaTypes
+        name: fields
+        required: false
+        fields: 
+          - name: import
+            label: Import 
+            widget: hidden
+            field_type: string
+            hint: DO NOT MODIFY - unique mediaTypes are defined in the extend.name field below.
+            default: field hugo-config-mediaType
+          - name: extend
+            label: extend
+            widget: object
+            field_type: object
+            fields: 
+              - import: field scms-field-name
+                extend:
+                  hint: Add a new MediaType with the pattern `contents/format`. Then set the type's suffixes in your hugo config.
+                  required: false 
+  - type: file
+    name: outputFormats
+    label: outputFormats
+    file: data/scms/fields/hugo-config-outputFormats.yml
+    fields:
+      - field_type: list
+        widget: list
+        label: outputFormats
+        name: fields
+        required: false
+        fields: 
+          - name: import
+            label: Import 
+            widget: hidden
+            field_type: string
+            default: field hugo-config-outputFormat
+          - name: extend
+            label: extend
+            widget: object
+            field_type: object
+            fields: 
+              - import: field scms-field-name
+                extend:
+                  hint: Name the new output format, to be configured in hugo config.  
+                  required: true 
+  - type: file
+    name: params
+    label: params
+    file: data/scms/fields/hugo-config-params.yml
+    fields:
+      - name: fields
+        label: Fields
+        widget: list
+        field_type: list-variable-types
+        summary: "{{field_type}}: {{name}}{{import}}"
+        minimize_collapsed: false
+        label_singular: Field
+        typeKey: field_type
+        types:
+          - import: type tnd-import-field
+            field_type: import
+          - import: type string-field
+            field_type: import
+          - import: type image-field
+            field_type: import
+          - import: type file-field
+            field_type: import
+          - import: type markdown-field
+            field_type: import
+          - import: type boolean-field
+            field_type: import
+          - import: type select-field
+            field_type: import
+          - import: type list-field
+            field_type: import
+          - import: type number-field
+            field_type: import
+          - import: type relation-field
+            field_type: import
+          - import: type object-field
+            field_type: import
+
+
+
+
+
+          
+
+

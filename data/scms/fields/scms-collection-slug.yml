@@ -1,0 +1,6 @@
+label: Slug 
+name: slug 
+widget: string 
+field_type: string 
+required: false
+hint: "See https://www.scms.org/docs/configuration-options/#slug"

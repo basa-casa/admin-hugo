@@ -1,0 +1,22 @@
+# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+name: hugo-content-posts
+description: Write basic blog posts.
+label: Posts
+label_singular: Post
+collection_type: folder
+folder: content/posts
+path: "{{year}}/{{slug}}"
+slug: ""
+format: yaml-frontmatter
+fields:
+  - field_type: import
+    import: field hugo-content-title
+  - field_type: import
+    import: field hugo-content-draft
+  - field_type: import
+    import: field hugo-content-date
+  - field_type: import
+    import: field hugo-content-body
+create: true
+delete: true
+preview_path: /posts

@@ -1,0 +1,37 @@
+label: Import
+name: import
+widget: object
+fields:
+  - name: import
+    label: Import
+    widget: string
+    field_type: string
+    hint: Pattern\:\ "(singularized) dirname filename". ex. "field body" will import `data/scms/fields/body.yml`
+  - import: field scms-field-field_type
+    field_type: import
+    extend:
+      default: import 
+  - name: extend
+    label: Extend
+    widget: object
+    field_type: object
+    collapsed: true
+    required: false
+    hint: "Only common field options may be extended here. For further control, consider cloning the field or editing the'extend:' object directly in the file."
+    fields:
+      - import: field scms-field-name
+        extend:
+          required: false
+        field_type: import
+      - import: field scms-field-label
+        field_type: import
+      - import: field scms-field-widget
+        field_type: import
+        extend:
+          required: false
+      - import: field scms-field-hint
+        field_type: import
+      - import: field scms-field-default
+        field_type: import
+      - import: field scms-field-comment
+        field_type: import
