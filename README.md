@@ -1,12 +1,12 @@
 # /admin
-A soon-to-be [StaticJsCMS](https://staticjscms.netlify.app/), currently [NetlifyCMS](https://netlifycms.org) generator and hugo configuration management interface, made with love, [Hugo](https://gohugo.io), NetlifyCMS, and ispired by [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
+A [StaticJsCMS](https://staticjscms.netlify.app/) generator and hugo configuration management interface, made with love, [Hugo](https://gohugo.io), StaticCMS, and ispired by [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
 ## Prerequisites
- - Hugo [] ([Installation instructions](https://gohugo.io/installation))
+ - [ ] Hugo ([Installation instructions](https://gohugo.io/installation))
 
- - Git [] ([Installation instructions](https://github.com/git-guides/install-git))
+ - [ ] Git ([Installation instructions](https://github.com/git-guides/install-git))
 
- - []A Hugo site tracked by Git
+ - [ ] A Hugo site tracked by Git
     ```
     hugo new site my-awesome-site
     cd my-awesome-site
