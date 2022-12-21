@@ -1,5 +1,5 @@
 # /admin
-A soon-to-be [StaticJsCMS](https://staticjscms.netlify.app/), currently [NetlifyCMS](https://netlifycms.org) generator and hugo configuration management interface, made with love, [Hugo](https://gohugo.io), NetlifyCMS, and ispired by [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
+This hugo module adds an Administration section to any Hugo site. The pages in this section generate 7 instances of [NetlifyCMS](https://netlifycms.org), soon to change to [StaticJsCMS](https://staticjscms.netlify.app/). The `content/admin/_index.md generates and edit the CMS's themselves, and sub-pages do the same for the collections and fields that comprise the CMSes, hugo configuration files and their fields, and the content and data that make up the site. This module is based on[theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
 ## Prerequisites
  - Hugo [] ([Installation instructions](https://gohugo.io/installation))
@@ -23,6 +23,24 @@ A soon-to-be [StaticJsCMS](https://staticjscms.netlify.app/), currently [Netlify
         [[module.imports]]
             path = "github.com/basa-casa/hugo-scms-admin"
     ```
+    `config.yml`
+    ```yaml
+    module:
+      imports:
+        - path: github.com/basa-casa/hugo-scms-admin
+    ```
+    `config.json`
+    ```json
+    {
+        "module": {
+            "imports": [
+                {
+                    "path": "github.com/basa-casa/hugo-scms-admin"
+                },
+            ]
+        }
+    }
+    ```
 2. Vendor the module files for easier copying/overriding
     ```
     hugo mod vendor
@@ -36,6 +54,7 @@ A soon-to-be [StaticJsCMS](https://staticjscms.netlify.app/), currently [Netlify
     ```
     cp _vendor/github.com/basa-casa/hugo-scms-admin/content/admin/content/index.md content/admin/content/index.md
     ```
+6. Repeat Step 5 as needed, for other Admin CMS files you want to control. 
 
 ## Usage
 ### Getting Started
