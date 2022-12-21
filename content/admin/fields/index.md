@@ -33,18 +33,6 @@ collections:
     collection_type: import
   - import: collection scms-map-fields
     collection_type: import
-  - collection_type: files
-    name: Admin
-    label: "Admin"
-    description: "Control the files that control the collection forms active in this CMS. "
-    files:
-      - type: file
-        name: content/admin/fields/index.md
-        label: content/admin/fields/index.md
-        file: content/admin/fields/index.md
-        fields:
-          - field_type: import
-            import: collection admin-pages.fields
 menu:
   admin:
     weight: 20

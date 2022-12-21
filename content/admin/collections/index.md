@@ -9,4 +9,5 @@ menu:
   admin:
     weight: 10
 ---
-## 
+- [Static CMS Collection Overview](https://staticjscms.netlify.app/docs/collection-overview)
+- [Static CMS Collection Types](https://staticjscms.netlify.app/docs/collection-types)
