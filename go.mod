@@ -1,4 +1,4 @@
-module github.com/basa-casa/hugo-scms-admin
+module github.com/basa-casa/hugo-admin
 
 go 1.18
 

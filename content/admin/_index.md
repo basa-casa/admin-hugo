@@ -1,31 +1,34 @@
 ---
-title: "Admin"
+title: Admin
+collections:
+  - import: collection admin-pages
+    collection_type: import
 menu:
   admin:
     weight: 10
-collections:
- - import: collection admin-pages
-   collection_type: import
 cascade:
-- outputs:
-    - HTML
-    - scms_config
-    - help
-  config:
-    local_backend: true
-    backend:
-      branch: main
-      name: test-repo
-      repo: basa-casa/hugo-scms-admin
-    media_folder: assets/img
-    public_folder: img
-    site_url: ../../
-    display_url: /
-    logo_url: /img/hugo-scms-admin.png
---- 
+  - outputs:
+      - HTML
+      - scms_config
+      - help
+    config:
+      local_backend: true
+      backend:
+        branch: main
+        name: test-repo
+        repo: basa-casa/hugo-scms-admin
+      media_folder: assets/img
+      public_folder: img
+      site_url: ../../
+      display_url: /
+      logo_url: "/img/hugo-scms-admin.png\r"
+draft: false
+type: scms
+---
+ 
 
 
-The `admin-pages` collectiongenerates instances of StaticCMS (scms), at `/admin/{{slug}}` by providing a title and collection import definitions. 
+The `admin-pages` collection generates instances of StaticCMS (scms), at `/admin/{{slug}}` by providing a title and collection import definitions. 
 ```yaml
 {{< readfile file="/data/scms/collections/admin-pages.yml" >}}
 ```
