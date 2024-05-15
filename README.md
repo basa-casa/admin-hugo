@@ -1,12 +1,13 @@
 # /admin
-This hugo module adds an Administration section to any Hugo site. The pages in this section generate 7 instances of [NetlifyCMS](https://netlifycms.org), soon to change to [StaticJsCMS](https://staticjscms.netlify.app/). The `content/admin/_index.md generates and edit the CMS's themselves, and sub-pages do the same for the collections and fields that comprise the CMSes, hugo configuration files and their fields, and the content and data that make up the site. This module is based on[theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
+
+A [StaticJsCMS](https://staticjscms.netlify.app/) generator and hugo configuration management interface, made with love, [Hugo](https://gohugo.io), StaticCMS, and ispired by [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
 ## Prerequisites
- - Hugo [] ([Installation instructions](https://gohugo.io/installation))
+ - [ ] Hugo ([Installation instructions](https://gohugo.io/installation))
 
- - Git [] ([Installation instructions](https://github.com/git-guides/install-git))
+ - [ ] Git ([Installation instructions](https://github.com/git-guides/install-git))
 
- - []A Hugo site tracked by Git
+ - [ ] A Hugo site tracked by Git
     ```
     hugo new site my-awesome-site
     cd my-awesome-site

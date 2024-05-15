@@ -9,18 +9,10 @@
   </head>
   <body>
     {{ partial "admin/menu.html" . }}
-    <section id="scms-root"></section>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    {{- $version := partial "bc-scms/private/GetCMSVersion" . "bc-scms/private/GetCMSVersion" -}}
-    {{/* Hugo keeps escaping the `^` character potentially used to specify CMS version (`^2.0.0`) in spite of
-      safeHTML, safeHTMLAttr and the like. Passing the whole tag through `printf` fixes it... */}}
-     {{- $cdn := printf `<script src="https://unpkg.com/netlify-cms@%s/dist/netlify-cms.js"></script>` $version -}}
-      {{ $cdn | safeHTML }}
-      {{ partial "bc-scms/scripts.html" . }}  
        <!-- Include the script that builds the page and powers Static CMS -->
-    {{/*  <script src="https://unpkg.com/@staticcms/core@1.0.0-beta4/dist/static-cms-core.js"></script>
+    <script src="https://unpkg.com/@staticcms/core@1.0.0-beta4/dist/static-cms-core.js"></script>
     <script>
       window.CMS.init();
-    </script>  */}}
+    </script>
     </body>
 </html> 
