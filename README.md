@@ -1,4 +1,5 @@
 # /admin
+
 A [StaticJsCMS](https://staticjscms.netlify.app/) generator and hugo configuration management interface, made with love, [Hugo](https://gohugo.io), StaticCMS, and ispired by [theNewDynamic's](https://www.thenewdynamic.com) [hugo-module-tnd-netlifycms](https://github.com/theNewDynamic/hugo-module-tnd-netlifycms). 
 
 ## Prerequisites
@@ -23,6 +24,24 @@ A [StaticJsCMS](https://staticjscms.netlify.app/) generator and hugo configurati
         [[module.imports]]
             path = "github.com/basa-casa/hugo-scms-admin"
     ```
+    `config.yml`
+    ```yaml
+    module:
+      imports:
+        - path: github.com/basa-casa/hugo-scms-admin
+    ```
+    `config.json`
+    ```json
+    {
+        "module": {
+            "imports": [
+                {
+                    "path": "github.com/basa-casa/hugo-scms-admin"
+                },
+            ]
+        }
+    }
+    ```
 2. Vendor the module files for easier copying/overriding
     ```
     hugo mod vendor
@@ -36,6 +55,7 @@ A [StaticJsCMS](https://staticjscms.netlify.app/) generator and hugo configurati
     ```
     cp _vendor/github.com/basa-casa/hugo-scms-admin/content/admin/content/index.md content/admin/content/index.md
     ```
+6. Repeat Step 5 as needed, for other Admin CMS files you want to control. 
 
 ## Usage
 ### Getting Started
