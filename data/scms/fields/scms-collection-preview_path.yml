@@ -3,4 +3,4 @@ name: preview_path
 widget: string 
 field_type: string 
 required: false
-hint: "A string representing the path where content in this collection can be found on the live site. https://www.scms.org/docs/configuration-options/#preview_path"
+hint: "A string representing the path where content in this collection can be found on the live site. https://www.staticcms.org/docs/configuration-options/#preview_path"

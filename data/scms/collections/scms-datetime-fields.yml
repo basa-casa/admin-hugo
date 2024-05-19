@@ -1,5 +1,5 @@
 name: date_fields
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: |
   The datetime widget translates a datetime picker to a datetime string.
 label: Date Fields

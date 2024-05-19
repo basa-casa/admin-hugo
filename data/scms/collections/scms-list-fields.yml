@@ -1,4 +1,4 @@
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 name: List Fields
 identifier_field: name
 label: List Fields

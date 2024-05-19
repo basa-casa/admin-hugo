@@ -1,5 +1,5 @@
 name: folder-collections
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: Folder collections represent one or more files with the same
   format, fields, and configuration options, all stored within the same folder
   in the repository. You might use a folder collection for blog posts, product
@@ -19,7 +19,7 @@ fields:
     field_type: import
     extend:
       comment: Netlify CMS Folder Collection. See
-        https://www.scms.org/docs/collection-types#folder-collections
+        https://www.staticcms.org/docs/collection-types#folder-collections
   - import: field scms-collection-fields_primitive
     field_type: import
     extend:

@@ -1,5 +1,5 @@
 name: hugo-content-default
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: The scms equivalent of `hugo new page-title.md`
 label: Content
 collection_type: folder

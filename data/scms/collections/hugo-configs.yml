@@ -1,5 +1,5 @@
 name: hugo_configuration
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: Controller for Hugo {{slug}}.{{extension}} in
   /config/{{destination}} (usually config.yml or .toml, but hugo can run with arbitrarily-named config files. See https://gohugo.io/getting-started/configuration/#configuration-file)
 label: Hugo Configuration

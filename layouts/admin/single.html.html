@@ -4,14 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Site.Title }} {{ .Section }} {{ .Title }}</title>
-    <!-- Include the script that enables Netlify Identity on this page. -->
-    {{/*  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8">  */}}
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^4.0.0/dist/main.css" />
   </head>
   <body>
     {{ partial "admin/menu.html" . }} 
     <!-- Include the script that builds the page and powers Static CMS -->
-    <script src="https://unpkg.com/@staticcms/core@1.0.0-beta4/dist/static-cms-core.js"></script>
+    <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script>
     <script>
       window.CMS.init();
     </script>

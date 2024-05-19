@@ -6,7 +6,7 @@ fields:
     field_type: import
     extend:
       comment: Netlify CMS Folder Collection. See
-        https://www.scms.org/docs/collection-types#folder-collections
+        https://www.staticcms.org/docs/collection-types#folder-collections
   - import: field scms-collection-description
     field_type: import
   - import: field scms-field-label

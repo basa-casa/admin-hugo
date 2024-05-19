@@ -1,5 +1,5 @@
 name: admin-help
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: Help page editor for Admin Pages. These deploy to the site at `/admin/help/admin/{.Name}`.
 label: Admin Help Editor
 label_singular: Admin Help

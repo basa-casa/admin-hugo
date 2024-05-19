@@ -1,5 +1,5 @@
 name: admin-pages
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: Generates an instance of StaticCMS (scms), at `/admin/{{slug}}` Use this collection to override the module-provided pages admin/content, admin/config, etc.
 label: Admin Pages
 label_singular: Admin Page

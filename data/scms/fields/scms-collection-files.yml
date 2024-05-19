@@ -4,7 +4,7 @@ name: "files"
 widget: "list"
 field_type: "list-variable-types"
 multiple: true
-hint: "https://www.scms.org/docs/collection-types#file-collections"
+hint: "https://www.staticcms.org/docs/collection-types#file-collections"
 summary: '{{type}}: {{import}}{{file}}'
 types:
   - label: Import

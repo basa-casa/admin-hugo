@@ -1,5 +1,5 @@
 name: File Sets
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: "Create a list of files to import to file collections together.
   Useful for grouped pages and configuration files. "
 label: File Sets

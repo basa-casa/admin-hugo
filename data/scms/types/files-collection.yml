@@ -5,7 +5,7 @@ fields:
     field_type: import
     extend:
       comment: Netlify CMS Files Collection. See
-        https://www.scms.org/docs/collection-types#file-collections
+        https://www.staticcms.org/docs/collection-types#file-collections
   - import: field scms-field-label
     field_type: import
   - import: field scms-collection-collection_type

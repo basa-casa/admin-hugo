@@ -1,5 +1,5 @@
 name: collection_sets
-# Netlify CMS Folder Collection. See https://www.scms.org/docs/collection-types#folder-collections
+# Netlify CMS Folder Collection. See https://www.staticcms.org/docs/collection-types#folder-collections
 description: Create a list of collections to import to CMSs together.
 label: Collection Sets
 label_singular: Collection Set

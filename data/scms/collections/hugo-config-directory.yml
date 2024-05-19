@@ -1,4 +1,4 @@
-# Netlify CMS Files Collection. See https://www.scms.org/docs/collection-types#file-collections
+# Netlify CMS Files Collection. See https://www.staticcms.org/docs/collection-types#file-collections
 name: hugo-config-directory
 label: Hugo Config Files
 collection_type: files

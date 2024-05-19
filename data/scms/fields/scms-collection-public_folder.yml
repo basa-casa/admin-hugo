@@ -3,4 +3,4 @@ name: public_folder
 widget: string
 required: false
 field_type: string
-hint: See https://www.scms.org/docs/beta-features/#folder-collections-media-and-public-folder. 
+hint: See https://www.staticcms.org/docs/beta-features/#folder-collections-media-and-public-folder. 
