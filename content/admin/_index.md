@@ -15,13 +15,13 @@ cascade:
       local_backend: true
       backend:
         branch: main
-        name: test-repo
-        repo: basa-casa/hugo-scms-admin
+        name: github
+        repo: basa-casa/hugo-admin
       media_folder: assets/img
       public_folder: img
       site_url: ../../
       display_url: /
-      logo_url: "/img/hugo-scms-admin.png\r"
+      logo_url: "/img/hugo-admin.png\r"
 draft: false
 type: scms
 ---

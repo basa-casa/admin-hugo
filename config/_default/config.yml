@@ -1,6 +1,6 @@
 buildDrafts: true
 Params:
-  stylesheetUrl: https://cdn.jsdelivr.net/npm/holiday.css@0.9.8
+  stylesheetUrl: https://cdn.jsdelivr.net/npm/holiday.css@0.11.2
 cleanDestinationDir: true
 destination: _default
 slug: config
