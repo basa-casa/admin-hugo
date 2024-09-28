@@ -1,7 +1,0 @@
-label: date
-name: date
-widget: list
-field_type: list
-required: false
-hint: Enter a comma-separated list of parameters to assign the date value for this page variable.
-

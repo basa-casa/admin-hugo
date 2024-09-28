@@ -1,3 +1,0 @@
-{{- with partial "bc-scms/private/go" . "bc-scms/private/go" -}}
-  {{ . }}
-{{- end -}}

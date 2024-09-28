@@ -1,0 +1,6 @@
+label: Capitalize List Titles
+name: capitalizeListTitles
+widget: boolean
+field_type: boolean
+required: false
+hint: Whether to capitalize automatic list titles. Applicable to section, taxonomy, and term pages. Default is true. You can change the capitalization style in your site configuration to one of ap, chicago, go, firstupper, or none.

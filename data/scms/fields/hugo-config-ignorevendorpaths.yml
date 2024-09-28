@@ -1,0 +1,5 @@
+label: ignoreVendorPaths
+name: ignoreVendorPaths
+widget: string
+field_type: string
+hint: Ignore vendored modules that match the given Glob pattern within the _vendor directory.

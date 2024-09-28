@@ -1,6 +1,0 @@
-label: Subfolder
-name: destination
-widget: string
-field_type: string
-required: false
-hint: The directory to where scms will write the file, beneath the folder collection's `folder` field.

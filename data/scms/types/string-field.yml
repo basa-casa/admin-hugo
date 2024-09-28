@@ -1,6 +1,0 @@
-label: String
-name: 'string'
-widget: object
-fields:
-  - import: collection scms-string-fields.fields
-    field_type: import

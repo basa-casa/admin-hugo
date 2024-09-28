@@ -1,6 +1,0 @@
-{{ with resources.Get "static-cms-core.js" }}
-<script>{{ .Content | safeJS }}</script>
-{{ end }}
-<script>
-    window.CMS.init();
-  </script>

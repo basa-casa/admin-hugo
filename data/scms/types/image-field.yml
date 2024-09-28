@@ -1,6 +1,0 @@
-name: image
-label: Image
-widget: object
-fields:
-  - import: collection scms-image-fields.fields
-    field_type: import

@@ -1,0 +1,5 @@
+label: ignoreLogs 
+name: ignoreLogs
+widget: string
+field_type: string
+hint: A slice of message identifiers corresponding to warnings and errors you wish to suppress. See [erroridf](https://gohugo.io/functions/fmt/erroridf/) and [warnidf](https://gohugo.io/functions/fmt/erroridf/).

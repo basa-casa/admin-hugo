@@ -1,5 +1,4 @@
 name: draft
-namespace: hugo
 label: Draft
 widget: boolean
 field_type: boolean

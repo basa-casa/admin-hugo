@@ -3,4 +3,4 @@ name: canonifyURLs
 widget: boolean
 field_type: boolean
 required: false
-hint: Enable to turn relative URLs into absolute.
+hint: This is a legacy configuration option, superseded by template functions and Markdown render hooks, and will likely be removed in a future release. See https://gohugo.io/content-management/urls/#canonical-urls

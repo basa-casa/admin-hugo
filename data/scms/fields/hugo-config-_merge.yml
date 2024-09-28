@@ -2,8 +2,11 @@ label: _merge
 name: _merge
 widget: select
 required: false
-hint: "[Hugo Merge Docs](https://gohugo.io/getting-started/configuration/#merge-configuration-from-themes)"
+hint: "Merge this configuration object from themes."
 options: 
-  - none
-  - shallow
-  - deep
+  - label: none - No merge 
+    value: none
+  - label: shallow - Adds values for only new keys
+    value: shallow
+  - label: deep - Add values for new keys, and merge existing
+    value: deep

@@ -7,21 +7,24 @@ required: false
 fields:
   - import: field hugo-config-_merge 
     field_type: import
-  - import: field hugo-config-frontmatter-date
-    field_type: import
-  - import: field hugo-config-frontmatter-date
-    field_type: import
-    extend: 
-      name: expiryDate
-      label: expiryDate
-  - import: field hugo-config-frontmatter-date
-    field_type: import
-    extend: 
-      name: lastmod
-      label: lastmod
-  - import: field hugo-config-frontmatter-date
-    field_type: import
-    extend: 
-      name: publishDate
-      label: publishDate
+  - label: date
+    name: date
+    widget: list
+    field_type: list
+    required: false
+  - name: expiryDate
+    label: expiryDate
+    widget: list
+    field_type: list
+    required: false
+  - name: lastmod
+    label: lastmod
+    widget: list
+    field_type: list
+    required: false
+  - name: publishDate
+    label: publishDate
+    widget: list
+    field_type: list
+    required: false
 hint: "[Docs](https://gohugo.io/getting-started/configuration/#configure-front-matter)"

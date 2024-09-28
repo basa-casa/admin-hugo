@@ -1,0 +1,5 @@
+label: ignoreCache
+name: ignoreCache
+widget: boolean
+field_type: boolean
+hint: Ignore the cache directory. Default is false.

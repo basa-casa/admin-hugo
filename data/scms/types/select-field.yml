@@ -1,6 +1,0 @@
-label: Select
-name: select
-widget: object
-fields:
-  - import: collection scms-select-fields.fields
-    field_type: import

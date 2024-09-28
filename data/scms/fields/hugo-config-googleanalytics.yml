@@ -1,6 +1,0 @@
-label: google Analytics
-name: googleAnalytics
-widget: string
-field_type: string
-required: false
-hint: Google Analytics tracking ID.

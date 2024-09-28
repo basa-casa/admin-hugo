@@ -1,5 +1,4 @@
 name: date
-namespace: hugo
 widget: datetime
 field_type: datetime
 required: false

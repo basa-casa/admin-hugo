@@ -1,6 +1,0 @@
-label: Hint
-name: hint
-widget: text
-field_type: text
-required: false
-hint: "Helper text directly below a widget. This is a hint."
