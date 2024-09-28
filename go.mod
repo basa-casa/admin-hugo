@@ -1,3 +1,3 @@
-module github.com/basa-casa/hugo-admin
+module github.com/basa-casa/admin-hugo
 
 go 1.18
