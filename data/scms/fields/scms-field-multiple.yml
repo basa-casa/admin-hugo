@@ -1,6 +1,0 @@
-label: Multiple
-name: multiple
-widget: boolean
-field_type: boolean
-
-required: false

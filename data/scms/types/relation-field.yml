@@ -1,6 +1,0 @@
-label: Relation
-name: relation
-widget: object
-fields:
-  - import: collection scms-relation-fields.fields
-    field_type: import

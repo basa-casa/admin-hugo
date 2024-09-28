@@ -1,6 +1,0 @@
-label: Boolean 
-name: boolean
-widget: object
-fields:
-  - import: collection scms-boolean-fields.fields
-    field_type: import

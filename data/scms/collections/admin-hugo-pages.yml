@@ -1,0 +1,24 @@
+name: admin-pages
+description: Generates an instance of StaticCMS (scms), at `/admin/{{slug}}` Use this collection to override the module-provided pages admin/content, admin/config, etc.
+label: Admin Pages
+label_singular: Admin Page
+collection_type: folder
+folder: content/admin
+identifier_field: title
+path: "{{slug}}/index"
+format: yaml-frontmatter
+fields:
+  - import: field admin-title
+    field_type: import
+  - import: field admin-cms
+    field_type: import  
+  - import: field admin-collections-import
+    field_type: import
+  - import: field hugo-content-menu
+    field_type: import
+  - import: field hugo-content-draft
+    field_type: import
+sortable_fields: [title]
+create: true
+delete: true
+hide: false

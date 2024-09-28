@@ -1,6 +1,0 @@
-label: Slug 
-name: slug 
-widget: string 
-field_type: string 
-required: false
-hint: "See https://www.staticcms.org/docs/configuration-options/#slug"

@@ -1,5 +1,0 @@
-label: Object
-name: object
-widget: object
-fields:
- - import: collection scms-object-fields.fields

@@ -1,6 +1,0 @@
-label: Widget
-name: widget
-widget: string
-hint: See https://www.staticcms.org/docs/widgets/. Widget fields should only change to equivalent data types.
-field_type: string
-required: true

@@ -1,0 +1,6 @@
+label: disableLanguages
+name: disableLanguages
+field_type: list
+widget: list
+required: false
+hint: The language codes to disable. 

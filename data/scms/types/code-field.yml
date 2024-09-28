@@ -1,6 +1,0 @@
-label: Code 
-name: code
-widget: object
-fields:
-  - import: collection scms-code-fields.fields
-    field_type: import

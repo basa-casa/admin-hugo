@@ -1,6 +1,0 @@
-label: File
-name: file
-widget: object
-fields:
-  - import: collection scms-file-fields.fields
-    field_type: import

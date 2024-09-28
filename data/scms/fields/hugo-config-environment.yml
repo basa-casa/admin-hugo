@@ -1,0 +1,7 @@
+name: environment
+label: environment
+widget: string
+field_type: string
+required: false
+hint: >
+  Build environment. Set to production to build your site for production. Set to development to build your site for development. Default is production. See [Configuration Directory]()

@@ -1,5 +1,0 @@
-label: Color
-name: "color"
-widget: object
-fields:
-  - import: collection scms-color-fields.fields

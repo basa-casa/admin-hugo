@@ -1,6 +1,0 @@
-{{ range (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
-<div>
-  {{ partial "list_item.html" . }}
-</div>
-<br>
-{{ end }}

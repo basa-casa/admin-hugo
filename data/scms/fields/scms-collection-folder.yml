@@ -1,5 +1,0 @@
-label: Folder
-name: folder 
-widget: string
-hint: Enter a path relative to the base of the repository, where all files created with this collection will be stored.
-field_type: string

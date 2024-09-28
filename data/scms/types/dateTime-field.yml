@@ -1,6 +1,0 @@
-label: Date Time
-name: dateTime
-widget: object
-fields:
-  - import: collection scms-datetime-fields.fields
-    field_type: import

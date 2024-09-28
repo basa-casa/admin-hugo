@@ -1,6 +1,0 @@
-label: "Preview Path Date Field" 
-name: preview_path_date_field 
-widget: string 
-field_type: string 
-required: false
-hint: "The name of a date field for parsing date-based template tags from preview_path"

@@ -9,6 +9,8 @@ fields:
     label: Enable Inline Shortcodes 
     widget: boolean
     required: false
+    hint: >
+      [Enable inline shortcodes](https://gohugo.io/templates/shortcode/#inline-shortcodes) in the content. This is a potential security risk, so use with caution.
   - name: exec
     widget: object
     required: false

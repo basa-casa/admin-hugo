@@ -1,6 +1,0 @@
-name: admin content collections
-collection_type: set
-collections:
-  - import: collection hugo-content-default
-    collection_type: import
-

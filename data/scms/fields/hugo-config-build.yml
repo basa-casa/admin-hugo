@@ -6,6 +6,51 @@ collapsed: true
 fields:
   - import: field hugo-config-_merge 
     field_type: import
+  - label: buildStats
+    name: buildStats
+    widget: object
+    required: false
+    fields:
+      - label: enable
+        name: enable
+        widget: boolean
+        required: false
+        hint: When enabled, a file named hugo_stats.json will be written to your project root with some aggregated data about the build, e.g. list of HTML entities published to be used to do CSS pruning. If you’re only using this for the production build, you should consider placing it below config/production. It’s also worth mentioning that, due to the nature of the partial server builds, new HTML entities will be added when you add or change them while the server is running, but the old values will not be removed until you restart the server or run a regular hugo build.
+      - label: disableClasses
+        name: disableClasses
+        widget: boolean
+        required: false
+        hint: When enabled, the CSS class names will be disabled in the build stats. This can be useful if you want to reduce the size of the stats file.
+      - label: disableIDs
+        name: disableIDs
+        widget: boolean
+        required: false
+        hint: When enabled, the HTML ID attributes will be disabled in the build stats. This can be useful if you want to reduce the size of the stats file.
+      - label: disableTags
+        name: disableTags
+        widget: boolean
+        required: false
+        hint: When enabled, the HTML tag names will be disabled in the build stats. This can be useful if you want to reduce the size of the stats file.
+  - label: cacheBusters
+    name: cacheBusters
+    widget: list
+    required: false
+    fields:
+      - label: source
+        name: source
+        widget: string
+        required: false
+        hint: A regexp matching file(s) relative to one of the virtual component directories in Hugo, typically assets/....
+      - label: target
+        name: target
+        widget: string
+        required: false
+        hint: A regexp matching the keys in the resource cache that should be expired when source changes. You can use the matching regexp groups from source in the expression, e.g. $1. - 
+  - label: no JS Config In Assets
+    name: nJSConfigInAssets
+    widget: boolean
+    required: false
+    hint: Turn off writing a jsconfig.json into your /assets folder with mapping of imports from running js.Build. This file is intended to help with intellisense/navigation inside code editors such as VS Code. Note that if you do not use js.Build, no file will be written.
   - label: use Resource Cache When
     name: useResourceCacheWhen
     widget: select
@@ -15,13 +60,3 @@ fields:
       - always
       - fallback
     hint: When to use the cached resources in /resources/_gen for PostCSS and ToCSS. Valid values are never, always and fallback. The last value means that the cache will be tried if PostCSS/extended version is not available.
-  - label: write Stats
-    name: writeStats
-    widget: boolean
-    required: false
-    hint: When enabled, a file named hugo_stats.json will be written to your project root with some aggregated data about the build, e.g. list of HTML entities published to be used to do CSS pruning. If you’re only using this for the production build, you should consider placing it below config/production. It’s also worth mentioning that, due to the nature of the partial server builds, new HTML entities will be added when you add or change them while the server is running, but the old values will not be removed until you restart the server or run a regular hugo build.
-  - label: no JS Config In Assets
-    name: nJSConfigInAssets
-    widget: boolean
-    required: false
-    hint: Turn off writing a jsconfig.json into your /assets folder with mapping of imports from running js.Build. This file is intended to help with intellisense/navigation inside code editors such as VS Code. Note that if you do not use js.Build, no file will be written.

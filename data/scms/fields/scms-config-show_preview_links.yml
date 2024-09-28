@@ -1,6 +1,0 @@
-label: Show Preview Links
-name: show_preview_links
-widget: boolean
-hint: False disables preview links.
-field_type: boolean
-required: false

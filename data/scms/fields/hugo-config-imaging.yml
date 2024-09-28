@@ -4,18 +4,108 @@ widget: object
 field_type: object
 collapsed: true
 required: false
+hint: >
+  Hugo supports a number of image processing options. Set sitewide defaults for anchor, bgColor, hint, quality, resampleFilter, and EXIF data here. These can be overridden on a per-image basis in  image shortcode arguments..
 fields:
   - import: field hugo-config-_merge 
     field_type: import
-  - import: field hugo-config-resamplefilter
-    field_type: import
-  - import: field hugo-config-quality
-    field_type: import
-  - import: field hugo-config-hint
-    field_type: import
-  - import: field hugo-config-anchor
-    field_type: import
-  - import: field hugo-config-bgcolor
-    field_type: import
-  - import: field hugo-config-exif
-    field_type: import
+  - label: resample Filter
+    name: resampleFilter
+    widget: select
+    field_type: select
+    required: false
+    options: ["",NearestNeighbor, Box, Linear, Hermite, MitchellNetravali, CatmullRom, BSpline, Gaussian, Lanczos, Hann, Hamming, Blackman, Bartlett, Welch, Cosine]
+    hint: The default value is Box. See https://github.com/disintegration/imaging.
+  - label: quality
+    name: quality
+    widget: number
+    field_type: number
+    required: false
+  - label: hint
+    name: hint
+    widget: select
+    field_type: select
+    required: false
+    hint: |-
+      Default hint about what type of image. Currently only used for WebP encoding.
+      Default is "photo".
+    options:
+      - picture
+      - photo
+      - drawing
+      - icon
+      - text
+  - label: anchor
+    name: anchor
+    widget: select
+    field_type: select
+    required: false
+    hint: >-
+      Anchor used when cropping pictures.
+
+      Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+
+      Smart Cropping is content aware and tries to find the best crop for each image. Default is "photo".
+    options:
+      - smart
+      - center
+      - topLeft
+      - Top
+      - TopRight
+      - Left
+      - Right
+      - bottomLeft
+      - bottom
+      - bottomRight
+  - label: bg Color
+    name: bgColor
+    widget: color
+    field_type: color
+    required: false
+    hint: >-
+      Default background color.
+
+      Hugo will preserve transparency for target formats that supports it, but will fall back to this color for JPEG.
+
+      Expects a standard HEX color string with 3 or 6 digits.
+
+      See https://www.google.com/search?q=color+picker
+  - label: exif
+    name: exif
+    widget: object
+    field_type: object
+    collapsed: true
+    required: false
+    fields:
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: disableDate
+        label: disableDate
+        hint: Hugo extracts the "photo taken" date/time into .Date by default. Set this
+          to true to turn it off.
+      - field_type: boolean
+        widget: boolean
+        required: false
+        name: disableLatLong
+        label: disableLatLong
+        hint: |-
+          Hugo extracts the "photo taken where" (GPS latitude and longitude) into
+          .Long and .Lat. Set this to true to turn it off.
+      - field_type: string
+        widget: string
+        required: false
+        name: excludeFields
+        label: excludeFields
+        hint: Regexp matching the Exif fields you want to exclude. This may be easier to
+          use than IncludeFields above, depending on what you want.
+      - field_type: string
+        widget: string
+        required: false
+        name: includeFields
+        label: includeFields
+        hint: Regexp matching the fields you want to Exclude from the (massive) set of
+          Exif info available. As we cache this info to disk, this is for
+          performance and disk space reasons more than anything. If you want it all,
+          put ".*" in this config setting. Note that if neither this or
+          ExcludeFields is set, Hugo will return a small default set.
