@@ -4,10 +4,10 @@ description: The scms equivalent of `hugo new page-title.md`
 label: Content
 collection_type: folder
 folder: content
-path: "{{destination}}/{{slug}}"
-slug: "{{fields.slug}}"
+path: "{{slug}}/index"
+slug: "{{slug}}"
+identifier_field: title
 format: yaml-frontmatter
-extension: md
 fields:
   - import: field scms-collection-destination
     field_type: import
